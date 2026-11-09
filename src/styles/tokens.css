@@ -1,0 +1,67 @@
+/* Warm manuscript / charcoal tools. The charcoal surface is local, not a theme. */
+:root {
+  --color-environment: #ddded5;
+  --color-workspace: #f7f5ef;
+  --color-manuscript: #f7f5ef;
+  --manuscript-muted: #4f4d45;
+  --manuscript-tertiary: #514e44;
+  --color-inspector: #23262d;
+  --color-control: #ffffff;
+  --color-scrim: rgb(35 38 45 / 28%);
+  --color-text: #282d28;
+  --color-text-secondary: #56564f;
+  --color-text-tertiary: #626158;
+  --color-separator: #b7b09f;
+  --color-control-border: #6d685f;
+  --color-accent: #282d28;
+  --color-highlight: #d9c9ac;
+  --color-coral: #986b48;
+  --color-success: #395739;
+  --color-warning: #574012;
+  --color-error: #76311f;
+  --color-selected: #ece5cd;
+  --color-hover: #e9e4d9;
+  --on-dark-text: #f5f3ed;
+  --on-dark-secondary: #c6c9c9;
+  --on-dark-tertiary: #b0b6b8;
+  --on-dark-surface: #30343c;
+  --on-dark-line: #454a52;
+  --on-dark-border: #8b939a;
+  --on-dark-error: #ffae92;
+  --on-dark-success: #c5d4b8;
+  --radius-micro: 4px;
+  --radius-control: 10px;
+  --radius-surface: 14px;
+  --radius-workspace: 20px;
+  --shadow-workspace: 0 16px 48px rgb(43 39 32 / 8%);
+  --shadow-dialog: 0 20px 64px rgb(25 25 25 / 20%);
+  --environment-inset: 20px;
+  --shell-sidebar: 84px;
+  --shell-gap: 24px;
+  --workspace-padding: 24px;
+  --editor-inspector-width: clamp(300px,25.3vw,366px);
+  --editor-column-gap: 14px;
+  --poetry-size: 40px;
+  --poetry-leading: 66px;
+  --poetry-title-size: 48px;
+  --poetry-title-leading: 68px;
+  --poetry-scene-width: 100%;
+  --poetry-line-pitch: 78px;
+}
+@media (max-width: 1179px) {
+  :root {
+    --environment-inset: 12px;
+    --shell-sidebar: 68px;
+    --shell-gap: 16px;
+    --workspace-padding: 16px;
+    --radius-workspace: 18px;
+    --radius-surface: 12px;
+    --editor-inspector-width: 260px;
+    --editor-column-gap: 14px;
+    --poetry-size: 28px;
+    --poetry-leading: 48px;
+    --poetry-title-size: 30px;
+    --poetry-title-leading: 42px;
+    --poetry-line-pitch: 58px;
+  }
+}

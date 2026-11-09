@@ -1,0 +1,28 @@
+.app-shell.unified-shell{display:flex;flex-direction:column;gap:0;background:#e5e1dc}
+.app-shell.unified-shell::before,.app-shell.unified-shell::after{content:none}
+.unified-shell>.workspace{height:auto;flex:1;min-height:0;padding:0;background:#e5e1dc}
+.app-navigation{position:relative;z-index:30;display:flex;align-items:center;gap:44px;height:64px;min-height:64px;box-sizing:border-box;padding:0 32px 0 94px;background:#eae6e1;border-bottom:1px solid #837c6e1b;-webkit-app-region:drag}
+.app-navigation button{border:0;background:none;box-shadow:none;border-radius:0;color:#82796d;font:13px/1.6 -apple-system,"PingFang SC",sans-serif;padding:8px 0;cursor:pointer;-webkit-app-region:no-drag}
+.app-navigation .app-brand{font:19px/1.6 "Songti SC",serif;color:#554d42;letter-spacing:3px}
+.app-navigation nav{display:flex;align-items:center;gap:30px}.app-navigation nav button{font:15px/1.6 "Songti SC","STSong",serif;letter-spacing:1px;color:#8a8073;transition:color .18s ease}.app-navigation nav button:hover{color:#554d42}.app-navigation nav button[aria-current=page]{color:#443d34;font-weight:400}
+.app-navigation .app-more{margin-left:auto;font:22px/1 Georgia,serif;letter-spacing:3px;min-width:34px}.app-navigation button:focus-visible{outline:1px solid #aa9c83;outline-offset:4px}
+.paper-popover{position:fixed;z-index:100;min-width:142px;max-height:calc(100vh - 32px);overflow:auto;padding:7px 14px;border:1px solid #d8cfc166;border-radius:3px;color:#746a5b;background-color:#fcfaf5;background-image:repeating-linear-gradient(0deg,#79634c05 0 1px,transparent 1px 3px),linear-gradient(110deg,#f5efe680,#fffdf940);box-shadow:0 2px 4px #57463206,0 12px 30px -10px #57463226}
+.paper-popover>button{display:block;width:100%;min-height:36px;padding:7px 10px;text-align:center;border:0;border-bottom:1px solid #8b806d18;border-radius:0;background:transparent;box-shadow:none;font:14px/1.8 "Songti SC",serif;color:#746a5b;cursor:pointer}.paper-popover>button:last-child{border-bottom:0}.paper-popover>button:hover{background:#a88c6510;color:#574a3b}.paper-popover>button:disabled{opacity:.35;cursor:default}.paper-popover>button:focus-visible{outline:1px solid #b5a58d88;outline-offset:0}
+.unified-shell [data-manuscript-ui] .editor-header{height:48px;min-height:48px;padding:0 26px;background:#e5e1dc}.unified-shell .editor-context-label{height:48px}.unified-shell .editor-context-label:after{display:none}.unified-shell .editor-header .book-brand{font:13px/1.6 -apple-system,sans-serif;letter-spacing:0;color:#8a8073}
+.unified-shell.is-home,.unified-shell.is-home>.workspace{background:#f8f6f1}
+
+.paper-popover:focus{outline:none}.paper-popover>button:focus-visible{outline:0;background:#a88c6510;text-decoration:underline;text-decoration-color:#b5a58d88;text-underline-offset:5px}
+
+/* The home wash begins at this exact color: no border or translucent seam. */
+.unified-shell.is-home .app-navigation{background:#eae6e1;border-bottom-color:transparent}
+
+/* A single shared marker keeps route changes visually connected. */
+.app-navigation nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);gap:24px;-webkit-app-region:no-drag}
+.app-navigation nav button{width:40px;text-align:center;transition:color 150ms ease}
+.app-navigation .app-brand,.app-navigation .app-more{transition:color 150ms ease}
+.app-navigation .app-brand:hover,.app-navigation .app-more:hover{color:#302b25}
+.app-nav-indicator{position:absolute;left:13px;bottom:3px;width:14px;height:1px;background:#9b8d785c;pointer-events:none;opacity:1;transform:translateX(0);transition:transform 200ms cubic-bezier(.22,.61,.36,1),opacity 150ms ease}
+.app-navigation nav[data-section=reference] .app-nav-indicator{transform:translateX(64px)}
+.app-navigation nav[data-section=notes] .app-nav-indicator{transform:translateX(128px)}
+.app-navigation nav[data-section=home] .app-nav-indicator{opacity:0;transition:opacity 150ms ease}
+@media(prefers-reduced-motion:reduce){.app-navigation button,.app-navigation nav button,.app-navigation .app-brand,.app-navigation .app-more,.app-nav-indicator{transition:none}}

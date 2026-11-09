@@ -1,0 +1,152 @@
+.workspace>.reading-workspace[data-manuscript-ui]{margin:0;padding:0;border:0;border-radius:0;background:#e5e1dc;overflow:hidden;display:flex;flex-direction:column;height:100%;min-height:0;color:#393630}
+.reading-workspace{--reading-line:rgba(130,113,91,.18);--reading-muted:#8d8376;--reading-blue:#4d6980;--reading-serif:"Songti SC","STSong","Noto Serif CJK SC",serif}
+.reading-workspace button{font:inherit;color:inherit;background:none;border:0;border-radius:0;box-shadow:none;padding:0;cursor:pointer}
+.reading-workspace button:disabled{opacity:.3;cursor:default}
+.reading-workspace button:hover:not(:disabled),.reading-workspace button[aria-current="true"]{color:var(--reading-blue)}
+.reading-workspace button:focus-visible{outline:1px solid #9bacae;outline-offset:4px}
+.reading-topbar{height:64px;min-height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;color:#82786d;font-size:13px;gap:20px}
+.reading-topbar>span{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.reading-topbar>div{display:flex;align-items:center;gap:18px;flex-shrink:0}
+.reading-workspace .manuscript-stamp{border:1px solid #b98d8566;padding:3px 10px;min-width:56px;height:28px;font:15px var(--reading-serif);color:#98655b;border-radius:2px}
+.reading-paper{background-color:#fcfaf6;background-image:repeating-linear-gradient(0deg,#745c3d07 0,#745c3d07 1px,transparent 1px,transparent 3px),repeating-linear-gradient(90deg,#745c3d03 0,#745c3d03 1px,transparent 1px,transparent 7px),linear-gradient(100deg,#f6f0e580,#fffdf980 48%,#f5eee580);border:1px solid #d7cfc2;box-shadow:0 2px 4px #5b514510,0 16px 34px -25px #5b51454a}
+.reading-workspace h1,.reading-workspace h2,.reading-workspace p{margin:0;font-weight:400}
+.reading-shelf{margin:0 26px 26px;padding:38px 48px;flex:1;min-height:0;overflow:auto;scrollbar-gutter:stable}
+.reading-shelf h1{font:32px/1.4 var(--reading-serif);margin-bottom:30px;letter-spacing:2px}
+.reading-books{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 46px;max-width:950px}
+.reading-books>button{text-align:left;padding:18px 6px 18px 0;border-bottom:1px solid var(--reading-line);font:21px/1.65 var(--reading-serif);overflow-wrap:anywhere}
+.reading-directory,.reading-book{margin:0 26px 26px;flex:1;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.reading-directory>header{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:28px 32px 23px;border-bottom:1px solid var(--reading-line)}
+.reading-directory>header h1{font:28px/1.5 var(--reading-serif);letter-spacing:1px}.reading-directory>header button{font-size:12px;color:var(--reading-muted)}
+.reading-index{display:grid;grid-template-columns:250px minmax(0,1fr);flex:1;min-height:0}
+.reading-index>aside{padding:24px 20px 28px 26px;overflow:auto;border-right:1px solid var(--reading-line);scrollbar-gutter:stable}
+.reading-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:8px;align-content:start}
+.reading-authors button{height:38px;text-align:left;font:16px/1.5 var(--reading-serif);white-space:nowrap}
+.reading-works{overflow:auto;padding:26px 28px 28px 34px;scrollbar-gutter:stable}.reading-works h2{font:27px/1.5 var(--reading-serif);margin-bottom:18px}
+.reading-works>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 30px;align-content:start}.reading-works>div>button{text-align:left;padding:13px 0;border-bottom:1px solid var(--reading-line);min-width:0}.reading-works button>span{display:block;font:18px/1.5 var(--reading-serif)}.reading-works small{display:block;margin-top:5px;font:12px/1.5 var(--reading-serif);color:#988d7e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.reading-footer{display:flex;align-items:center;gap:20px;min-height:52px;padding:0 28px;border-top:1px solid var(--reading-line);font-size:12px;color:#8a7e70;flex-shrink:0;background:#faf7f16b}
+.reading-footer>div{margin-left:auto;display:flex;gap:30px;align-items:center}.reading-footer>span{font-size:12px}
+.reading-spread{display:grid;grid-template-columns:.94fr 1.06fr;flex:1;min-height:0;position:relative}
+.is-spread .reading-spread:after{content:'';pointer-events:none;position:absolute;top:0;bottom:0;left:47%;width:20px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,#8c79660a 40%,#78634f12 50%,#fff9ef44 65%,transparent)}
+.reading-poem{padding:32px 26px 32px;overflow:auto;scrollbar-gutter:stable;min-width:0}
+.reading-poem-heading{position:relative;min-height:170px;margin-bottom:28px;padding:0 16px}
+.reading-poem-heading h1{writing-mode:vertical-rl;font:30px/1.6 var(--reading-serif);letter-spacing:4px;max-height:285px}
+.reading-poem-heading p{position:absolute;right:8px;top:4px;font:15px/1.7 var(--reading-serif);color:var(--reading-muted)}
+.reading-poem-heading.long-title{min-height:125px}.reading-poem-heading.long-title h1{writing-mode:horizontal-tb;font-size:26px;letter-spacing:1px;line-height:1.7;padding-right:8px}.reading-poem-heading.long-title p{position:static;text-align:right;margin-top:12px}
+.reading-poem-lines{font:22px/1.8 var(--reading-serif);text-align:center;overflow-wrap:anywhere}.reading-poem-lines>p{margin:0 0 22px}
+.reading-workspace .reading-note-mark{font:10px/1 sans-serif;vertical-align:super;color:#9c8c77;margin-left:2px}
+.reading-poem ::selection,.reading-body ::selection{background:#dcd2bc88}
+.reading-workspace .reading-excerpt{display:block;margin:10px auto 0;font-size:12px;color:#7e6a50;border-bottom:1px solid #b4a38b66;padding-bottom:3px}
+.reading-right{min-width:0;min-height:0;display:flex;flex-direction:column}
+.reading-right>nav{padding:22px 32px 14px;display:flex;align-items:center;gap:22px;min-height:52px;font-size:13px;color:#978b7c}
+.reading-body{padding:0 30px 32px 32px;overflow:auto;min-height:0;flex:1;scrollbar-gutter:stable;font:17px/1.95 var(--reading-serif);color:#514a41;overflow-wrap:anywhere}
+.reading-body .reference-reading-block{font:inherit;max-width:36em;margin:0 auto 18px}.reading-body .reference-reading-block p{font:inherit;margin:0 0 14px}.reading-body .reference-reading-block h1,.reading-body .reference-reading-block h2,.reading-body .reference-reading-block h3{font:24px/1.7 var(--reading-serif);margin:20px 0}.reading-body table{border-collapse:collapse;max-width:100%;font-size:14px}.reading-body td,.reading-body th{border:1px solid var(--reading-line);padding:6px}.reading-body img{max-width:100%;height:auto}.reading-body .reference-internal-link{display:inline;color:var(--reading-blue);text-decoration:underline;text-decoration-color:#4d698033;text-underline-offset:4px}
+.is-single .reading-spread{display:block;min-height:0;overflow:hidden}.is-single .reading-right{height:100%;max-width:850px;margin:0 auto}.is-single .reading-right>nav{min-height:28px;padding:0}.is-single .reading-body{padding:8px 48px 32px}.reading-prose-heading{margin:12px 0 30px}.reading-prose-heading h1{font:28px/1.6 var(--reading-serif)}.reading-prose-heading p{text-align:right;color:var(--reading-muted);font-size:15px;margin-top:12px}
+.reading-excerpts article{padding:8px 0 24px;margin:0 0 24px;border-bottom:1px solid var(--reading-line)}.reading-excerpts blockquote{margin:0 0 16px;font:21px/1.8 var(--reading-serif);color:#3b3731}
+.reading-note-edit{display:flex;align-items:flex-start;gap:16px}.reading-workspace .reading-note-edit textarea{flex:1;min-width:0;resize:none;border:0;border-radius:0;background:transparent;box-shadow:none;outline:none;padding:0;font:16px/1.9 var(--reading-serif);color:#71695e;min-height:31px}.reading-note-edit>button{flex-shrink:0;font:12px/30px sans-serif;color:#8d8274}.reading-note-edit>.reading-note-text{text-align:left;white-space:pre-wrap;font:16px/1.9 var(--reading-serif);color:#83786b;width:100%;overflow-wrap:anywhere}
+.reading-original-directory{flex:1;min-height:0;overflow:auto;padding:24px 32px;scrollbar-gutter:stable}.reading-original-directory ul{list-style:none;margin:0;padding-left:18px}.reading-original-directory>ul{padding-left:0}.reading-original-directory li{line-height:2.4;font:17px/2.4 var(--reading-serif)}.reading-original-directory .reading-quiet{margin-left:20px;font:12px sans-serif;color:#a3998b}
+.reading-empty{color:#9b9082;font-size:14px;padding:16px 0}.reading-workspace .reading-load{font-size:12px;color:#8a7c6c;margin:20px 0}.reading-error,.reading-progress{font-size:13px;padding:10px 28px;color:#9d594a}.reading-error button,.reading-progress button{margin-left:18px}
+@media(max-width:1000px){.reading-index{grid-template-columns:210px minmax(0,1fr)}.reading-works>div{grid-template-columns:1fr}.reading-poem{padding-left:16px;padding-right:16px}.reading-poem-lines{font-size:20px}.reading-body{font-size:16px;padding-left:24px;padding-right:22px}.reading-shelf{padding:30px}.reading-books{gap:0 28px}}
+
+.reading-poem-lines .reference-reading-block{font:inherit;margin:0 0 22px}.reading-poem-lines .reference-reading-block p{font:inherit;margin:0}.reading-right>nav>.reading-excerpt{margin:0 0 0 auto}.is-single .reading-right>nav:has(button){min-height:50px;padding:12px 48px}
+.reading-poem-heading .reading-note-mark{writing-mode:horizontal-tb;text-orientation:upright;letter-spacing:0}
+.reading-works>div>button{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start}
+
+.reading-topbar .reading-primary-nav{gap:25px}.reading-primary-nav button:first-child{font:19px var(--reading-serif);color:#544c42}.reading-topbar>.reading-top-actions{margin-left:auto}.reading-topbar>span{flex:1;margin-left:8px;font-size:12px}
+/* Human review: optical alignment and readable horizontal headings. */
+.reading-contextbar{height:48px;min-height:48px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;color:#8a8073;font-size:12px;gap:20px;}
+.reading-contextbar>div{display:flex;align-items:center;gap:18px}.reading-contextbar>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.reading-shelf h1{margin-left:-3px}.reading-works h2{margin-left:-2px}
+.reading-index>aside{padding-left:20px;padding-right:20px;scrollbar-gutter:stable both-edges}
+.reading-authors{column-gap:12px}.reading-authors button{text-align:center}
+.reading-poem-heading,.reading-poem-heading.long-title{min-height:0;padding:0 12px;margin:0 auto 32px;max-width:30em;text-align:center}
+.reading-poem-heading h1,.reading-poem-heading.long-title h1{writing-mode:horizontal-tb;font:26px/1.6 var(--reading-serif);letter-spacing:1px;max-height:none;padding:0;margin:0;overflow-wrap:anywhere;text-wrap:balance}
+.reading-poem-heading p,.reading-poem-heading.long-title p{position:static;text-align:center;margin-top:8px;font:14px/1.8 var(--reading-serif);letter-spacing:1px;color:var(--reading-muted)}
+.reading-prose-heading{text-align:center;margin:12px auto 32px;max-width:30em}
+.reading-prose-heading h1{font:26px/1.6 var(--reading-serif);letter-spacing:1px;text-wrap:balance;overflow-wrap:anywhere}
+.reading-prose-heading p{text-align:center;margin-top:8px;font:14px/1.8 var(--reading-serif);letter-spacing:1px}
+.reading-poem{padding-top:34px}
+.reading-workspace button[aria-current="true"],.reading-workspace .reading-right>nav button:hover{color:#51483e;font-weight:500}
+.reading-right>nav{color:#978b7c}.reading-right>nav button[aria-current="true"]{color:#51483e}
+.reading-excerpt-floating{position:fixed;z-index:90;min-width:54px;height:30px;padding:4px 10px;border:1px solid #d8cdbb99;border-radius:3px;background:#fcfaf4;box-shadow:0 4px 14px #5a473218;color:#77644e;font:13px/20px "Songti SC",serif;cursor:pointer}
+.reading-excerpt-floating:hover{background:#f5f0e5}.reading-excerpt-floating:focus-visible{outline:1px solid #a39379;outline-offset:2px}
+
+/* Shared paper top edge across the three primary sections. */
+.reading-shelf,.reading-directory,.reading-book{margin-top:20px}
+.reading-shelf-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:30px}
+.reading-shelf-heading h1{margin-bottom:0}
+.reading-shelf-heading>.manuscript-stamp{flex-shrink:0;height:28px;min-width:56px;padding:3px 7px;font:12px/1.6 var(--reading-serif);letter-spacing:1px;border-color:#d9c2bf;color:#8b5c58}
+.reading-directory-actions{margin-left:auto;display:flex;gap:18px;align-items:center;flex-shrink:0}
+
+/* Restore the approved book spread, keeping the later horizontal title choice. */
+.reading-poem{scrollbar-gutter:stable both-edges;padding-top:36px}
+.reading-poem-heading,.reading-poem-heading.long-title{padding-left:0;padding-right:0}
+.reading-poem-lines .reading-terminal-mark{display:inline-block;width:.5em;text-align:left;text-indent:0}
+.is-spread .reading-spread:after{width:26px;background:linear-gradient(90deg,transparent,#8c79660a 30%,#78634f1a 48%,#fff9ef66 59%,transparent)}
+.is-spread .reading-right{padding:0 32px}
+.is-spread .reading-right>nav{margin:0;padding:28px 0 15px;min-height:0;border-bottom:1px solid #8b806d22}
+.is-spread .reading-body{padding:20px 9px 30px 0;scrollbar-gutter:stable;overscroll-behavior:contain}
+.reading-poem{overscroll-behavior:contain}
+.reading-appreciation{font:16px/1.95 var(--reading-serif);color:#454039}
+.reading-appreciation .reference-reading-block{max-width:34em;margin:0 auto 20px}
+.reading-appreciation .reference-reading-block p{text-indent:2em;margin:0 0 18px}
+.reading-appreciation>.reference-reading-block:first-child{padding-bottom:18px;border-bottom:1px solid #8b806d18;margin-bottom:23px}
+.reading-appreciation>.reference-reading-block:first-child p{text-indent:0}
+.reading-footer>.reading-source-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#968a7b}
+@media(max-width:1000px){.is-spread .reading-right{padding-left:24px;padding-right:22px}}
+
+/* Footer actions sit on the paper rather than inside a separate toolbar. */
+.reading-book>.reading-footer{min-height:40px;padding:0 28px 4px;border-top:0;background:transparent;position:relative;font-size:12px;color:#8f8578}
+.reading-book>.reading-footer:before{content:'';position:absolute;left:0;right:0;bottom:100%;height:16px;background:linear-gradient(0deg,#fcfaf6b3,transparent);pointer-events:none}
+.reading-excerpts article{padding:4px 0 18px;margin:0 0 18px}
+.reading-excerpts blockquote{margin:0 0 8px;font:20px/1.7 var(--reading-serif)}
+.reading-workspace .reading-excerpts .reading-note-edit textarea,.reading-workspace .reading-excerpts .reading-note-edit>.reading-note-text{font:14px/1.8 var(--reading-serif);min-height:25px}
+.reading-excerpts .reading-note-edit>button:not(.reading-note-text){font:12px/25px sans-serif}
+
+/* Bounded open book: each page owns its fading footer; the fold continues below. */
+.reading-book.is-spread{position:relative;width:calc(100% - 52px);max-width:1100px;align-self:center;margin-left:auto;margin-right:auto;box-shadow:0 2px 3px #5b514510,0 15px 32px -19px #51443440}
+.is-spread .reading-spread{grid-template-columns:48% 52%}
+.is-spread .reading-spread:after{content:none}
+.reading-book.is-spread:after{content:'';position:absolute;z-index:3;pointer-events:none;top:0;bottom:0;left:48%;width:48px;transform:translateX(-50%);background:linear-gradient(90deg,transparent 0%,#8f7c6305 15%,#89735b13 38%,#76634e23 49%,#d7cbbb1c 53%,#fffdf590 62%,#fffdf530 80%,transparent 100%)}
+.reading-book>.reading-page-footers{display:grid;grid-template-columns:48% 52%;gap:0;padding:0;min-height:44px;flex-shrink:0;background:none;border:0}
+.reading-book>.reading-page-footers:before{content:none}
+.reading-page-footers>div{position:relative;min-width:0;min-height:44px;margin:0;display:flex;align-items:center;gap:20px;padding:0 28px 4px;background:transparent}
+.reading-page-footers>div:before{content:'';position:absolute;pointer-events:none;left:0;right:0;bottom:100%;height:30px;background:linear-gradient(0deg,#fcfaf6e8,#fcfaf680 36%,#fcfaf600)}
+.reading-page-footers>.reading-page-footer-right{justify-content:flex-end;gap:26px}
+.reading-page-footer-left>.reading-source-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#968a7b}
+.reading-book.is-single>.reading-page-footers{grid-template-columns:minmax(0,1fr) auto}
+/* Fade the actual scrolling ink, leaving the same paper visible beneath it. */
+.is-spread .reading-poem,.is-spread .reading-body{mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 64px),#000c calc(100% - 42px),#0005 calc(100% - 18px),transparent 100%);mask-repeat:no-repeat;padding-bottom:76px}
+.is-spread .reading-page-footers>div:before{content:none}
+/* Broad page curvature and a narrow recessed fold are separate layers. */
+.reading-book.is-spread:before{content:'';position:absolute;z-index:2;pointer-events:none;inset:0;background:linear-gradient(90deg,transparent 40%,#8b755d05 43%,#8b755d12 46%,#75614a24 47.7%,#bba68a12 48.2%,#fffdf68c 49.4%,#fffdf636 51.5%,transparent 55%)}
+.reading-book.is-spread:after{width:14px;background:linear-gradient(90deg,transparent 0%,#816c5320 23%,#62503e40 45%,#5344344d 50%,#b9a58a30 58%,#fffdf58c 75%,transparent 100%)}
+
+/* Slightly narrower appreciation measure; tabs keep their established edge. */
+.is-spread .reading-body.reading-appreciation{padding-left:16px;padding-right:25px}
+@media(max-width:1000px){.is-spread .reading-body.reading-appreciation{padding-left:10px;padding-right:19px}}
+
+.reading-ci-lines .reference-reading-block p{white-space:normal;line-height:2.1;font-size:21px}
+.reading-ci-lines .reading-stanza-break{display:block;height:.75em}
+@media(max-width:1000px){.reading-ci-lines .reference-reading-block p{font-size:19px}}
+
+.reading-excerpts article,.notes-list article{position:relative;padding-right:34px}
+.reading-workspace .reading-note-more{position:absolute;right:0;top:8px;width:28px;height:28px;padding:0;color:#998c7c;font:18px/28px Georgia,serif;letter-spacing:2px;opacity:.65}
+.reading-workspace .reading-note-more:hover,.reading-note-more[aria-expanded=true]{opacity:1}
+.reading-delete-scope{max-width:190px;margin:4px 2px 8px;font:13px/1.8 "Songti SC",serif;text-align:center;color:#8a7e6f}
+
+.reading-poem-lines.reading-prose-original{text-align:left;font-size:17px;line-height:2}
+.reading-prose-original .reference-reading-block{margin-bottom:18px}
+.reading-prose-original .reference-reading-block p{text-indent:2em;white-space:normal}
+.reading-poem-lines h3{font:17px/1.8 var(--reading-serif);margin:0 0 12px;color:#8a7e6e}
+.reading-poem-lines sup{font-size:10px;line-height:1;vertical-align:super;text-indent:0}
+.reading-poem-lines sup .reference-internal-link{font:inherit;color:#9c8c77;text-indent:0}
+
+/* Prose and appreciation share the same optical text insets on both leaves. */
+.reading-book.is-spread:has(.reading-prose-original) .reading-poem{padding-left:48px;padding-right:48px}
+.reading-book.is-spread:has(.reading-prose-original) .reading-body{padding-left:16px;padding-right:16px;scrollbar-gutter:stable both-edges}
+@media(max-width:1000px){.reading-book.is-spread:has(.reading-prose-original) .reading-poem{padding-left:34px;padding-right:34px}.reading-book.is-spread:has(.reading-prose-original) .reading-right{padding-left:24px;padding-right:24px}.reading-book.is-spread:has(.reading-prose-original) .reading-body{padding-left:10px;padding-right:10px}}
+
+/* Directory entries are titles, not paragraph previews. */
+.reading-works>div>button{overflow:hidden;min-width:0}
+.reading-works>div>button>span{min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.65}
+
+.reading-works>div>button>small{width:100%;max-width:100%;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-shrink:0}

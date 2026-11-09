@@ -1,0 +1,55 @@
+/* Edge-to-edge workspace: one continuous environment, fixed navigation and content panes. */
+html, body, #root { width: 100%; height: 100%; min-height: 0; }
+html { overflow: hidden; }
+body { overflow: hidden; overscroll-behavior: none; display: flow-root; position: relative; isolation: isolate; margin: 0; min-width: 960px; background: #e7e5dd; }
+body::before { content: none; }
+body::after { content: none; }
+.app-shell { display: flex; align-items: stretch; position: relative; isolation: isolate; gap: 0; height: 100dvh; min-height: 0; overflow: hidden; margin: 0; padding: 0; border: 0; border-radius: 0; background: rgb(247 244 237 / 88%); box-shadow: none; }
+.app-shell::after { content: ""; pointer-events: none; position: absolute; z-index: 0; inset: 0; background: radial-gradient(ellipse at 55% 52%, #faf8f1 0%, rgb(250 248 241 / .85) 28%, transparent 78%); }
+
+.sidebar { flex: 0 0 15%; width: 15%; min-width: 0; display: flex; flex-direction: column; position: relative; z-index: 2; height: 100%; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: clamp(40px, 6vh, 65px) 15px 22px; border-right: 1px solid rgb(115 106 88 / 18%); border-radius: 0; background: linear-gradient(180deg, rgb(238 234 225 / 82%), rgb(238 234 225 / 60%) 42%, transparent 68%, rgb(237 233 224 / 53%) 100%); }
+.brand-mark { display: flex; align-items: center; gap: 10px; width: 100%; padding: 0 14px; color: #1c241f; border: 0; background: transparent; cursor: pointer; font: clamp(31px, 2.65vw, 39px)/1.4 var(--poem-font); }
+.brand-mark img { width: 26px; height: 26px; filter: grayscale(.7) sepia(.25); }
+.brand-caption { margin: 13px 14px 0; font: 12px/20px var(--poem-font); letter-spacing: 3px; color: #696a60; }
+.nav-list { display: grid; gap: 9px; margin-top: 32px; padding: 0; background: none; }
+.nav-item { display: flex; align-items: center; gap: 15px; width: 100%; min-height: 54px; padding: 12px 14px; border: 0; border-radius: 9px; color: #252e27; background: transparent; font: 17px/25px var(--poem-font); white-space: nowrap; cursor: pointer; }
+.nav-item svg { width: 21px; height: 21px; }
+.nav-item:hover { background: rgb(218 207 195 / 45%); }
+.nav-item.is-active { background: #dcd0c4; color: #15251e; }
+.nav-item.is-active svg { color: #26332b; }
+.nav-item:focus-visible { outline: 2px solid #506049; outline-offset: 3px; }
+.sidebar-footer { margin-top: auto; padding: 16px 14px 0; font-size: 12px; line-height: 20px; color: #4e5749; }
+.workspace { flex: 1; display: flex; flex-direction: column; height: 100%; min-height: 0; overflow: hidden; position: relative; z-index: 1; min-width: 0; padding: 0 14px 0 0; }
+.workspace > :is(.home-page,.works-page,.reference-page) { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; margin: 18px; padding: 20px; border-radius: 12px; background: rgb(250 248 243 / 91%); }
+@media (max-width: 1179px) {
+ .app-shell { margin: 0; }
+ .sidebar { flex-basis: 136px; width: 136px; padding: 34px 9px 20px; }
+ .brand-mark { font-size: 28px; padding-inline: 4px; gap: 7px; }
+ .brand-mark img { width: 24px; height: 24px; }
+ .brand-caption { margin-left: 5px; font-size: 11px; letter-spacing: 2px; }
+ .nav-item { font-size: 14px; padding-inline: 9px; gap: 9px; }
+ .nav-list { margin-top: 25px; }
+ .workspace { padding-right: 10px; }
+}
+
+.workspace > :is(.async-state,.detail-empty) { min-height: 0; overflow: auto; overscroll-behavior: contain; }
+.workspace > .operation-error { flex-shrink: 0; max-height: 25%; overflow: auto; overscroll-behavior: contain; }
+
+/* Native traffic lights occupy the sidebar's top margin; content is still edge-to-edge. */
+.window-drag-strip { position: absolute; z-index: 5; inset: 0 0 auto; height: 10px; -webkit-app-region: drag; }
+.sidebar { padding-top: 74px; }
+.sidebar::before { content: ""; position: absolute; inset: 0 0 auto; height: 62px; -webkit-app-region: drag; }
+.editor-header, .topbar, .reference-heading { -webkit-app-region: drag; }
+button, input, textarea, select, summary, a, [role="button"], [role="dialog"] { -webkit-app-region: no-drag; }
+
+.app-inscription { margin: 0 0 18px; font: 400 11px/21px var(--ui-font); color: #565b4f; letter-spacing: .02em; }
+@media (max-width:1179px) { .sidebar { padding-top: 70px; } .app-inscription { font-size: 10px; letter-spacing: 0; } }
+
+/* Six real destinations retain reachable native-window and footer space. */
+.nav-list { gap: 4px; margin-top: 24px; }
+.nav-item { min-height: 44px; padding-block: 9px; }
+
+.sidebar-footer { background: rgb(247 245 239 / 82%); border-radius: 8px; }
+
+.nav-item { font-family:var(--ui-font); font-size:15px; gap:12px; }
+.brand-caption { margin-top:8px; }

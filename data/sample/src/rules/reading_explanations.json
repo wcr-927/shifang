@@ -1,0 +1,35 @@
+{
+  "version": "sample-1",
+  "sources": [
+    {
+      "id": "sample",
+      "title": "释义示例",
+      "edition": "1",
+      "locator": "长幼"
+    }
+  ],
+  "entries": [
+    {
+      "key": {
+        "system": "pingshui",
+        "character": "长",
+        "sourceCandidateId": "长:shang-22yang",
+        "groupId": "shang-22yang",
+        "tone": "shang"
+      },
+      "version": "sample-1",
+      "status": "partial",
+      "senses": [
+        {
+          "id": "seniority",
+          "meaning": "年纪较大。",
+          "usage": "如长幼、长兄。",
+          "sourceIds": [
+            "sample"
+          ],
+          "examples": []
+        }
+      ]
+    }
+  ]
+}

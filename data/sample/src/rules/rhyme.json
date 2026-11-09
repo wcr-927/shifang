@@ -1,0 +1,4320 @@
+{
+  "datasetId": "sample-rhyme",
+  "datasetVersion": "sample-1",
+  "schemaVersion": 1,
+  "source": {
+    "note": "公开开发示例"
+  },
+  "groups": [
+    {
+      "id": "ping-01dong",
+      "name": "一东",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "一",
+      "rhymeName": "东",
+      "characters": [
+        "东",
+        "中",
+        "冲",
+        "匆",
+        "同",
+        "宫",
+        "工",
+        "桐",
+        "梦",
+        "穷",
+        "空",
+        "红",
+        "终",
+        "翁",
+        "蓬",
+        "风",
+        "鸿"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-02dong",
+      "name": "二冬",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "二",
+      "rhymeName": "冬",
+      "characters": [
+        "从",
+        "共",
+        "冬",
+        "冲",
+        "宗",
+        "封",
+        "慵",
+        "松",
+        "舂",
+        "踪",
+        "重"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-03jiang",
+      "name": "三江",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "三",
+      "rhymeName": "江",
+      "characters": [
+        "双",
+        "江"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-04zhi",
+      "name": "四支",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "四",
+      "rhymeName": "支",
+      "characters": [
+        "书",
+        "仪",
+        "伊",
+        "台",
+        "吹",
+        "垂",
+        "居",
+        "思",
+        "悲",
+        "支",
+        "时",
+        "期",
+        "枝",
+        "知",
+        "离",
+        "维",
+        "肌",
+        "芝",
+        "谁",
+        "辞",
+        "迟",
+        "陲",
+        "随",
+        "骑",
+        "麾"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-05wei",
+      "name": "五微",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "五",
+      "rhymeName": "微",
+      "characters": [
+        "依",
+        "几",
+        "归",
+        "微",
+        "衣",
+        "飞"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-06yu",
+      "name": "六鱼",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "六",
+      "rhymeName": "鱼",
+      "characters": [
+        "书",
+        "余",
+        "初",
+        "如",
+        "居",
+        "渔",
+        "疏",
+        "鱼"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-07yu",
+      "name": "七虞",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "七",
+      "rhymeName": "虞",
+      "characters": [
+        "句",
+        "图",
+        "夫",
+        "孤",
+        "无",
+        "朱",
+        "枯",
+        "母",
+        "湖",
+        "珠",
+        "竽",
+        "胡",
+        "芜",
+        "苏",
+        "虞",
+        "衢",
+        "铢",
+        "铺"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-08qi",
+      "name": "八齐",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "八",
+      "rhymeName": "齐",
+      "characters": [
+        "低",
+        "啼",
+        "堤",
+        "栖",
+        "泥",
+        "溪",
+        "萋",
+        "西",
+        "蹄",
+        "迷",
+        "题",
+        "齐"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-09jia",
+      "name": "九佳",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "九",
+      "rhymeName": "佳",
+      "characters": [
+        "佳",
+        "徘",
+        "怀",
+        "柴",
+        "阶"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-10hui",
+      "name": "十灰",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十",
+      "rhymeName": "灰",
+      "characters": [
+        "台",
+        "哀",
+        "回",
+        "开",
+        "徊",
+        "思",
+        "才",
+        "来",
+        "杯",
+        "梅",
+        "灰",
+        "能",
+        "苔"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-11zhen",
+      "name": "十一真",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十一",
+      "rhymeName": "真",
+      "characters": [
+        "人",
+        "因",
+        "循",
+        "新",
+        "春",
+        "真",
+        "神",
+        "秦",
+        "身",
+        "辰",
+        "邻"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-12wen",
+      "name": "十二文",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十二",
+      "rhymeName": "文",
+      "characters": [
+        "云",
+        "文",
+        "闻"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-13yuan",
+      "name": "十三元",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十三",
+      "rhymeName": "元",
+      "characters": [
+        "元",
+        "原",
+        "喧",
+        "园",
+        "孙",
+        "暖",
+        "根",
+        "源",
+        "猿",
+        "繁",
+        "翻",
+        "门"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-14han",
+      "name": "十四寒",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十四",
+      "rhymeName": "寒",
+      "characters": [
+        "兰",
+        "寒",
+        "檀",
+        "欢",
+        "残",
+        "玕",
+        "盘",
+        "看",
+        "繁",
+        "难",
+        "餐",
+        "鸾"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-15shan",
+      "name": "十五删",
+      "section": "平声上",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十五",
+      "rhymeName": "删",
+      "characters": [
+        "删",
+        "山",
+        "环",
+        "艰",
+        "还",
+        "间",
+        "鬟"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-01xian",
+      "name": "一先",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "一",
+      "rhymeName": "先",
+      "characters": [
+        "便",
+        "先",
+        "全",
+        "千",
+        "圆",
+        "天",
+        "娟",
+        "婵",
+        "平",
+        "年",
+        "怜",
+        "扇",
+        "旋",
+        "泉",
+        "烟",
+        "然",
+        "燕",
+        "田",
+        "眠",
+        "篇",
+        "莲",
+        "蝉",
+        "边",
+        "还",
+        "连"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-02xiao",
+      "name": "二萧",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "二",
+      "rhymeName": "萧",
+      "characters": [
+        "寥",
+        "徭",
+        "挑",
+        "朝",
+        "漂",
+        "烧",
+        "焦",
+        "腰",
+        "苗",
+        "萧",
+        "调",
+        "邀",
+        "雕"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-03xiao",
+      "name": "三肴",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "三",
+      "rhymeName": "肴",
+      "characters": [
+        "肴",
+        "茅"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-04hao",
+      "name": "四豪",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "四",
+      "rhymeName": "豪",
+      "characters": [
+        "挑",
+        "桃",
+        "豪",
+        "高"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-05ge",
+      "name": "五歌",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "五",
+      "rhymeName": "歌",
+      "characters": [
+        "何",
+        "和",
+        "多",
+        "歌",
+        "河",
+        "繁",
+        "罗",
+        "蓑",
+        "过",
+        "难",
+        "颇"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-06ma",
+      "name": "六麻",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "六",
+      "rhymeName": "麻",
+      "characters": [
+        "家",
+        "沙",
+        "花",
+        "葭",
+        "雅",
+        "麻"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-07yang",
+      "name": "七阳",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "七",
+      "rhymeName": "阳",
+      "characters": [
+        "乡",
+        "伤",
+        "光",
+        "凉",
+        "唐",
+        "尚",
+        "常",
+        "当",
+        "房",
+        "望",
+        "杨",
+        "桑",
+        "横",
+        "狂",
+        "王",
+        "琅",
+        "相",
+        "芳",
+        "荒",
+        "行",
+        "锵",
+        "长",
+        "阳",
+        "霜",
+        "香",
+        "黄"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-08geng",
+      "name": "八庚",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "八",
+      "rhymeName": "庚",
+      "characters": [
+        "争",
+        "令",
+        "兵",
+        "净",
+        "城",
+        "声",
+        "平",
+        "庚",
+        "征",
+        "情",
+        "惊",
+        "成",
+        "明",
+        "晴",
+        "晶",
+        "更",
+        "横",
+        "清",
+        "琼",
+        "生",
+        "程",
+        "笙",
+        "荆",
+        "荣",
+        "莺",
+        "行",
+        "轻",
+        "鸣"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-09qing",
+      "name": "九青",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "九",
+      "rhymeName": "青",
+      "characters": [
+        "亭",
+        "令",
+        "停",
+        "听",
+        "径",
+        "星",
+        "暝",
+        "汀",
+        "青"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-10zheng",
+      "name": "十蒸",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十",
+      "rhymeName": "蒸",
+      "characters": [
+        "乘",
+        "仍",
+        "兴",
+        "凭",
+        "增",
+        "层",
+        "应",
+        "征",
+        "昇",
+        "曾",
+        "登",
+        "胜",
+        "能",
+        "蒸",
+        "陵",
+        "鹏"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-11you",
+      "name": "十一尤",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十一",
+      "rhymeName": "尤",
+      "characters": [
+        "不",
+        "叟",
+        "句",
+        "头",
+        "尤",
+        "幽",
+        "愁",
+        "楼",
+        "洲",
+        "流",
+        "游",
+        "犹",
+        "由",
+        "留",
+        "秋",
+        "舟",
+        "调"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-12qin",
+      "name": "十二侵",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十二",
+      "rhymeName": "侵",
+      "characters": [
+        "临",
+        "今",
+        "任",
+        "侵",
+        "南",
+        "心",
+        "林",
+        "沈",
+        "沉",
+        "深",
+        "金",
+        "阴"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-13tan",
+      "name": "十三覃",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十三",
+      "rhymeName": "覃",
+      "characters": [
+        "三",
+        "南",
+        "惭",
+        "蓝",
+        "覃",
+        "谈",
+        "谙"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-14yan",
+      "name": "十四盐",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十四",
+      "rhymeName": "盐",
+      "characters": [
+        "兼",
+        "渐",
+        "盐",
+        "蒹"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ping-15xian",
+      "name": "十五咸",
+      "section": "平声下",
+      "toneCategory": "ping",
+      "toneType": "ping",
+      "number": "十五",
+      "rhymeName": "咸",
+      "characters": [
+        "咸",
+        "衫"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-01dong",
+      "name": "一董",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "一",
+      "rhymeName": "董",
+      "characters": [
+        "动",
+        "洞",
+        "空",
+        "董"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-02zhong",
+      "name": "二肿",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "二",
+      "rhymeName": "肿",
+      "characters": [
+        "恐",
+        "肿",
+        "重"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-03jiang",
+      "name": "三讲",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "三",
+      "rhymeName": "讲",
+      "characters": [
+        "讲"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-04zhi",
+      "name": "四纸",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "四",
+      "rhymeName": "纸",
+      "characters": [
+        "似",
+        "几",
+        "子",
+        "已",
+        "是",
+        "此",
+        "死",
+        "水",
+        "纸",
+        "绮",
+        "起",
+        "跪",
+        "轨",
+        "里"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-05wei",
+      "name": "五尾",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "五",
+      "rhymeName": "尾",
+      "characters": [
+        "几",
+        "尾"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-06yu",
+      "name": "六语",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "六",
+      "rhymeName": "语",
+      "characters": [
+        "举",
+        "作",
+        "去",
+        "处",
+        "女",
+        "所",
+        "楚",
+        "渚",
+        "煮",
+        "苎",
+        "语",
+        "雨"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-07yu",
+      "name": "七麌",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "七",
+      "rhymeName": "麌",
+      "characters": [
+        "下",
+        "五",
+        "古",
+        "宇",
+        "户",
+        "树",
+        "母",
+        "舞",
+        "苦",
+        "补",
+        "贾",
+        "部",
+        "雨",
+        "麌"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-08ji",
+      "name": "八荠",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "八",
+      "rhymeName": "荠",
+      "characters": [
+        "泥",
+        "荠"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-09xie",
+      "name": "九蟹",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "九",
+      "rhymeName": "蟹",
+      "characters": [
+        "蟹"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-10hui",
+      "name": "十贿",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "十",
+      "rhymeName": "贿",
+      "characters": [
+        "在",
+        "彩",
+        "待",
+        "每",
+        "海",
+        "贿"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-11zhen",
+      "name": "十一轸",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "十一",
+      "rhymeName": "轸",
+      "characters": [
+        "尽",
+        "轸"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-12wen",
+      "name": "十二吻",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "十二",
+      "rhymeName": "吻",
+      "characters": [
+        "听",
+        "吻",
+        "近"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-13ruan",
+      "name": "十三阮",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "十三",
+      "rhymeName": "阮",
+      "characters": [
+        "晚",
+        "暖",
+        "本",
+        "滚",
+        "苑",
+        "衮",
+        "返",
+        "远",
+        "阮",
+        "饭"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-14han",
+      "name": "十四旱",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "十四",
+      "rhymeName": "旱",
+      "characters": [
+        "但",
+        "断",
+        "旱",
+        "浣",
+        "满",
+        "短"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-15shan",
+      "name": "十五潸",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "十五",
+      "rhymeName": "潸",
+      "characters": [
+        "拣",
+        "潸",
+        "眼"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-16xi",
+      "name": "十六铣",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "十六",
+      "rhymeName": "铣",
+      "characters": [
+        "宴",
+        "浅",
+        "转",
+        "铣"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-17xiao",
+      "name": "十七筱",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "十七",
+      "rhymeName": "筱",
+      "characters": [
+        "小",
+        "挑",
+        "晓",
+        "矫",
+        "筱",
+        "缈",
+        "缥",
+        "鸟"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-18qiao",
+      "name": "十八巧",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "十八",
+      "rhymeName": "巧",
+      "characters": [
+        "巧"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-19hao",
+      "name": "十九皓",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "十九",
+      "rhymeName": "皓",
+      "characters": [
+        "倒",
+        "好",
+        "早",
+        "潦",
+        "皓",
+        "老",
+        "草",
+        "道"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-20ge",
+      "name": "二十哿",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "二十",
+      "rhymeName": "哿",
+      "characters": [
+        "可",
+        "哿",
+        "坐",
+        "我",
+        "火",
+        "颇"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-21ma",
+      "name": "二十一马",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "二十一",
+      "rhymeName": "马",
+      "characters": [
+        "下",
+        "也",
+        "惹",
+        "把",
+        "贾",
+        "野",
+        "雅",
+        "马"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-22yang",
+      "name": "二十二养",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "二十二",
+      "rhymeName": "养",
+      "characters": [
+        "上",
+        "两",
+        "仗",
+        "养",
+        "向",
+        "响",
+        "往",
+        "长"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-23geng",
+      "name": "二十三梗",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "二十三",
+      "rhymeName": "梗",
+      "characters": [
+        "丙",
+        "冷",
+        "影",
+        "景",
+        "梗",
+        "省",
+        "静"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-24jiong",
+      "name": "二十四迥",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "二十四",
+      "rhymeName": "迥",
+      "characters": [
+        "肯",
+        "迥"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-25you",
+      "name": "二十五有",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "二十五",
+      "rhymeName": "有",
+      "characters": [
+        "不",
+        "久",
+        "九",
+        "偶",
+        "叟",
+        "后",
+        "守",
+        "手",
+        "有",
+        "柳",
+        "母",
+        "部",
+        "酒",
+        "首"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-26qin",
+      "name": "二十六寝",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "二十六",
+      "rhymeName": "寝",
+      "characters": [
+        "寝",
+        "沈",
+        "饮"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-27gan",
+      "name": "二十七感",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "二十七",
+      "rhymeName": "感",
+      "characters": [
+        "感",
+        "掩",
+        "菡",
+        "萏"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-28jian",
+      "name": "二十八俭",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "二十八",
+      "rhymeName": "俭",
+      "characters": [
+        "俭",
+        "掩",
+        "渐",
+        "点"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "shang-29xian",
+      "name": "二十九豏",
+      "section": "上声部",
+      "toneCategory": "shang",
+      "toneType": "ze",
+      "number": "二十九",
+      "rhymeName": "豏",
+      "characters": [
+        "豏"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-01song",
+      "name": "一送",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "一",
+      "rhymeName": "送",
+      "characters": [
+        "中",
+        "凤",
+        "动",
+        "同",
+        "弄",
+        "梦",
+        "洞",
+        "空",
+        "送"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-02song",
+      "name": "二宋",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "二",
+      "rhymeName": "宋",
+      "characters": [
+        "从",
+        "共",
+        "宋",
+        "封",
+        "恐",
+        "用",
+        "重"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-03jiang",
+      "name": "三绛",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "三",
+      "rhymeName": "绛",
+      "characters": [
+        "绛"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-04tian",
+      "name": "四寘",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "四",
+      "rhymeName": "寘",
+      "characters": [
+        "事",
+        "似",
+        "位",
+        "值",
+        "几",
+        "出",
+        "吹",
+        "四",
+        "寘",
+        "寺",
+        "已",
+        "思",
+        "意",
+        "柴",
+        "泪",
+        "知",
+        "织",
+        "翠",
+        "自",
+        "致",
+        "记",
+        "近",
+        "迟",
+        "避",
+        "醉",
+        "里",
+        "骑"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-05wei",
+      "name": "五未",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "五",
+      "rhymeName": "未",
+      "characters": [
+        "未",
+        "气",
+        "渭",
+        "衣"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-06yu",
+      "name": "六御",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "六",
+      "rhymeName": "御",
+      "characters": [
+        "去",
+        "处",
+        "女",
+        "如",
+        "御",
+        "楚",
+        "语",
+        "预"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-07yu",
+      "name": "七遇",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "七",
+      "rhymeName": "遇",
+      "characters": [
+        "住",
+        "作",
+        "句",
+        "故",
+        "树",
+        "注",
+        "渡",
+        "疏",
+        "素",
+        "苦",
+        "莫",
+        "足",
+        "遇",
+        "铺",
+        "雨",
+        "露"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-08ji",
+      "name": "八霁",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "八",
+      "rhymeName": "霁",
+      "characters": [
+        "岁",
+        "帝",
+        "桂",
+        "泥",
+        "离",
+        "税",
+        "第",
+        "细",
+        "计",
+        "说",
+        "达",
+        "霁",
+        "题",
+        "髻"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-09tai",
+      "name": "九泰",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "九",
+      "rhymeName": "泰",
+      "characters": [
+        "外",
+        "大",
+        "带",
+        "最",
+        "泰"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-10gua",
+      "name": "十卦",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "十",
+      "rhymeName": "卦",
+      "characters": [
+        "卦",
+        "挂",
+        "柴",
+        "画"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-11dui",
+      "name": "十一队",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "十一",
+      "rhymeName": "队",
+      "characters": [
+        "佩",
+        "再",
+        "北",
+        "回",
+        "在",
+        "对",
+        "废",
+        "爱",
+        "菜",
+        "队"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-12zhen",
+      "name": "十二震",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "十二",
+      "rhymeName": "震",
+      "characters": [
+        "认",
+        "进",
+        "震",
+        "鬓"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-13wen",
+      "name": "十三问",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "十三",
+      "rhymeName": "问",
+      "characters": [
+        "近",
+        "问",
+        "闻",
+        "韵"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-14yuan",
+      "name": "十四愿",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "十四",
+      "rhymeName": "愿",
+      "characters": [
+        "万",
+        "恨",
+        "愿",
+        "远",
+        "闷",
+        "饭"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-15han",
+      "name": "十五翰",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "十五",
+      "rhymeName": "翰",
+      "characters": [
+        "乱",
+        "宴",
+        "岸",
+        "断",
+        "旦",
+        "段",
+        "汉",
+        "浣",
+        "看",
+        "翰",
+        "难",
+        "鹳"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-16jian",
+      "name": "十六谏",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "十六",
+      "rhymeName": "谏",
+      "characters": [
+        "慢",
+        "谏",
+        "间"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-17xian",
+      "name": "十七霰",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "十七",
+      "rhymeName": "霰",
+      "characters": [
+        "便",
+        "先",
+        "变",
+        "宴",
+        "扇",
+        "拣",
+        "旋",
+        "燕",
+        "见",
+        "转",
+        "霰",
+        "面",
+        "饭"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-18xiao",
+      "name": "十八啸",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "十八",
+      "rhymeName": "啸",
+      "characters": [
+        "啸",
+        "妙",
+        "漂",
+        "烧",
+        "照",
+        "眺",
+        "笑",
+        "调",
+        "钓"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-19xiao",
+      "name": "十九效",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "十九",
+      "rhymeName": "效",
+      "characters": [
+        "效"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-20hao",
+      "name": "二十号",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "二十",
+      "rhymeName": "号",
+      "characters": [
+        "倒",
+        "到",
+        "号",
+        "好",
+        "报",
+        "道"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-21ge",
+      "name": "二十一个",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "二十一",
+      "rhymeName": "个",
+      "characters": [
+        "个",
+        "作",
+        "和",
+        "坐",
+        "大",
+        "过"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-22ma",
+      "name": "二十二祃",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "二十二",
+      "rhymeName": "祃",
+      "characters": [
+        "下",
+        "夜",
+        "射",
+        "把",
+        "柘",
+        "祃",
+        "谢",
+        "贾"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-23yang",
+      "name": "二十三漾",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "二十三",
+      "rhymeName": "漾",
+      "characters": [
+        "上",
+        "两",
+        "仗",
+        "况",
+        "向",
+        "尚",
+        "当",
+        "望",
+        "漾",
+        "王",
+        "相",
+        "行",
+        "长"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-24jing",
+      "name": "二十四敬",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "二十四",
+      "rhymeName": "敬",
+      "characters": [
+        "令",
+        "净",
+        "圣",
+        "敬",
+        "更",
+        "横",
+        "病",
+        "行",
+        "轻",
+        "镜"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-25jing",
+      "name": "二十五径",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "二十五",
+      "rhymeName": "径",
+      "characters": [
+        "乘",
+        "兴",
+        "凭",
+        "听",
+        "定",
+        "应",
+        "径",
+        "暝",
+        "胜"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-26you",
+      "name": "二十六宥",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "二十六",
+      "rhymeName": "宥",
+      "characters": [
+        "又",
+        "句",
+        "后",
+        "复",
+        "奏",
+        "守",
+        "宥",
+        "宿",
+        "幼",
+        "旧",
+        "漏",
+        "犹",
+        "留",
+        "首"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-27qin",
+      "name": "二十七沁",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "二十七",
+      "rhymeName": "沁",
+      "characters": [
+        "临",
+        "任",
+        "沁",
+        "沈",
+        "浸",
+        "深",
+        "饮"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-28kan",
+      "name": "二十八勘",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "二十八",
+      "rhymeName": "勘",
+      "characters": [
+        "三",
+        "勘"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-29yan",
+      "name": "二十九艳",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "二十九",
+      "rhymeName": "艳",
+      "characters": [
+        "兼",
+        "艳"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "qu-30xian",
+      "name": "三十陷",
+      "section": "去声部",
+      "toneCategory": "qu",
+      "toneType": "ze",
+      "number": "三十",
+      "rhymeName": "陷",
+      "characters": [
+        "陷"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-01wu",
+      "name": "一屋",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "一",
+      "rhymeName": "屋",
+      "characters": [
+        "六",
+        "啄",
+        "复",
+        "宿",
+        "屋",
+        "曲",
+        "木",
+        "浊",
+        "独",
+        "目",
+        "竹",
+        "菊",
+        "鹿"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-02wo",
+      "name": "二沃",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "二",
+      "rhymeName": "沃",
+      "characters": [
+        "曲",
+        "欲",
+        "沃",
+        "玉",
+        "绿",
+        "足"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-03jue",
+      "name": "三觉",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "三",
+      "rhymeName": "觉",
+      "characters": [
+        "啄",
+        "浊",
+        "确",
+        "觉"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-04zhi",
+      "name": "四质",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "四",
+      "rhymeName": "质",
+      "characters": [
+        "一",
+        "出",
+        "日",
+        "质"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-05wu",
+      "name": "五物",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "五",
+      "rhymeName": "物",
+      "characters": [
+        "不",
+        "物"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-06yue",
+      "name": "六月",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "六",
+      "rhymeName": "月",
+      "characters": [
+        "不",
+        "发",
+        "月",
+        "歇",
+        "没",
+        "突",
+        "袜",
+        "阙",
+        "骨"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-07he",
+      "name": "七曷",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "七",
+      "rhymeName": "曷",
+      "characters": [
+        "曷",
+        "歇",
+        "达"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-08xia",
+      "name": "八黠",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "八",
+      "rhymeName": "黠",
+      "characters": [
+        "八",
+        "歇",
+        "黠"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-09xie",
+      "name": "九屑",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "九",
+      "rhymeName": "屑",
+      "characters": [
+        "别",
+        "屑",
+        "歇",
+        "灭",
+        "结",
+        "绝",
+        "缺",
+        "说",
+        "雪"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-10yao",
+      "name": "十药",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "十",
+      "rhymeName": "药",
+      "characters": [
+        "作",
+        "却",
+        "寞",
+        "斫",
+        "洛",
+        "漠",
+        "脚",
+        "药",
+        "莫",
+        "落",
+        "薄",
+        "阁",
+        "雀",
+        "魄"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-11mo",
+      "name": "十一陌",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "十一",
+      "rhymeName": "陌",
+      "characters": [
+        "夕",
+        "客",
+        "射",
+        "拍",
+        "画",
+        "白",
+        "百",
+        "石",
+        "碧",
+        "莫",
+        "迹",
+        "陌",
+        "魄"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-12xi",
+      "name": "十二锡",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "十二",
+      "rhymeName": "锡",
+      "characters": [
+        "历",
+        "寂",
+        "笛",
+        "锡"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-13zhi",
+      "name": "十三职",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "十三",
+      "rhymeName": "职",
+      "characters": [
+        "仄",
+        "北",
+        "国",
+        "忆",
+        "织",
+        "翼",
+        "职",
+        "色",
+        "轼"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-14ji",
+      "name": "十四缉",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "十四",
+      "rhymeName": "缉",
+      "characters": [
+        "入",
+        "十",
+        "急",
+        "立",
+        "笠",
+        "级",
+        "缉"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-15he",
+      "name": "十五合",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "十五",
+      "rhymeName": "合",
+      "characters": [
+        "合",
+        "纳"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-16ye",
+      "name": "十六叶",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "十六",
+      "rhymeName": "叶",
+      "characters": [
+        "叶",
+        "接"
+      ],
+      "notes": {}
+    },
+    {
+      "id": "ru-17qia",
+      "name": "十七洽",
+      "section": "入声部",
+      "toneCategory": "ru",
+      "toneType": "ze",
+      "number": "十七",
+      "rhymeName": "洽",
+      "characters": [
+        "业",
+        "押",
+        "洽"
+      ],
+      "notes": {}
+    }
+  ],
+  "characterIndex": {
+    "东": [
+      "ping-01dong"
+    ],
+    "中": [
+      "ping-01dong",
+      "qu-01song"
+    ],
+    "冲": [
+      "ping-01dong",
+      "ping-02dong"
+    ],
+    "匆": [
+      "ping-01dong"
+    ],
+    "同": [
+      "ping-01dong",
+      "qu-01song"
+    ],
+    "宫": [
+      "ping-01dong"
+    ],
+    "工": [
+      "ping-01dong"
+    ],
+    "桐": [
+      "ping-01dong"
+    ],
+    "梦": [
+      "ping-01dong",
+      "qu-01song"
+    ],
+    "穷": [
+      "ping-01dong"
+    ],
+    "空": [
+      "ping-01dong",
+      "shang-01dong",
+      "qu-01song"
+    ],
+    "红": [
+      "ping-01dong"
+    ],
+    "终": [
+      "ping-01dong"
+    ],
+    "翁": [
+      "ping-01dong"
+    ],
+    "蓬": [
+      "ping-01dong"
+    ],
+    "风": [
+      "ping-01dong"
+    ],
+    "鸿": [
+      "ping-01dong"
+    ],
+    "从": [
+      "ping-02dong",
+      "qu-02song"
+    ],
+    "共": [
+      "ping-02dong",
+      "qu-02song"
+    ],
+    "冬": [
+      "ping-02dong"
+    ],
+    "宗": [
+      "ping-02dong"
+    ],
+    "封": [
+      "ping-02dong",
+      "qu-02song"
+    ],
+    "慵": [
+      "ping-02dong"
+    ],
+    "松": [
+      "ping-02dong"
+    ],
+    "舂": [
+      "ping-02dong"
+    ],
+    "踪": [
+      "ping-02dong"
+    ],
+    "重": [
+      "ping-02dong",
+      "shang-02zhong",
+      "qu-02song"
+    ],
+    "双": [
+      "ping-03jiang"
+    ],
+    "江": [
+      "ping-03jiang"
+    ],
+    "书": [
+      "ping-04zhi",
+      "ping-06yu"
+    ],
+    "仪": [
+      "ping-04zhi"
+    ],
+    "伊": [
+      "ping-04zhi"
+    ],
+    "台": [
+      "ping-04zhi",
+      "ping-10hui"
+    ],
+    "吹": [
+      "ping-04zhi",
+      "qu-04tian"
+    ],
+    "垂": [
+      "ping-04zhi"
+    ],
+    "居": [
+      "ping-04zhi",
+      "ping-06yu"
+    ],
+    "思": [
+      "ping-04zhi",
+      "ping-10hui",
+      "qu-04tian"
+    ],
+    "悲": [
+      "ping-04zhi"
+    ],
+    "支": [
+      "ping-04zhi"
+    ],
+    "时": [
+      "ping-04zhi"
+    ],
+    "期": [
+      "ping-04zhi"
+    ],
+    "枝": [
+      "ping-04zhi"
+    ],
+    "知": [
+      "ping-04zhi",
+      "qu-04tian"
+    ],
+    "离": [
+      "ping-04zhi",
+      "qu-08ji"
+    ],
+    "维": [
+      "ping-04zhi"
+    ],
+    "肌": [
+      "ping-04zhi"
+    ],
+    "芝": [
+      "ping-04zhi"
+    ],
+    "谁": [
+      "ping-04zhi"
+    ],
+    "辞": [
+      "ping-04zhi"
+    ],
+    "迟": [
+      "ping-04zhi",
+      "qu-04tian"
+    ],
+    "陲": [
+      "ping-04zhi"
+    ],
+    "随": [
+      "ping-04zhi"
+    ],
+    "骑": [
+      "ping-04zhi",
+      "qu-04tian"
+    ],
+    "麾": [
+      "ping-04zhi"
+    ],
+    "依": [
+      "ping-05wei"
+    ],
+    "几": [
+      "ping-05wei",
+      "shang-04zhi",
+      "shang-05wei",
+      "qu-04tian"
+    ],
+    "归": [
+      "ping-05wei"
+    ],
+    "微": [
+      "ping-05wei"
+    ],
+    "衣": [
+      "ping-05wei",
+      "qu-05wei"
+    ],
+    "飞": [
+      "ping-05wei"
+    ],
+    "余": [
+      "ping-06yu"
+    ],
+    "初": [
+      "ping-06yu"
+    ],
+    "如": [
+      "ping-06yu",
+      "qu-06yu"
+    ],
+    "渔": [
+      "ping-06yu"
+    ],
+    "疏": [
+      "ping-06yu",
+      "qu-07yu"
+    ],
+    "鱼": [
+      "ping-06yu"
+    ],
+    "句": [
+      "ping-07yu",
+      "ping-11you",
+      "qu-07yu",
+      "qu-26you"
+    ],
+    "图": [
+      "ping-07yu"
+    ],
+    "夫": [
+      "ping-07yu"
+    ],
+    "孤": [
+      "ping-07yu"
+    ],
+    "无": [
+      "ping-07yu"
+    ],
+    "朱": [
+      "ping-07yu"
+    ],
+    "枯": [
+      "ping-07yu"
+    ],
+    "母": [
+      "ping-07yu",
+      "shang-07yu",
+      "shang-25you"
+    ],
+    "湖": [
+      "ping-07yu"
+    ],
+    "珠": [
+      "ping-07yu"
+    ],
+    "竽": [
+      "ping-07yu"
+    ],
+    "胡": [
+      "ping-07yu"
+    ],
+    "芜": [
+      "ping-07yu"
+    ],
+    "苏": [
+      "ping-07yu"
+    ],
+    "虞": [
+      "ping-07yu"
+    ],
+    "衢": [
+      "ping-07yu"
+    ],
+    "铢": [
+      "ping-07yu"
+    ],
+    "铺": [
+      "ping-07yu",
+      "qu-07yu"
+    ],
+    "低": [
+      "ping-08qi"
+    ],
+    "啼": [
+      "ping-08qi"
+    ],
+    "堤": [
+      "ping-08qi"
+    ],
+    "栖": [
+      "ping-08qi"
+    ],
+    "泥": [
+      "ping-08qi",
+      "shang-08ji",
+      "qu-08ji"
+    ],
+    "溪": [
+      "ping-08qi"
+    ],
+    "萋": [
+      "ping-08qi"
+    ],
+    "西": [
+      "ping-08qi"
+    ],
+    "蹄": [
+      "ping-08qi"
+    ],
+    "迷": [
+      "ping-08qi"
+    ],
+    "题": [
+      "ping-08qi",
+      "qu-08ji"
+    ],
+    "齐": [
+      "ping-08qi"
+    ],
+    "佳": [
+      "ping-09jia"
+    ],
+    "徘": [
+      "ping-09jia"
+    ],
+    "怀": [
+      "ping-09jia"
+    ],
+    "柴": [
+      "ping-09jia",
+      "qu-04tian",
+      "qu-10gua"
+    ],
+    "阶": [
+      "ping-09jia"
+    ],
+    "哀": [
+      "ping-10hui"
+    ],
+    "回": [
+      "ping-10hui",
+      "qu-11dui"
+    ],
+    "开": [
+      "ping-10hui"
+    ],
+    "徊": [
+      "ping-10hui"
+    ],
+    "才": [
+      "ping-10hui"
+    ],
+    "来": [
+      "ping-10hui"
+    ],
+    "杯": [
+      "ping-10hui"
+    ],
+    "梅": [
+      "ping-10hui"
+    ],
+    "灰": [
+      "ping-10hui"
+    ],
+    "能": [
+      "ping-10hui",
+      "ping-10zheng"
+    ],
+    "苔": [
+      "ping-10hui"
+    ],
+    "人": [
+      "ping-11zhen"
+    ],
+    "因": [
+      "ping-11zhen"
+    ],
+    "循": [
+      "ping-11zhen"
+    ],
+    "新": [
+      "ping-11zhen"
+    ],
+    "春": [
+      "ping-11zhen"
+    ],
+    "真": [
+      "ping-11zhen"
+    ],
+    "神": [
+      "ping-11zhen"
+    ],
+    "秦": [
+      "ping-11zhen"
+    ],
+    "身": [
+      "ping-11zhen"
+    ],
+    "辰": [
+      "ping-11zhen"
+    ],
+    "邻": [
+      "ping-11zhen"
+    ],
+    "云": [
+      "ping-12wen"
+    ],
+    "文": [
+      "ping-12wen"
+    ],
+    "闻": [
+      "ping-12wen",
+      "qu-13wen"
+    ],
+    "元": [
+      "ping-13yuan"
+    ],
+    "原": [
+      "ping-13yuan"
+    ],
+    "喧": [
+      "ping-13yuan"
+    ],
+    "园": [
+      "ping-13yuan"
+    ],
+    "孙": [
+      "ping-13yuan"
+    ],
+    "暖": [
+      "ping-13yuan",
+      "shang-13ruan"
+    ],
+    "根": [
+      "ping-13yuan"
+    ],
+    "源": [
+      "ping-13yuan"
+    ],
+    "猿": [
+      "ping-13yuan"
+    ],
+    "繁": [
+      "ping-13yuan",
+      "ping-14han",
+      "ping-05ge"
+    ],
+    "翻": [
+      "ping-13yuan"
+    ],
+    "门": [
+      "ping-13yuan"
+    ],
+    "兰": [
+      "ping-14han"
+    ],
+    "寒": [
+      "ping-14han"
+    ],
+    "檀": [
+      "ping-14han"
+    ],
+    "欢": [
+      "ping-14han"
+    ],
+    "残": [
+      "ping-14han"
+    ],
+    "玕": [
+      "ping-14han"
+    ],
+    "盘": [
+      "ping-14han"
+    ],
+    "看": [
+      "ping-14han",
+      "qu-15han"
+    ],
+    "难": [
+      "ping-14han",
+      "ping-05ge",
+      "qu-15han"
+    ],
+    "餐": [
+      "ping-14han"
+    ],
+    "鸾": [
+      "ping-14han"
+    ],
+    "删": [
+      "ping-15shan"
+    ],
+    "山": [
+      "ping-15shan"
+    ],
+    "环": [
+      "ping-15shan"
+    ],
+    "艰": [
+      "ping-15shan"
+    ],
+    "还": [
+      "ping-15shan",
+      "ping-01xian"
+    ],
+    "间": [
+      "ping-15shan",
+      "qu-16jian"
+    ],
+    "鬟": [
+      "ping-15shan"
+    ],
+    "便": [
+      "ping-01xian",
+      "qu-17xian"
+    ],
+    "先": [
+      "ping-01xian",
+      "qu-17xian"
+    ],
+    "全": [
+      "ping-01xian"
+    ],
+    "千": [
+      "ping-01xian"
+    ],
+    "圆": [
+      "ping-01xian"
+    ],
+    "天": [
+      "ping-01xian"
+    ],
+    "娟": [
+      "ping-01xian"
+    ],
+    "婵": [
+      "ping-01xian"
+    ],
+    "平": [
+      "ping-01xian",
+      "ping-08geng"
+    ],
+    "年": [
+      "ping-01xian"
+    ],
+    "怜": [
+      "ping-01xian"
+    ],
+    "扇": [
+      "ping-01xian",
+      "qu-17xian"
+    ],
+    "旋": [
+      "ping-01xian",
+      "qu-17xian"
+    ],
+    "泉": [
+      "ping-01xian"
+    ],
+    "烟": [
+      "ping-01xian"
+    ],
+    "然": [
+      "ping-01xian"
+    ],
+    "燕": [
+      "ping-01xian",
+      "qu-17xian"
+    ],
+    "田": [
+      "ping-01xian"
+    ],
+    "眠": [
+      "ping-01xian"
+    ],
+    "篇": [
+      "ping-01xian"
+    ],
+    "莲": [
+      "ping-01xian"
+    ],
+    "蝉": [
+      "ping-01xian"
+    ],
+    "边": [
+      "ping-01xian"
+    ],
+    "连": [
+      "ping-01xian"
+    ],
+    "寥": [
+      "ping-02xiao"
+    ],
+    "徭": [
+      "ping-02xiao"
+    ],
+    "挑": [
+      "ping-02xiao",
+      "ping-04hao",
+      "shang-17xiao"
+    ],
+    "朝": [
+      "ping-02xiao"
+    ],
+    "漂": [
+      "ping-02xiao",
+      "qu-18xiao"
+    ],
+    "烧": [
+      "ping-02xiao",
+      "qu-18xiao"
+    ],
+    "焦": [
+      "ping-02xiao"
+    ],
+    "腰": [
+      "ping-02xiao"
+    ],
+    "苗": [
+      "ping-02xiao"
+    ],
+    "萧": [
+      "ping-02xiao"
+    ],
+    "调": [
+      "ping-02xiao",
+      "ping-11you",
+      "qu-18xiao"
+    ],
+    "邀": [
+      "ping-02xiao"
+    ],
+    "雕": [
+      "ping-02xiao"
+    ],
+    "肴": [
+      "ping-03xiao"
+    ],
+    "茅": [
+      "ping-03xiao"
+    ],
+    "桃": [
+      "ping-04hao"
+    ],
+    "豪": [
+      "ping-04hao"
+    ],
+    "高": [
+      "ping-04hao"
+    ],
+    "何": [
+      "ping-05ge"
+    ],
+    "和": [
+      "ping-05ge",
+      "qu-21ge"
+    ],
+    "多": [
+      "ping-05ge"
+    ],
+    "歌": [
+      "ping-05ge"
+    ],
+    "河": [
+      "ping-05ge"
+    ],
+    "罗": [
+      "ping-05ge"
+    ],
+    "蓑": [
+      "ping-05ge"
+    ],
+    "过": [
+      "ping-05ge",
+      "qu-21ge"
+    ],
+    "颇": [
+      "ping-05ge",
+      "shang-20ge"
+    ],
+    "家": [
+      "ping-06ma"
+    ],
+    "沙": [
+      "ping-06ma"
+    ],
+    "花": [
+      "ping-06ma"
+    ],
+    "葭": [
+      "ping-06ma"
+    ],
+    "雅": [
+      "ping-06ma",
+      "shang-21ma"
+    ],
+    "麻": [
+      "ping-06ma"
+    ],
+    "乡": [
+      "ping-07yang"
+    ],
+    "伤": [
+      "ping-07yang"
+    ],
+    "光": [
+      "ping-07yang"
+    ],
+    "凉": [
+      "ping-07yang"
+    ],
+    "唐": [
+      "ping-07yang"
+    ],
+    "尚": [
+      "ping-07yang",
+      "qu-23yang"
+    ],
+    "常": [
+      "ping-07yang"
+    ],
+    "当": [
+      "ping-07yang",
+      "qu-23yang"
+    ],
+    "房": [
+      "ping-07yang"
+    ],
+    "望": [
+      "ping-07yang",
+      "qu-23yang"
+    ],
+    "杨": [
+      "ping-07yang"
+    ],
+    "桑": [
+      "ping-07yang"
+    ],
+    "横": [
+      "ping-07yang",
+      "ping-08geng",
+      "qu-24jing"
+    ],
+    "狂": [
+      "ping-07yang"
+    ],
+    "王": [
+      "ping-07yang",
+      "qu-23yang"
+    ],
+    "琅": [
+      "ping-07yang"
+    ],
+    "相": [
+      "ping-07yang",
+      "qu-23yang"
+    ],
+    "芳": [
+      "ping-07yang"
+    ],
+    "荒": [
+      "ping-07yang"
+    ],
+    "行": [
+      "ping-07yang",
+      "ping-08geng",
+      "qu-23yang",
+      "qu-24jing"
+    ],
+    "锵": [
+      "ping-07yang"
+    ],
+    "长": [
+      "ping-07yang",
+      "shang-22yang",
+      "qu-23yang"
+    ],
+    "阳": [
+      "ping-07yang"
+    ],
+    "霜": [
+      "ping-07yang"
+    ],
+    "香": [
+      "ping-07yang"
+    ],
+    "黄": [
+      "ping-07yang"
+    ],
+    "争": [
+      "ping-08geng"
+    ],
+    "令": [
+      "ping-08geng",
+      "ping-09qing",
+      "qu-24jing"
+    ],
+    "兵": [
+      "ping-08geng"
+    ],
+    "净": [
+      "ping-08geng",
+      "qu-24jing"
+    ],
+    "城": [
+      "ping-08geng"
+    ],
+    "声": [
+      "ping-08geng"
+    ],
+    "庚": [
+      "ping-08geng"
+    ],
+    "征": [
+      "ping-08geng",
+      "ping-10zheng"
+    ],
+    "情": [
+      "ping-08geng"
+    ],
+    "惊": [
+      "ping-08geng"
+    ],
+    "成": [
+      "ping-08geng"
+    ],
+    "明": [
+      "ping-08geng"
+    ],
+    "晴": [
+      "ping-08geng"
+    ],
+    "晶": [
+      "ping-08geng"
+    ],
+    "更": [
+      "ping-08geng",
+      "qu-24jing"
+    ],
+    "清": [
+      "ping-08geng"
+    ],
+    "琼": [
+      "ping-08geng"
+    ],
+    "生": [
+      "ping-08geng"
+    ],
+    "程": [
+      "ping-08geng"
+    ],
+    "笙": [
+      "ping-08geng"
+    ],
+    "荆": [
+      "ping-08geng"
+    ],
+    "荣": [
+      "ping-08geng"
+    ],
+    "莺": [
+      "ping-08geng"
+    ],
+    "轻": [
+      "ping-08geng",
+      "qu-24jing"
+    ],
+    "鸣": [
+      "ping-08geng"
+    ],
+    "亭": [
+      "ping-09qing"
+    ],
+    "停": [
+      "ping-09qing"
+    ],
+    "听": [
+      "ping-09qing",
+      "shang-12wen",
+      "qu-25jing"
+    ],
+    "径": [
+      "ping-09qing",
+      "qu-25jing"
+    ],
+    "星": [
+      "ping-09qing"
+    ],
+    "暝": [
+      "ping-09qing",
+      "qu-25jing"
+    ],
+    "汀": [
+      "ping-09qing"
+    ],
+    "青": [
+      "ping-09qing"
+    ],
+    "乘": [
+      "ping-10zheng",
+      "qu-25jing"
+    ],
+    "仍": [
+      "ping-10zheng"
+    ],
+    "兴": [
+      "ping-10zheng",
+      "qu-25jing"
+    ],
+    "凭": [
+      "ping-10zheng",
+      "qu-25jing"
+    ],
+    "增": [
+      "ping-10zheng"
+    ],
+    "层": [
+      "ping-10zheng"
+    ],
+    "应": [
+      "ping-10zheng",
+      "qu-25jing"
+    ],
+    "昇": [
+      "ping-10zheng"
+    ],
+    "曾": [
+      "ping-10zheng"
+    ],
+    "登": [
+      "ping-10zheng"
+    ],
+    "胜": [
+      "ping-10zheng",
+      "qu-25jing"
+    ],
+    "蒸": [
+      "ping-10zheng"
+    ],
+    "陵": [
+      "ping-10zheng"
+    ],
+    "鹏": [
+      "ping-10zheng"
+    ],
+    "不": [
+      "ping-11you",
+      "shang-25you",
+      "ru-05wu",
+      "ru-06yue"
+    ],
+    "叟": [
+      "ping-11you",
+      "shang-25you"
+    ],
+    "头": [
+      "ping-11you"
+    ],
+    "尤": [
+      "ping-11you"
+    ],
+    "幽": [
+      "ping-11you"
+    ],
+    "愁": [
+      "ping-11you"
+    ],
+    "楼": [
+      "ping-11you"
+    ],
+    "洲": [
+      "ping-11you"
+    ],
+    "流": [
+      "ping-11you"
+    ],
+    "游": [
+      "ping-11you"
+    ],
+    "犹": [
+      "ping-11you",
+      "qu-26you"
+    ],
+    "由": [
+      "ping-11you"
+    ],
+    "留": [
+      "ping-11you",
+      "qu-26you"
+    ],
+    "秋": [
+      "ping-11you"
+    ],
+    "舟": [
+      "ping-11you"
+    ],
+    "临": [
+      "ping-12qin",
+      "qu-27qin"
+    ],
+    "今": [
+      "ping-12qin"
+    ],
+    "任": [
+      "ping-12qin",
+      "qu-27qin"
+    ],
+    "侵": [
+      "ping-12qin"
+    ],
+    "南": [
+      "ping-12qin",
+      "ping-13tan"
+    ],
+    "心": [
+      "ping-12qin"
+    ],
+    "林": [
+      "ping-12qin"
+    ],
+    "沈": [
+      "ping-12qin",
+      "shang-26qin",
+      "qu-27qin"
+    ],
+    "沉": [
+      "ping-12qin"
+    ],
+    "深": [
+      "ping-12qin",
+      "qu-27qin"
+    ],
+    "金": [
+      "ping-12qin"
+    ],
+    "阴": [
+      "ping-12qin"
+    ],
+    "三": [
+      "ping-13tan",
+      "qu-28kan"
+    ],
+    "惭": [
+      "ping-13tan"
+    ],
+    "蓝": [
+      "ping-13tan"
+    ],
+    "覃": [
+      "ping-13tan"
+    ],
+    "谈": [
+      "ping-13tan"
+    ],
+    "谙": [
+      "ping-13tan"
+    ],
+    "兼": [
+      "ping-14yan",
+      "qu-29yan"
+    ],
+    "渐": [
+      "ping-14yan",
+      "shang-28jian"
+    ],
+    "盐": [
+      "ping-14yan"
+    ],
+    "蒹": [
+      "ping-14yan"
+    ],
+    "咸": [
+      "ping-15xian"
+    ],
+    "衫": [
+      "ping-15xian"
+    ],
+    "动": [
+      "shang-01dong",
+      "qu-01song"
+    ],
+    "洞": [
+      "shang-01dong",
+      "qu-01song"
+    ],
+    "董": [
+      "shang-01dong"
+    ],
+    "恐": [
+      "shang-02zhong",
+      "qu-02song"
+    ],
+    "肿": [
+      "shang-02zhong"
+    ],
+    "讲": [
+      "shang-03jiang"
+    ],
+    "似": [
+      "shang-04zhi",
+      "qu-04tian"
+    ],
+    "子": [
+      "shang-04zhi"
+    ],
+    "已": [
+      "shang-04zhi",
+      "qu-04tian"
+    ],
+    "是": [
+      "shang-04zhi"
+    ],
+    "此": [
+      "shang-04zhi"
+    ],
+    "死": [
+      "shang-04zhi"
+    ],
+    "水": [
+      "shang-04zhi"
+    ],
+    "纸": [
+      "shang-04zhi"
+    ],
+    "绮": [
+      "shang-04zhi"
+    ],
+    "起": [
+      "shang-04zhi"
+    ],
+    "跪": [
+      "shang-04zhi"
+    ],
+    "轨": [
+      "shang-04zhi"
+    ],
+    "里": [
+      "shang-04zhi",
+      "qu-04tian"
+    ],
+    "尾": [
+      "shang-05wei"
+    ],
+    "举": [
+      "shang-06yu"
+    ],
+    "作": [
+      "shang-06yu",
+      "qu-07yu",
+      "qu-21ge",
+      "ru-10yao"
+    ],
+    "去": [
+      "shang-06yu",
+      "qu-06yu"
+    ],
+    "处": [
+      "shang-06yu",
+      "qu-06yu"
+    ],
+    "女": [
+      "shang-06yu",
+      "qu-06yu"
+    ],
+    "所": [
+      "shang-06yu"
+    ],
+    "楚": [
+      "shang-06yu",
+      "qu-06yu"
+    ],
+    "渚": [
+      "shang-06yu"
+    ],
+    "煮": [
+      "shang-06yu"
+    ],
+    "苎": [
+      "shang-06yu"
+    ],
+    "语": [
+      "shang-06yu",
+      "qu-06yu"
+    ],
+    "雨": [
+      "shang-06yu",
+      "shang-07yu",
+      "qu-07yu"
+    ],
+    "下": [
+      "shang-07yu",
+      "shang-21ma",
+      "qu-22ma"
+    ],
+    "五": [
+      "shang-07yu"
+    ],
+    "古": [
+      "shang-07yu"
+    ],
+    "宇": [
+      "shang-07yu"
+    ],
+    "户": [
+      "shang-07yu"
+    ],
+    "树": [
+      "shang-07yu",
+      "qu-07yu"
+    ],
+    "舞": [
+      "shang-07yu"
+    ],
+    "苦": [
+      "shang-07yu",
+      "qu-07yu"
+    ],
+    "补": [
+      "shang-07yu"
+    ],
+    "贾": [
+      "shang-07yu",
+      "shang-21ma",
+      "qu-22ma"
+    ],
+    "部": [
+      "shang-07yu",
+      "shang-25you"
+    ],
+    "麌": [
+      "shang-07yu"
+    ],
+    "荠": [
+      "shang-08ji"
+    ],
+    "蟹": [
+      "shang-09xie"
+    ],
+    "在": [
+      "shang-10hui",
+      "qu-11dui"
+    ],
+    "彩": [
+      "shang-10hui"
+    ],
+    "待": [
+      "shang-10hui"
+    ],
+    "每": [
+      "shang-10hui"
+    ],
+    "海": [
+      "shang-10hui"
+    ],
+    "贿": [
+      "shang-10hui"
+    ],
+    "尽": [
+      "shang-11zhen"
+    ],
+    "轸": [
+      "shang-11zhen"
+    ],
+    "吻": [
+      "shang-12wen"
+    ],
+    "近": [
+      "shang-12wen",
+      "qu-04tian",
+      "qu-13wen"
+    ],
+    "晚": [
+      "shang-13ruan"
+    ],
+    "本": [
+      "shang-13ruan"
+    ],
+    "滚": [
+      "shang-13ruan"
+    ],
+    "苑": [
+      "shang-13ruan"
+    ],
+    "衮": [
+      "shang-13ruan"
+    ],
+    "返": [
+      "shang-13ruan"
+    ],
+    "远": [
+      "shang-13ruan",
+      "qu-14yuan"
+    ],
+    "阮": [
+      "shang-13ruan"
+    ],
+    "饭": [
+      "shang-13ruan",
+      "qu-14yuan",
+      "qu-17xian"
+    ],
+    "但": [
+      "shang-14han"
+    ],
+    "断": [
+      "shang-14han",
+      "qu-15han"
+    ],
+    "旱": [
+      "shang-14han"
+    ],
+    "浣": [
+      "shang-14han",
+      "qu-15han"
+    ],
+    "满": [
+      "shang-14han"
+    ],
+    "短": [
+      "shang-14han"
+    ],
+    "拣": [
+      "shang-15shan",
+      "qu-17xian"
+    ],
+    "潸": [
+      "shang-15shan"
+    ],
+    "眼": [
+      "shang-15shan"
+    ],
+    "宴": [
+      "shang-16xi",
+      "qu-15han",
+      "qu-17xian"
+    ],
+    "浅": [
+      "shang-16xi"
+    ],
+    "转": [
+      "shang-16xi",
+      "qu-17xian"
+    ],
+    "铣": [
+      "shang-16xi"
+    ],
+    "小": [
+      "shang-17xiao"
+    ],
+    "晓": [
+      "shang-17xiao"
+    ],
+    "矫": [
+      "shang-17xiao"
+    ],
+    "筱": [
+      "shang-17xiao"
+    ],
+    "缈": [
+      "shang-17xiao"
+    ],
+    "缥": [
+      "shang-17xiao"
+    ],
+    "鸟": [
+      "shang-17xiao"
+    ],
+    "巧": [
+      "shang-18qiao"
+    ],
+    "倒": [
+      "shang-19hao",
+      "qu-20hao"
+    ],
+    "好": [
+      "shang-19hao",
+      "qu-20hao"
+    ],
+    "早": [
+      "shang-19hao"
+    ],
+    "潦": [
+      "shang-19hao"
+    ],
+    "皓": [
+      "shang-19hao"
+    ],
+    "老": [
+      "shang-19hao"
+    ],
+    "草": [
+      "shang-19hao"
+    ],
+    "道": [
+      "shang-19hao",
+      "qu-20hao"
+    ],
+    "可": [
+      "shang-20ge"
+    ],
+    "哿": [
+      "shang-20ge"
+    ],
+    "坐": [
+      "shang-20ge",
+      "qu-21ge"
+    ],
+    "我": [
+      "shang-20ge"
+    ],
+    "火": [
+      "shang-20ge"
+    ],
+    "也": [
+      "shang-21ma"
+    ],
+    "惹": [
+      "shang-21ma"
+    ],
+    "把": [
+      "shang-21ma",
+      "qu-22ma"
+    ],
+    "野": [
+      "shang-21ma"
+    ],
+    "马": [
+      "shang-21ma"
+    ],
+    "上": [
+      "shang-22yang",
+      "qu-23yang"
+    ],
+    "两": [
+      "shang-22yang",
+      "qu-23yang"
+    ],
+    "仗": [
+      "shang-22yang",
+      "qu-23yang"
+    ],
+    "养": [
+      "shang-22yang"
+    ],
+    "向": [
+      "shang-22yang",
+      "qu-23yang"
+    ],
+    "响": [
+      "shang-22yang"
+    ],
+    "往": [
+      "shang-22yang"
+    ],
+    "丙": [
+      "shang-23geng"
+    ],
+    "冷": [
+      "shang-23geng"
+    ],
+    "影": [
+      "shang-23geng"
+    ],
+    "景": [
+      "shang-23geng"
+    ],
+    "梗": [
+      "shang-23geng"
+    ],
+    "省": [
+      "shang-23geng"
+    ],
+    "静": [
+      "shang-23geng"
+    ],
+    "肯": [
+      "shang-24jiong"
+    ],
+    "迥": [
+      "shang-24jiong"
+    ],
+    "久": [
+      "shang-25you"
+    ],
+    "九": [
+      "shang-25you"
+    ],
+    "偶": [
+      "shang-25you"
+    ],
+    "后": [
+      "shang-25you",
+      "qu-26you"
+    ],
+    "守": [
+      "shang-25you",
+      "qu-26you"
+    ],
+    "手": [
+      "shang-25you"
+    ],
+    "有": [
+      "shang-25you"
+    ],
+    "柳": [
+      "shang-25you"
+    ],
+    "酒": [
+      "shang-25you"
+    ],
+    "首": [
+      "shang-25you",
+      "qu-26you"
+    ],
+    "寝": [
+      "shang-26qin"
+    ],
+    "饮": [
+      "shang-26qin",
+      "qu-27qin"
+    ],
+    "感": [
+      "shang-27gan"
+    ],
+    "掩": [
+      "shang-27gan",
+      "shang-28jian"
+    ],
+    "菡": [
+      "shang-27gan"
+    ],
+    "萏": [
+      "shang-27gan"
+    ],
+    "俭": [
+      "shang-28jian"
+    ],
+    "点": [
+      "shang-28jian"
+    ],
+    "豏": [
+      "shang-29xian"
+    ],
+    "凤": [
+      "qu-01song"
+    ],
+    "弄": [
+      "qu-01song"
+    ],
+    "送": [
+      "qu-01song"
+    ],
+    "宋": [
+      "qu-02song"
+    ],
+    "用": [
+      "qu-02song"
+    ],
+    "绛": [
+      "qu-03jiang"
+    ],
+    "事": [
+      "qu-04tian"
+    ],
+    "位": [
+      "qu-04tian"
+    ],
+    "值": [
+      "qu-04tian"
+    ],
+    "出": [
+      "qu-04tian",
+      "ru-04zhi"
+    ],
+    "四": [
+      "qu-04tian"
+    ],
+    "寘": [
+      "qu-04tian"
+    ],
+    "寺": [
+      "qu-04tian"
+    ],
+    "意": [
+      "qu-04tian"
+    ],
+    "泪": [
+      "qu-04tian"
+    ],
+    "织": [
+      "qu-04tian",
+      "ru-13zhi"
+    ],
+    "翠": [
+      "qu-04tian"
+    ],
+    "自": [
+      "qu-04tian"
+    ],
+    "致": [
+      "qu-04tian"
+    ],
+    "记": [
+      "qu-04tian"
+    ],
+    "避": [
+      "qu-04tian"
+    ],
+    "醉": [
+      "qu-04tian"
+    ],
+    "未": [
+      "qu-05wei"
+    ],
+    "气": [
+      "qu-05wei"
+    ],
+    "渭": [
+      "qu-05wei"
+    ],
+    "御": [
+      "qu-06yu"
+    ],
+    "预": [
+      "qu-06yu"
+    ],
+    "住": [
+      "qu-07yu"
+    ],
+    "故": [
+      "qu-07yu"
+    ],
+    "注": [
+      "qu-07yu"
+    ],
+    "渡": [
+      "qu-07yu"
+    ],
+    "素": [
+      "qu-07yu"
+    ],
+    "莫": [
+      "qu-07yu",
+      "ru-10yao",
+      "ru-11mo"
+    ],
+    "足": [
+      "qu-07yu",
+      "ru-02wo"
+    ],
+    "遇": [
+      "qu-07yu"
+    ],
+    "露": [
+      "qu-07yu"
+    ],
+    "岁": [
+      "qu-08ji"
+    ],
+    "帝": [
+      "qu-08ji"
+    ],
+    "桂": [
+      "qu-08ji"
+    ],
+    "税": [
+      "qu-08ji"
+    ],
+    "第": [
+      "qu-08ji"
+    ],
+    "细": [
+      "qu-08ji"
+    ],
+    "计": [
+      "qu-08ji"
+    ],
+    "说": [
+      "qu-08ji",
+      "ru-09xie"
+    ],
+    "达": [
+      "qu-08ji",
+      "ru-07he"
+    ],
+    "霁": [
+      "qu-08ji"
+    ],
+    "髻": [
+      "qu-08ji"
+    ],
+    "外": [
+      "qu-09tai"
+    ],
+    "大": [
+      "qu-09tai",
+      "qu-21ge"
+    ],
+    "带": [
+      "qu-09tai"
+    ],
+    "最": [
+      "qu-09tai"
+    ],
+    "泰": [
+      "qu-09tai"
+    ],
+    "卦": [
+      "qu-10gua"
+    ],
+    "挂": [
+      "qu-10gua"
+    ],
+    "画": [
+      "qu-10gua",
+      "ru-11mo"
+    ],
+    "佩": [
+      "qu-11dui"
+    ],
+    "再": [
+      "qu-11dui"
+    ],
+    "北": [
+      "qu-11dui",
+      "ru-13zhi"
+    ],
+    "对": [
+      "qu-11dui"
+    ],
+    "废": [
+      "qu-11dui"
+    ],
+    "爱": [
+      "qu-11dui"
+    ],
+    "菜": [
+      "qu-11dui"
+    ],
+    "队": [
+      "qu-11dui"
+    ],
+    "认": [
+      "qu-12zhen"
+    ],
+    "进": [
+      "qu-12zhen"
+    ],
+    "震": [
+      "qu-12zhen"
+    ],
+    "鬓": [
+      "qu-12zhen"
+    ],
+    "问": [
+      "qu-13wen"
+    ],
+    "韵": [
+      "qu-13wen"
+    ],
+    "万": [
+      "qu-14yuan"
+    ],
+    "恨": [
+      "qu-14yuan"
+    ],
+    "愿": [
+      "qu-14yuan"
+    ],
+    "闷": [
+      "qu-14yuan"
+    ],
+    "乱": [
+      "qu-15han"
+    ],
+    "岸": [
+      "qu-15han"
+    ],
+    "旦": [
+      "qu-15han"
+    ],
+    "段": [
+      "qu-15han"
+    ],
+    "汉": [
+      "qu-15han"
+    ],
+    "翰": [
+      "qu-15han"
+    ],
+    "鹳": [
+      "qu-15han"
+    ],
+    "慢": [
+      "qu-16jian"
+    ],
+    "谏": [
+      "qu-16jian"
+    ],
+    "变": [
+      "qu-17xian"
+    ],
+    "见": [
+      "qu-17xian"
+    ],
+    "霰": [
+      "qu-17xian"
+    ],
+    "面": [
+      "qu-17xian"
+    ],
+    "啸": [
+      "qu-18xiao"
+    ],
+    "妙": [
+      "qu-18xiao"
+    ],
+    "照": [
+      "qu-18xiao"
+    ],
+    "眺": [
+      "qu-18xiao"
+    ],
+    "笑": [
+      "qu-18xiao"
+    ],
+    "钓": [
+      "qu-18xiao"
+    ],
+    "效": [
+      "qu-19xiao"
+    ],
+    "到": [
+      "qu-20hao"
+    ],
+    "号": [
+      "qu-20hao"
+    ],
+    "报": [
+      "qu-20hao"
+    ],
+    "个": [
+      "qu-21ge"
+    ],
+    "夜": [
+      "qu-22ma"
+    ],
+    "射": [
+      "qu-22ma",
+      "ru-11mo"
+    ],
+    "柘": [
+      "qu-22ma"
+    ],
+    "祃": [
+      "qu-22ma"
+    ],
+    "谢": [
+      "qu-22ma"
+    ],
+    "况": [
+      "qu-23yang"
+    ],
+    "漾": [
+      "qu-23yang"
+    ],
+    "圣": [
+      "qu-24jing"
+    ],
+    "敬": [
+      "qu-24jing"
+    ],
+    "病": [
+      "qu-24jing"
+    ],
+    "镜": [
+      "qu-24jing"
+    ],
+    "定": [
+      "qu-25jing"
+    ],
+    "又": [
+      "qu-26you"
+    ],
+    "复": [
+      "qu-26you",
+      "ru-01wu"
+    ],
+    "奏": [
+      "qu-26you"
+    ],
+    "宥": [
+      "qu-26you"
+    ],
+    "宿": [
+      "qu-26you",
+      "ru-01wu"
+    ],
+    "幼": [
+      "qu-26you"
+    ],
+    "旧": [
+      "qu-26you"
+    ],
+    "漏": [
+      "qu-26you"
+    ],
+    "沁": [
+      "qu-27qin"
+    ],
+    "浸": [
+      "qu-27qin"
+    ],
+    "勘": [
+      "qu-28kan"
+    ],
+    "艳": [
+      "qu-29yan"
+    ],
+    "陷": [
+      "qu-30xian"
+    ],
+    "六": [
+      "ru-01wu"
+    ],
+    "啄": [
+      "ru-01wu",
+      "ru-03jue"
+    ],
+    "屋": [
+      "ru-01wu"
+    ],
+    "曲": [
+      "ru-01wu",
+      "ru-02wo"
+    ],
+    "木": [
+      "ru-01wu"
+    ],
+    "浊": [
+      "ru-01wu",
+      "ru-03jue"
+    ],
+    "独": [
+      "ru-01wu"
+    ],
+    "目": [
+      "ru-01wu"
+    ],
+    "竹": [
+      "ru-01wu"
+    ],
+    "菊": [
+      "ru-01wu"
+    ],
+    "鹿": [
+      "ru-01wu"
+    ],
+    "欲": [
+      "ru-02wo"
+    ],
+    "沃": [
+      "ru-02wo"
+    ],
+    "玉": [
+      "ru-02wo"
+    ],
+    "绿": [
+      "ru-02wo"
+    ],
+    "确": [
+      "ru-03jue"
+    ],
+    "觉": [
+      "ru-03jue"
+    ],
+    "一": [
+      "ru-04zhi"
+    ],
+    "日": [
+      "ru-04zhi"
+    ],
+    "质": [
+      "ru-04zhi"
+    ],
+    "物": [
+      "ru-05wu"
+    ],
+    "发": [
+      "ru-06yue"
+    ],
+    "月": [
+      "ru-06yue"
+    ],
+    "歇": [
+      "ru-06yue",
+      "ru-07he",
+      "ru-08xia",
+      "ru-09xie"
+    ],
+    "没": [
+      "ru-06yue"
+    ],
+    "突": [
+      "ru-06yue"
+    ],
+    "袜": [
+      "ru-06yue"
+    ],
+    "阙": [
+      "ru-06yue"
+    ],
+    "骨": [
+      "ru-06yue"
+    ],
+    "曷": [
+      "ru-07he"
+    ],
+    "八": [
+      "ru-08xia"
+    ],
+    "黠": [
+      "ru-08xia"
+    ],
+    "别": [
+      "ru-09xie"
+    ],
+    "屑": [
+      "ru-09xie"
+    ],
+    "灭": [
+      "ru-09xie"
+    ],
+    "结": [
+      "ru-09xie"
+    ],
+    "绝": [
+      "ru-09xie"
+    ],
+    "缺": [
+      "ru-09xie"
+    ],
+    "雪": [
+      "ru-09xie"
+    ],
+    "却": [
+      "ru-10yao"
+    ],
+    "寞": [
+      "ru-10yao"
+    ],
+    "斫": [
+      "ru-10yao"
+    ],
+    "洛": [
+      "ru-10yao"
+    ],
+    "漠": [
+      "ru-10yao"
+    ],
+    "脚": [
+      "ru-10yao"
+    ],
+    "药": [
+      "ru-10yao"
+    ],
+    "落": [
+      "ru-10yao"
+    ],
+    "薄": [
+      "ru-10yao"
+    ],
+    "阁": [
+      "ru-10yao"
+    ],
+    "雀": [
+      "ru-10yao"
+    ],
+    "魄": [
+      "ru-10yao",
+      "ru-11mo"
+    ],
+    "夕": [
+      "ru-11mo"
+    ],
+    "客": [
+      "ru-11mo"
+    ],
+    "拍": [
+      "ru-11mo"
+    ],
+    "白": [
+      "ru-11mo"
+    ],
+    "百": [
+      "ru-11mo"
+    ],
+    "石": [
+      "ru-11mo"
+    ],
+    "碧": [
+      "ru-11mo"
+    ],
+    "迹": [
+      "ru-11mo"
+    ],
+    "陌": [
+      "ru-11mo"
+    ],
+    "历": [
+      "ru-12xi"
+    ],
+    "寂": [
+      "ru-12xi"
+    ],
+    "笛": [
+      "ru-12xi"
+    ],
+    "锡": [
+      "ru-12xi"
+    ],
+    "仄": [
+      "ru-13zhi"
+    ],
+    "国": [
+      "ru-13zhi"
+    ],
+    "忆": [
+      "ru-13zhi"
+    ],
+    "翼": [
+      "ru-13zhi"
+    ],
+    "职": [
+      "ru-13zhi"
+    ],
+    "色": [
+      "ru-13zhi"
+    ],
+    "轼": [
+      "ru-13zhi"
+    ],
+    "入": [
+      "ru-14ji"
+    ],
+    "十": [
+      "ru-14ji"
+    ],
+    "急": [
+      "ru-14ji"
+    ],
+    "立": [
+      "ru-14ji"
+    ],
+    "笠": [
+      "ru-14ji"
+    ],
+    "级": [
+      "ru-14ji"
+    ],
+    "缉": [
+      "ru-14ji"
+    ],
+    "合": [
+      "ru-15he"
+    ],
+    "纳": [
+      "ru-15he"
+    ],
+    "叶": [
+      "ru-16ye"
+    ],
+    "接": [
+      "ru-16ye"
+    ],
+    "业": [
+      "ru-17qia"
+    ],
+    "押": [
+      "ru-17qia"
+    ],
+    "洽": [
+      "ru-17qia"
+    ]
+  }
+}

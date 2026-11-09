@@ -1,0 +1,9 @@
+import { useCallback, useEffect, useState, type RefObject } from 'react';
+export function useExcerptSelection(enabled:boolean,roots:RefObject<HTMLElement>[],identity:string){
+ const [selection,setSelection]=useState<{text:string;left:number;top:number}|null>(null);
+ const clear=useCallback(()=>setSelection(null),[]);
+ function capture(){if(!enabled)return clear();const s=window.getSelection();if(!s||s.isCollapsed||!s.rangeCount||!roots.some(r=>r.current?.contains(s.anchorNode)&&r.current.contains(s.focusNode)))return clear();const text=s.toString().trim();if(!text||text.length>10000)return clear();const range=s.getRangeAt(0);const rects=[...range.getClientRects()],r=rects.at(-1)??range.getBoundingClientRect();const root=roots.find(root=>root.current?.contains(s.focusNode))?.current?.getBoundingClientRect();if(!r.width&&!r.height)return clear();const left=Math.max(root?root.left+8:8,Math.min(r.right-28,(root?root.right:innerWidth)-64));const top=r.bottom+38<(root?.bottom??innerHeight)-8?r.bottom+7:Math.max((root?.top??0)+8,r.top-37);setSelection({text,left,top});}
+ useEffect(()=>{clear();},[enabled,identity,clear]);
+ useEffect(()=>{const change=()=>{const s=window.getSelection();if(s?.isCollapsed&&!document.activeElement?.classList.contains('reading-excerpt-floating'))clear()};const scroll=(e:Event)=>{if(!(e.target as HTMLElement)?.closest?.('.reading-excerpt-floating'))clear()};document.addEventListener('selectionchange',change);document.addEventListener('scroll',scroll,true);window.addEventListener('resize',clear);const key=(e:KeyboardEvent)=>{if(e.key==='Escape')clear()};document.addEventListener('keydown',key);return()=>{document.removeEventListener('selectionchange',change);document.removeEventListener('scroll',scroll,true);window.removeEventListener('resize',clear);document.removeEventListener('keydown',key)}},[clear]);
+ return{selection,capture,clear};
+}

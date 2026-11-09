@@ -1,0 +1,32 @@
+/* Shared material, geometry and type scale for the three primary library pages. */
+.unified-shell{--primary-paper:#fcfaf6;--primary-texture:repeating-linear-gradient(0deg,#745c3d07 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,#745c3d03 0 1px,transparent 1px 7px),linear-gradient(100deg,#f6f0e580,#fffdf980 48%,#f5eee580);--primary-serif:"Songti SC","STSong","Noto Serif CJK SC",serif}
+.unified-shell .library-sheet,.unified-shell .notes-layout,.unified-shell .reading-shelf,.unified-shell .reading-directory{margin:20px 26px 26px;background-color:var(--primary-paper);background-image:var(--primary-texture);border:1px solid #d7cfc2;border-radius:0;box-shadow:0 2px 4px #5b514510,0 16px 34px -25px #5b51454a}
+.unified-shell .library-main,.unified-shell .notes-layout>main{padding:28px 30px 24px 36px}
+.unified-shell .library-heading,.unified-shell .notes-layout main>header{align-items:center;padding:0 14px 20px 0}
+.unified-shell .library-heading h1,.unified-shell .notes-layout h1,.unified-shell .reading-shelf h1{font:32px/1.4 var(--primary-serif);letter-spacing:2px;margin-left:-3px;font-weight:400}
+.unified-shell .library-work-title{font:18px/1.75 var(--primary-serif);letter-spacing:0;color:#393630}
+.unified-shell .library-work-excerpt{font:12px/1.75 var(--primary-serif);color:#8a8075;margin-top:7px}
+.unified-shell .library-work-type{font:12px/1.75 var(--primary-serif)}
+.unified-shell .library-paper .manuscript-stamp,.unified-shell .reading-workspace .manuscript-stamp{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;width:56px;min-width:56px;height:28px;min-height:28px;padding:3px 7px;border:1px solid #d9c2bf;border-radius:2px;background:transparent;box-shadow:none;color:#8b5c58;font:12px/1.6 var(--primary-serif);letter-spacing:1px;white-space:nowrap;flex-shrink:0}
+.unified-shell .reading-shelf{padding:28px 36px 24px}.unified-shell .reading-books>button{font-size:18px}
+@media(max-width:1000px){.unified-shell .library-sheet{grid-template-columns:190px minmax(0,1fr)}.unified-shell .library-main,.unified-shell .notes-layout>main{padding:26px 22px}}
+@media(prefers-reduced-motion:reduce){.unified-shell .workspace>.library-paper,.unified-shell .reading-view,.unified-shell .notes-overview,.unified-shell .home-scene{animation:none}}
+
+.unified-shell .library-paper .library-collection-menu{align-self:center;flex-shrink:0;width:28px;height:28px;padding:0;color:#948879;font:18px/28px Georgia,serif;letter-spacing:2px;border:0;background:none}
+/* Snapshot only the content: navigation and its indicator remain live and fixed. */
+.unified-shell>.workspace{view-transition-name:primary-workspace}
+::view-transition{pointer-events:none}
+::view-transition-group(root){animation:none}
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+::view-transition-group(primary-workspace){animation-duration:300ms}
+::view-transition-old(primary-workspace){animation:paper-hold 300ms linear both;mix-blend-mode:normal}
+::view-transition-new(primary-workspace){animation:paper-arrive 300ms cubic-bezier(.22,.61,.36,1) both;mix-blend-mode:normal}
+@keyframes paper-hold{from{opacity:1}to{opacity:1}}
+@keyframes paper-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+html[data-page-motion=home]::view-transition-new(primary-workspace){animation-name:home-arrive}
+/* Inner pages stay fixed; retain the quiet dissolve preferred over directional reveals. */
+html[data-page-motion=paper]::view-transition-group(primary-workspace){animation:none}
+html[data-page-motion=paper]::view-transition-old(primary-workspace){animation-duration:200ms}
+html[data-page-motion=paper]::view-transition-new(primary-workspace){animation:home-arrive 200ms cubic-bezier(.4,0,.2,1) both}
+@keyframes home-arrive{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}

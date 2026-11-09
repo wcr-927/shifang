@@ -1,0 +1,109 @@
+{
+  "name": "shifang",
+  "version": "0.6.0",
+  "description": "诗房公开源码与开发示例",
+  "author": "诗房",
+  "private": true,
+  "type": "module",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/third_party_notices.mjs && node scripts/ci_metadata.mjs --check && npm run build:renderer && npm run build:electron",
+    "build:renderer": "vite build",
+    "build:electron": "node scripts/build_electron.mjs",
+    "typecheck": "npm run typecheck:renderer && npm run typecheck:electron",
+    "test": "node --max-old-space-size=256 --import tsx --test --test-concurrency=1 --test-timeout=15000 tests/unit/*.test.ts tests/components/*.test.tsx",
+    "package:mac": "CSC_IDENTITY_AUTO_DISCOVERY=false npm run build && CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --mac --arm64 --dir && npm run sign:mac:local",
+    "sign:mac:local": "node scripts/sign_local_mac_app.mjs \"release/mac-arm64/诗房开源版.app\"",
+    "icons": "electron scripts/generate_icons.cjs",
+    "typecheck:renderer": "tsc -p tsconfig.json --noEmit",
+    "typecheck:electron": "tsc -p tsconfig.electron.json --noEmit",
+    "runtime:check": "node scripts/require_node.mjs",
+    "prepare:data": "node scripts/prepare_data.mjs",
+    "check": "npm run typecheck && npm test",
+    "postinstall": "install-electron && npm run prepare:data",
+    "predev": "npm run runtime:check && npm run prepare:data",
+    "prebuild": "npm run runtime:check && npm run prepare:data",
+    "pretypecheck": "npm run runtime:check && npm run prepare:data",
+    "pretest": "npm run runtime:check && npm run prepare:data"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "lucide-react": "^0.468.0",
+    "parse5": "8.0.1",
+    "prosemirror-history": "1.5.1",
+    "prosemirror-model": "1.25.12",
+    "prosemirror-state": "1.4.4",
+    "prosemirror-view": "1.42.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "saxes": "6.0.0",
+    "yauzl": "3.4.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/yauzl": "3.4.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "44.10.2",
+    "electron-builder": "26.18.0",
+    "esbuild": "0.28.2",
+    "jsdom": "^30.0.1",
+    "tsx": "^4.23.13",
+    "typescript": "^5.7.2",
+    "vite": "6.4.5"
+  },
+  "build": {
+    "electronDist": "node_modules/electron/dist",
+    "directories": {
+      "output": "release"
+    },
+    "appId": "com.shifang.poetry.opensource",
+    "productName": "诗房开源版",
+    "asar": true,
+    "files": [
+      "dist/**",
+      "dist-electron/**",
+      "src/rules/**",
+      "electron/database/migrations/**",
+      "package.json",
+      "src/ci/forms.json",
+      "src/ci/cilin.json",
+      "assets/licenses/**"
+    ],
+    "mac": {
+      "target": [
+        "dir"
+      ],
+      "category": "public.app-category.productivity",
+      "icon": "assets/brand/shifang.icns"
+    },
+    "extraResources": [
+      {
+        "from": "LICENSE",
+        "to": "licenses/Shifang-MIT.txt"
+      },
+      {
+        "from": "assets/licenses/runtime-notices.txt",
+        "to": "licenses/dependencies.txt"
+      },
+      {
+        "from": "node_modules/electron/dist/LICENSE",
+        "to": "licenses/Electron-LICENSE"
+      },
+      {
+        "from": "node_modules/electron/dist/LICENSES.chromium.html",
+        "to": "licenses/Chromium.html"
+      }
+    ]
+  },
+  "engines": {
+    "node": "24.19.0"
+  },
+  "license": "MIT"
+}

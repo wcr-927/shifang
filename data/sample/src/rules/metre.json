@@ -1,0 +1,816 @@
+{
+  "datasetId": "sample-metre",
+  "datasetVersion": "sample-1",
+  "schemaVersion": 1,
+  "source": {
+    "note": "公开开发示例"
+  },
+  "templates": [
+    {
+      "id": "wujue",
+      "name": "五言绝句",
+      "shortName": "五绝",
+      "kind": "jueju",
+      "lineCount": 4,
+      "lineLength": 5,
+      "rhymeTone": "ping",
+      "recommendedVariantId": "zeqi-first-unrhymed",
+      "lineRoles": [
+        "起句",
+        "承句",
+        "转句",
+        "合句"
+      ],
+      "variants": [
+        {
+          "id": "zeqi-first-unrhymed",
+          "name": "仄起首句不入韵",
+          "style": "仄起",
+          "patterns": [
+            "仄仄平平仄",
+            "平平仄仄平",
+            "平平平仄仄",
+            "仄仄仄平平"
+          ],
+          "flexiblePositions": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "rhymePositions": [
+            1,
+            3
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "zeqi-first-rhymed",
+          "name": "仄起首句入韵",
+          "style": "仄起变体",
+          "patterns": [
+            "仄仄仄平平",
+            "平平仄仄平",
+            "平平平仄仄",
+            "仄仄仄平平"
+          ],
+          "flexiblePositions": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "rhymePositions": [
+            0,
+            1,
+            3
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "pingqi-first-unrhymed",
+          "name": "平起首句不入韵",
+          "style": "平起",
+          "patterns": [
+            "平平平仄仄",
+            "仄仄仄平平",
+            "仄仄平平仄",
+            "平平仄仄平"
+          ],
+          "flexiblePositions": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "rhymePositions": [
+            1,
+            3
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "pingqi-first-rhymed",
+          "name": "平起首句入韵",
+          "style": "平起变体",
+          "patterns": [
+            "平平仄仄平",
+            "仄仄仄平平",
+            "仄仄平平仄",
+            "平平仄仄平"
+          ],
+          "flexiblePositions": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "rhymePositions": [
+            0,
+            1,
+            3
+          ],
+          "note": "按所选谱式校对。"
+        }
+      ]
+    },
+    {
+      "id": "qijue",
+      "name": "七言绝句",
+      "shortName": "七绝",
+      "kind": "jueju",
+      "lineCount": 4,
+      "lineLength": 7,
+      "rhymeTone": "ping",
+      "recommendedVariantId": "pingqi-first-rhymed",
+      "lineRoles": [
+        "起句",
+        "承句",
+        "转句",
+        "合句"
+      ],
+      "variants": [
+        {
+          "id": "zeqi-first-rhymed",
+          "name": "仄起首句入韵",
+          "style": "仄起",
+          "patterns": [
+            "仄仄平平仄仄平",
+            "平平仄仄仄平平",
+            "平平仄仄平平仄",
+            "仄仄平平仄仄平"
+          ],
+          "flexiblePositions": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "rhymePositions": [
+            0,
+            1,
+            3
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "zeqi-first-unrhymed",
+          "name": "仄起首句不入韵",
+          "style": "仄起变体",
+          "patterns": [
+            "仄仄平平平仄仄",
+            "平平仄仄仄平平",
+            "平平仄仄平平仄",
+            "仄仄平平仄仄平"
+          ],
+          "flexiblePositions": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "rhymePositions": [
+            1,
+            3
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "pingqi-first-rhymed",
+          "name": "平起首句入韵",
+          "style": "平起",
+          "patterns": [
+            "平平仄仄仄平平",
+            "仄仄平平仄仄平",
+            "仄仄平平平仄仄",
+            "平平仄仄仄平平"
+          ],
+          "flexiblePositions": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "rhymePositions": [
+            0,
+            1,
+            3
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "pingqi-first-unrhymed",
+          "name": "平起首句不入韵",
+          "style": "平起变体",
+          "patterns": [
+            "平平仄仄平平仄",
+            "仄仄平平仄仄平",
+            "仄仄平平平仄仄",
+            "平平仄仄仄平平"
+          ],
+          "flexiblePositions": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "rhymePositions": [
+            1,
+            3
+          ],
+          "note": "按所选谱式校对。"
+        }
+      ]
+    },
+    {
+      "id": "wulv",
+      "name": "五言律诗",
+      "shortName": "五律",
+      "kind": "lushi",
+      "lineCount": 8,
+      "lineLength": 5,
+      "rhymeTone": "ping",
+      "recommendedVariantId": "zeqi-first-unrhymed",
+      "lineRoles": [
+        "首联出句",
+        "首联对句",
+        "颔联出句",
+        "颔联对句",
+        "颈联出句",
+        "颈联对句",
+        "尾联出句",
+        "尾联对句"
+      ],
+      "coupletPairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "nianPositions": [
+        2,
+        4,
+        6
+      ],
+      "variants": [
+        {
+          "id": "zeqi-first-unrhymed",
+          "name": "仄起首句不入韵",
+          "style": "仄起",
+          "patterns": [
+            "仄仄平平仄",
+            "平平仄仄平",
+            "平平平仄仄",
+            "仄仄仄平平",
+            "仄仄平平仄",
+            "平平仄仄平",
+            "平平平仄仄",
+            "仄仄仄平平"
+          ],
+          "flexiblePositions": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "rhymePositions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "zeqi-first-rhymed",
+          "name": "仄起首句入韵",
+          "style": "仄起变体",
+          "patterns": [
+            "仄仄仄平平",
+            "平平仄仄平",
+            "平平平仄仄",
+            "仄仄仄平平",
+            "仄仄平平仄",
+            "平平仄仄平",
+            "平平平仄仄",
+            "仄仄仄平平"
+          ],
+          "flexiblePositions": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "rhymePositions": [
+            0,
+            1,
+            3,
+            5,
+            7
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "pingqi-first-unrhymed",
+          "name": "平起首句不入韵",
+          "style": "平起",
+          "patterns": [
+            "平平平仄仄",
+            "仄仄仄平平",
+            "仄仄平平仄",
+            "平平仄仄平",
+            "平平平仄仄",
+            "仄仄仄平平",
+            "仄仄平平仄",
+            "平平仄仄平"
+          ],
+          "flexiblePositions": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "rhymePositions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "pingqi-first-rhymed",
+          "name": "平起首句入韵",
+          "style": "平起变体",
+          "patterns": [
+            "平平仄仄平",
+            "仄仄仄平平",
+            "仄仄平平仄",
+            "平平仄仄平",
+            "平平平仄仄",
+            "仄仄仄平平",
+            "仄仄平平仄",
+            "平平仄仄平"
+          ],
+          "flexiblePositions": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "rhymePositions": [
+            0,
+            1,
+            3,
+            5,
+            7
+          ],
+          "note": "按所选谱式校对。"
+        }
+      ]
+    },
+    {
+      "id": "qilv",
+      "name": "七言律诗",
+      "shortName": "七律",
+      "kind": "lushi",
+      "lineCount": 8,
+      "lineLength": 7,
+      "rhymeTone": "ping",
+      "recommendedVariantId": "zeqi-first-rhymed",
+      "lineRoles": [
+        "首联出句",
+        "首联对句",
+        "颔联出句",
+        "颔联对句",
+        "颈联出句",
+        "颈联对句",
+        "尾联出句",
+        "尾联对句"
+      ],
+      "coupletPairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "nianPositions": [
+        2,
+        4,
+        6
+      ],
+      "variants": [
+        {
+          "id": "zeqi-first-rhymed",
+          "name": "仄起首句入韵",
+          "style": "仄起",
+          "patterns": [
+            "仄仄平平仄仄平",
+            "平平仄仄仄平平",
+            "平平仄仄平平仄",
+            "仄仄平平仄仄平",
+            "仄仄平平平仄仄",
+            "平平仄仄仄平平",
+            "平平仄仄平平仄",
+            "仄仄平平仄仄平"
+          ],
+          "flexiblePositions": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "rhymePositions": [
+            0,
+            1,
+            3,
+            5,
+            7
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "zeqi-first-unrhymed",
+          "name": "仄起首句不入韵",
+          "style": "仄起变体",
+          "patterns": [
+            "仄仄平平平仄仄",
+            "平平仄仄仄平平",
+            "平平仄仄平平仄",
+            "仄仄平平仄仄平",
+            "仄仄平平平仄仄",
+            "平平仄仄仄平平",
+            "平平仄仄平平仄",
+            "仄仄平平仄仄平"
+          ],
+          "flexiblePositions": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "rhymePositions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "pingqi-first-rhymed",
+          "name": "平起首句入韵",
+          "style": "平起",
+          "patterns": [
+            "平平仄仄仄平平",
+            "仄仄平平仄仄平",
+            "仄仄平平平仄仄",
+            "平平仄仄仄平平",
+            "平平仄仄平平仄",
+            "仄仄平平仄仄平",
+            "仄仄平平平仄仄",
+            "平平仄仄仄平平"
+          ],
+          "flexiblePositions": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "rhymePositions": [
+            0,
+            1,
+            3,
+            5,
+            7
+          ],
+          "note": "按所选谱式校对。"
+        },
+        {
+          "id": "pingqi-first-unrhymed",
+          "name": "平起首句不入韵",
+          "style": "平起变体",
+          "patterns": [
+            "平平仄仄平平仄",
+            "仄仄平平仄仄平",
+            "仄仄平平平仄仄",
+            "平平仄仄仄平平",
+            "平平仄仄平平仄",
+            "仄仄平平仄仄平",
+            "仄仄平平平仄仄",
+            "平平仄仄仄平平"
+          ],
+          "flexiblePositions": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "rhymePositions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "note": "按所选谱式校对。"
+        }
+      ]
+    }
+  ]
+}

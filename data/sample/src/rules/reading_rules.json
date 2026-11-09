@@ -1,0 +1,28 @@
+{
+  "datasetId": "sample-context",
+  "datasetVersion": "sample-1",
+  "schemaVersion": 1,
+  "source": {
+    "note": "公开开发示例"
+  },
+  "rules": [
+    {
+      "id": "sample-seniority",
+      "phrase": "长幼",
+      "targetCharacter": "长",
+      "targetOffset": 0,
+      "candidateId": "长:shang-22yang",
+      "priority": 1,
+      "sourceGloss": "年长与年幼"
+    },
+    {
+      "id": "sample-difficulty",
+      "phrase": "艰难",
+      "targetCharacter": "难",
+      "targetOffset": 1,
+      "candidateId": "难:ping-14han",
+      "priority": 1,
+      "sourceGloss": "困苦或不容易"
+    }
+  ]
+}

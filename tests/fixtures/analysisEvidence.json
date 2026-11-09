@@ -1,0 +1,538 @@
+{
+  "source": "Copied unchanged fixture mappings and inputs from historical audit/metre/algorithm_cases.json; new assertions live in R1 tests.",
+  "fixture": {
+    "datasetVersion": "synthetic-complete-1",
+    "completeness": "Each listed character has exactly the complete listed candidates; 龘 is deliberately unknown. Group labels A/B/C/D/Z are abstract and distinct. Modern pronunciations and meanings are deliberately not assigned.",
+    "characters": {
+      "春": [
+        [
+          "ping",
+          "A"
+        ]
+      ],
+      "夜": [
+        [
+          "ze",
+          "Z"
+        ]
+      ],
+      "甲": [
+        [
+          "ping",
+          "A"
+        ],
+        [
+          "ping",
+          "B"
+        ]
+      ],
+      "乙": [
+        [
+          "ping",
+          "C"
+        ],
+        [
+          "ping",
+          "D"
+        ]
+      ],
+      "丙": [
+        [
+          "ping",
+          "B"
+        ],
+        [
+          "ping",
+          "C"
+        ]
+      ],
+      "丁": [
+        [
+          "ping",
+          "A"
+        ],
+        [
+          "ping",
+          "C"
+        ]
+      ],
+      "戊": [
+        [
+          "ping",
+          "A"
+        ],
+        [
+          "ping",
+          "A"
+        ]
+      ],
+      "己": [
+        [
+          "ping",
+          "A"
+        ],
+        [
+          "ping",
+          "B"
+        ],
+        [
+          "ping",
+          "C"
+        ]
+      ],
+      "庚": [
+        [
+          "ping",
+          "A"
+        ]
+      ],
+      "辛": [
+        [
+          "ping",
+          "B"
+        ]
+      ],
+      "壬": [
+        [
+          "ze",
+          "Z"
+        ]
+      ],
+      "癸": [
+        [
+          "ping",
+          "A"
+        ],
+        [
+          "ze",
+          "Z"
+        ]
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "ALG-R01",
+      "category": "C 小型合成规则夹具",
+      "title": "两个完备但不相交的多候选韵部集合",
+      "input": "夜夜春春夜\n春春夜夜甲\n春春春夜夜\n夜夜夜春乙",
+      "slots": [
+        "夜夜春春夜",
+        "春春夜夜甲",
+        "春春春夜夜",
+        "夜夜夜春乙"
+      ],
+      "template": "wujue",
+      "variant": "zeqi-first-unrhymed",
+      "overrides": [],
+      "datasetVersions": {
+        "metre": "production 1.0.0",
+        "pingze": "synthetic-complete-1",
+        "reading_rules": "audit-empty-phrase-rules-1"
+      },
+      "expected": {
+        "assertions": [
+          {
+            "path": "analysis.rhyme.status",
+            "op": "eq",
+            "value": "mismatch"
+          },
+          {
+            "path": "analysis.rhyme.commonGroupIds",
+            "op": "eq",
+            "value": []
+          },
+          {
+            "path": "rhymeGroupIssueCount",
+            "op": "gte",
+            "value": 1
+          }
+        ],
+        "basis": "Strict same-group rhyme with complete sets {A,B} and {C,D}: the Cartesian choices contain no same-group assignment. Nonunique reading does not erase this proof.",
+        "certainty": "确定（仅在明示夹具前提下）"
+      },
+      "uiImplications": "See actual server-rendered MetreSummary/RhymeSummary/ReadingConfirmationPanel in results; does not claim a desktop interaction was performed.",
+      "failureClassification": "确认漏报",
+      "codeLocations": [
+        "src/poetry/analysis/poemAnalyzer.ts:367-429",
+        "src/components/editor/RhymeSummary.tsx:5-7"
+      ],
+      "reproCommand": "node --import tsx audit/metre/algorithm_audit.mjs ALG-R01"
+    },
+    {
+      "case_id": "ALG-R02",
+      "category": "C 小型合成规则夹具",
+      "title": "三集合两两相交但全交为空",
+      "input": "夜夜春春夜\n春春夜夜甲\n春春春夜夜\n夜夜夜春丙\n夜夜春春夜\n春春夜夜丁\n春春春夜夜\n夜夜夜春己",
+      "slots": [
+        "夜夜春春夜",
+        "春春夜夜甲",
+        "春春春夜夜",
+        "夜夜夜春丙",
+        "夜夜春春夜",
+        "春春夜夜丁",
+        "春春春夜夜",
+        "夜夜夜春己"
+      ],
+      "template": "wulv",
+      "variant": "zeqi-first-unrhymed",
+      "overrides": [],
+      "datasetVersions": {
+        "metre": "production 1.0.0",
+        "pingze": "synthetic-complete-1",
+        "reading_rules": "audit-empty-phrase-rules-1"
+      },
+      "expected": {
+        "assertions": [
+          {
+            "path": "analysis.rhyme.status",
+            "op": "eq",
+            "value": "mismatch"
+          },
+          {
+            "path": "analysis.rhyme.commonGroupIds",
+            "op": "eq",
+            "value": []
+          },
+          {
+            "path": "rhymeGroupIssueCount",
+            "op": "gte",
+            "value": 1
+          }
+        ],
+        "basis": "Complete sets {A,B}, {B,C}, {A,C}, {A,B,C}; every first-three pair intersects, but the global intersection is empty, so strict same-group rhyme has no assignment.",
+        "certainty": "确定（仅在明示夹具前提下）"
+      },
+      "uiImplications": "See actual server-rendered MetreSummary/RhymeSummary/ReadingConfirmationPanel in results; does not claim a desktop interaction was performed.",
+      "failureClassification": "确认漏报",
+      "codeLocations": [
+        "src/poetry/analysis/poemAnalyzer.ts:367-429",
+        "src/components/editor/RhymeSummary.tsx:5-7"
+      ],
+      "reproCommand": "node --import tsx audit/metre/algorithm_audit.mjs ALG-R02"
+    },
+    {
+      "case_id": "ALG-R03",
+      "category": "C 小型合成规则夹具",
+      "title": "多个读音映射同一韵部无需假设具体义项",
+      "input": "夜夜春春夜\n春春夜夜戊\n春春春夜夜\n夜夜夜春庚",
+      "slots": [
+        "夜夜春春夜",
+        "春春夜夜戊",
+        "春春春夜夜",
+        "夜夜夜春庚"
+      ],
+      "template": "wujue",
+      "variant": "zeqi-first-unrhymed",
+      "overrides": [],
+      "datasetVersions": {
+        "metre": "production 1.0.0",
+        "pingze": "synthetic-complete-1",
+        "reading_rules": "audit-empty-phrase-rules-1"
+      },
+      "expected": {
+        "assertions": [
+          {
+            "path": "analysis.rhyme.status",
+            "op": "eq",
+            "value": "compatible"
+          },
+          {
+            "path": "analysis.rhyme.commonGroupIds",
+            "op": "eq",
+            "value": [
+              "A"
+            ]
+          },
+          {
+            "path": "analysis.lines.1.characters.4.reading.status",
+            "op": "eq",
+            "value": "ambiguous"
+          },
+          {
+            "path": "analysis.rhyme.feet.0.selectedGroupId",
+            "op": "eq",
+            "value": "A"
+          }
+        ],
+        "basis": "Two semantic candidates both have ping/A. Rhyme and tone are determined; reading meaning remains ambiguous. No requirement to claim a unique semantic reading.",
+        "certainty": "确定（仅在明示夹具前提下）"
+      },
+      "uiImplications": "See actual server-rendered MetreSummary/RhymeSummary/ReadingConfirmationPanel in results; does not claim a desktop interaction was performed.",
+      "failureClassification": "确认漏报",
+      "codeLocations": [
+        "src/poetry/analysis/poemAnalyzer.ts:367-429",
+        "src/components/editor/RhymeSummary.tsx:5-7"
+      ],
+      "reproCommand": "node --import tsx audit/metre/algorithm_audit.mjs ALG-R03"
+    },
+    {
+      "case_id": "ALG-R04",
+      "category": "C 小型合成规则夹具",
+      "title": "仅候选选择存在共同韵部，语义未确认",
+      "input": "夜夜春春夜\n春春夜夜甲\n春春春夜夜\n夜夜夜春庚",
+      "slots": [
+        "夜夜春春夜",
+        "春春夜夜甲",
+        "春春春夜夜",
+        "夜夜夜春庚"
+      ],
+      "template": "wujue",
+      "variant": "zeqi-first-unrhymed",
+      "overrides": [],
+      "datasetVersions": {
+        "metre": "production 1.0.0",
+        "pingze": "synthetic-complete-1",
+        "reading_rules": "audit-empty-phrase-rules-1"
+      },
+      "expected": {
+        "assertions": [
+          {
+            "path": "analysis.rhyme.status",
+            "op": "eq",
+            "value": "ambiguous"
+          },
+          {
+            "path": "analysis.rhyme.commonGroupIds",
+            "op": "eq",
+            "value": [
+              "A"
+            ]
+          },
+          {
+            "path": "analysis.rhyme.feet.0.selectedGroupId",
+            "op": "eq",
+            "value": null
+          },
+          {
+            "path": "analysis.lines.1.characters.4.reading.selectedCandidate",
+            "op": "eq",
+            "value": null
+          }
+        ],
+        "basis": "A feasible assignment exists, but the fixture gives no semantic evidence to choose A instead of B. Expected candidate compatibility, not silently selecting the metrically favorable candidate.",
+        "certainty": "确定（仅在明示夹具前提下）"
+      },
+      "uiImplications": "See actual server-rendered MetreSummary/RhymeSummary/ReadingConfirmationPanel in results; does not claim a desktop interaction was performed.",
+      "failureClassification": "确认漏报",
+      "codeLocations": [
+        "src/poetry/analysis/poemAnalyzer.ts:367-429",
+        "src/components/editor/RhymeSummary.tsx:5-7"
+      ],
+      "reproCommand": "node --import tsx audit/metre/algorithm_audit.mjs ALG-R04"
+    },
+    {
+      "case_id": "ALG-R05",
+      "category": "C 小型合成规则夹具",
+      "title": "缺失、未知并存不掩盖两个已确认冲突",
+      "input": "夜夜春春夜\n春春夜夜庚\n春春春夜夜\n夜夜夜春辛\n夜夜春春夜\n\n春春春夜夜\n夜夜夜春龘",
+      "slots": [
+        "夜夜春春夜",
+        "春春夜夜庚",
+        "春春春夜夜",
+        "夜夜夜春辛",
+        "夜夜春春夜",
+        "",
+        "春春春夜夜",
+        "夜夜夜春龘"
+      ],
+      "template": "wulv",
+      "variant": "zeqi-first-unrhymed",
+      "overrides": [],
+      "datasetVersions": {
+        "metre": "production 1.0.0",
+        "pingze": "synthetic-complete-1",
+        "reading_rules": "audit-empty-phrase-rules-1"
+      },
+      "expected": {
+        "assertions": [
+          {
+            "path": "analysis.status",
+            "op": "eq",
+            "value": "incomplete"
+          },
+          {
+            "path": "analysis.rhyme.status",
+            "op": "eq",
+            "value": "mismatch"
+          },
+          {
+            "path": "analysis.rhyme.missingLineIndexes",
+            "op": "eq",
+            "value": [
+              5
+            ]
+          },
+          {
+            "path": "analysis.rhyme.feet.3.rhymeStatus",
+            "op": "eq",
+            "value": "unknown"
+          },
+          {
+            "path": "rhymeGroupIssueCount",
+            "op": "gte",
+            "value": 2
+          }
+        ],
+        "basis": "Certain A and certain B already contradict strict same-group rhyme. Missing slot and unknown Han contribute no negative evidence, and do not invalidate this existing contradiction.",
+        "certainty": "确定（仅在明示夹具前提下）"
+      },
+      "uiImplications": "See actual server-rendered MetreSummary/RhymeSummary/ReadingConfirmationPanel in results; does not claim a desktop interaction was performed.",
+      "failureClassification": "确认漏报",
+      "codeLocations": [
+        "src/poetry/analysis/poemAnalyzer.ts:367-429",
+        "src/components/editor/RhymeSummary.tsx:5-7"
+      ],
+      "reproCommand": "node --import tsx audit/metre/algorithm_audit.mjs ALG-R05"
+    },
+    {
+      "case_id": "ALG-R06",
+      "category": "C 小型合成规则夹具",
+      "title": "只写一个韵脚并另有缺失不能判冲突",
+      "input": "夜夜春春夜\n春春夜夜庚\n春春春夜夜\n",
+      "slots": [
+        "夜夜春春夜",
+        "春春夜夜庚",
+        "春春春夜夜",
+        ""
+      ],
+      "template": "wujue",
+      "variant": "zeqi-first-unrhymed",
+      "overrides": [],
+      "datasetVersions": {
+        "metre": "production 1.0.0",
+        "pingze": "synthetic-complete-1",
+        "reading_rules": "audit-empty-phrase-rules-1"
+      },
+      "expected": {
+        "assertions": [
+          {
+            "path": "analysis.status",
+            "op": "eq",
+            "value": "incomplete"
+          },
+          {
+            "path": "analysis.rhyme.status",
+            "op": "eq",
+            "value": "missing"
+          },
+          {
+            "path": "rhymeGroupIssueCount",
+            "op": "eq",
+            "value": 0
+          }
+        ],
+        "basis": "Only one known foot A and a missing required slot. There is no incompatible pair or infeasible complete candidate system.",
+        "certainty": "确定（仅在明示夹具前提下）"
+      },
+      "uiImplications": "See actual server-rendered MetreSummary/RhymeSummary/ReadingConfirmationPanel in results; does not claim a desktop interaction was performed.",
+      "failureClassification": "确认误报",
+      "codeLocations": [
+        "src/poetry/analysis/poemAnalyzer.ts:367-429",
+        "src/components/editor/RhymeSummary.tsx:5-7"
+      ],
+      "reproCommand": "node --import tsx audit/metre/algorithm_audit.mjs ALG-R06"
+    },
+    {
+      "case_id": "ALG-R07",
+      "category": "C 小型合成规则夹具",
+      "title": "未知韵脚不当作空集合制造冲突",
+      "input": "夜夜春春夜\n春春夜夜庚\n春春春夜夜\n夜夜夜春龘",
+      "slots": [
+        "夜夜春春夜",
+        "春春夜夜庚",
+        "春春春夜夜",
+        "夜夜夜春龘"
+      ],
+      "template": "wujue",
+      "variant": "zeqi-first-unrhymed",
+      "overrides": [],
+      "datasetVersions": {
+        "metre": "production 1.0.0",
+        "pingze": "synthetic-complete-1",
+        "reading_rules": "audit-empty-phrase-rules-1"
+      },
+      "expected": {
+        "assertions": [
+          {
+            "path": "analysis.rhyme.status",
+            "op": "eq",
+            "value": "unknown"
+          },
+          {
+            "path": "rhymeGroupIssueCount",
+            "op": "eq",
+            "value": 0
+          },
+          {
+            "path": "analysis.status",
+            "op": "eq",
+            "value": "needs-confirmation"
+          }
+        ],
+        "basis": "The fixture deliberately lacks 龘. Unknown is incomplete evidence, not a known impossible candidate set.",
+        "certainty": "确定（仅在明示夹具前提下）"
+      },
+      "uiImplications": "See actual server-rendered MetreSummary/RhymeSummary/ReadingConfirmationPanel in results; does not claim a desktop interaction was performed.",
+      "failureClassification": "确认误报",
+      "codeLocations": [
+        "src/poetry/analysis/poemAnalyzer.ts:367-429",
+        "src/components/editor/RhymeSummary.tsx:5-7"
+      ],
+      "reproCommand": "node --import tsx audit/metre/algorithm_audit.mjs ALG-R07"
+    },
+    {
+      "case_id": "ALG-R08",
+      "category": "C 小型合成规则夹具",
+      "title": "仄声韵脚与韵部不相容分开",
+      "input": "夜夜春春夜\n春春夜夜庚\n春春春夜夜\n夜夜夜春壬",
+      "slots": [
+        "夜夜春春夜",
+        "春春夜夜庚",
+        "春春春夜夜",
+        "夜夜夜春壬"
+      ],
+      "template": "wujue",
+      "variant": "zeqi-first-unrhymed",
+      "overrides": [],
+      "datasetVersions": {
+        "metre": "production 1.0.0",
+        "pingze": "synthetic-complete-1",
+        "reading_rules": "audit-empty-phrase-rules-1"
+      },
+      "expected": {
+        "assertions": [
+          {
+            "path": "rhymeToneIssueCount",
+            "op": "eq",
+            "value": 1
+          },
+          {
+            "path": "rhymeGroupIssueCount",
+            "op": "eq",
+            "value": 0
+          },
+          {
+            "path": "analysis.rhyme.feet.1.toneStatus",
+            "op": "eq",
+            "value": "mismatch"
+          },
+          {
+            "path": "analysis.rhyme.status",
+            "op": "eq",
+            "value": "unknown"
+          }
+        ],
+        "basis": "The complete 壬 fixture is ze only. In ping rhyme mode this proves a tone violation; no ping-group candidates exist, which is not independent evidence for a same-group contradiction.",
+        "certainty": "确定（仅在明示夹具前提下）"
+      },
+      "uiImplications": "See actual server-rendered MetreSummary/RhymeSummary/ReadingConfirmationPanel in results; does not claim a desktop interaction was performed.",
+      "failureClassification": "确认漏报",
+      "codeLocations": [
+        "src/poetry/analysis/poemAnalyzer.ts:367-429",
+        "src/components/editor/RhymeSummary.tsx:5-7"
+      ],
+      "reproCommand": "node --import tsx audit/metre/algorithm_audit.mjs ALG-R08"
+    }
+  ]
+}

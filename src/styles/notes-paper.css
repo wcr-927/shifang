@@ -1,0 +1,43 @@
+.reading-view,.notes-overview{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+.notes-layout{margin:0 26px 26px;display:grid;grid-template-columns:210px minmax(0,1fr);flex:1;min-height:0;overflow:hidden}
+.notes-layout>aside{padding:28px 22px;display:grid;grid-template-rows:40px minmax(0,1.2fr) minmax(0,1fr);min-height:0;border-right:1px solid #e4ddd2;overflow:hidden}
+.notes-side-section{display:flex;flex-direction:column;min-height:0;border-top:1px solid var(--reading-line);padding-top:22px;margin-top:20px}.notes-books-section{margin-top:32px}
+.notes-side-section h2{font:18px/24px var(--reading-serif);margin:0 0 12px}.notes-authors,.notes-books{overflow:auto;min-height:0;scrollbar-gutter:stable;padding-right:7px}
+.reading-workspace .notes-scope{display:grid;grid-template-columns:minmax(0,1fr) 28px;gap:8px;text-align:left;width:100%;padding:8px 0;font:16px/24px var(--reading-serif);border:0}
+.notes-scope>span:last-child{font:12px/24px -apple-system,sans-serif;text-align:right;font-variant-numeric:tabular-nums;color:#948a7e}.reading-workspace .notes-scope[aria-pressed=true]{color:#8b5c58}.notes-scope .notes-book-name{font:14px/1.8 var(--reading-serif);overflow-wrap:anywhere;color:inherit;text-align:left}
+.notes-layout>main{padding:28px 30px 24px 36px;display:flex;flex-direction:column;min-width:0;min-height:0}
+.notes-layout main>header{display:flex;align-items:baseline;gap:14px;padding:0 14px 20px 0}.notes-layout h1{font:32px/1.4 var(--reading-serif);letter-spacing:2px;overflow-wrap:anywhere}.notes-count{font-size:12px;color:#827a72;white-space:nowrap}.notes-layout header .manuscript-stamp{margin-left:auto;flex-shrink:0}
+.notes-list{overflow:auto;scrollbar-gutter:stable;overscroll-behavior:contain;padding-right:14px;border-top:1px solid var(--reading-line);flex:1;min-height:0}
+.notes-list article{padding:24px 0;border-bottom:1px solid #7d776e1f}.notes-quote{display:block;width:100%;text-align:left}.notes-quote blockquote{margin:0;font:23px/1.8 var(--reading-serif);letter-spacing:.5px;white-space:pre-wrap;overflow-wrap:anywhere}
+.reading-workspace .notes-origin{display:block;text-align:left;margin-top:10px;font:12px/1.9 var(--reading-serif);color:#8a8075}.notes-origin>span{color:#b2a89b;padding:0 10px}
+.notes-detail{display:grid;grid-template-columns:minmax(0,1fr) 32px;gap:14px;align-items:start;margin-top:18px}.notes-margin{border-left:1px solid #d9cebd;padding-left:13px;min-width:0}
+.reading-workspace .notes-note-text,.reading-workspace .notes-margin textarea{display:block;width:100%;padding:0;margin:0;font:16px/1.95 var(--reading-serif);color:#756b61;text-align:left;white-space:pre-wrap;overflow-wrap:anywhere;letter-spacing:0;min-height:31px;border:0;border-radius:0;box-shadow:none;background:transparent;outline:none;resize:none;overflow:hidden}.reading-workspace .notes-margin textarea{color:#51483f}
+.reading-workspace .notes-done{font-size:12px;line-height:31px;color:#8a8075;white-space:nowrap}
+.notes-find{border-top:1px solid var(--reading-line);padding:18px 0 20px 16px;display:flex;gap:20px;align-items:baseline}.reading-workspace .notes-find input{width:min(260px,70%);padding:6px 0 9px;background:transparent;border:0;border-bottom:1px solid #e3dfd9;border-radius:0;outline:none;box-shadow:none;font:15px/1.7 var(--reading-serif)}.notes-find button{font-size:12px;color:#8a8075}.notes-find input::placeholder{color:#a49b90}
+.notes-empty{font:17px var(--reading-serif);color:#92877b;padding:60px 0;text-align:center}.notes-error{font-size:13px;color:#9d594a;padding:12px 0}.notes-error button{margin-left:15px}.notes-load{margin:20px 0;font-size:12px!important;color:#8a8075!important}
+.app-shell .dialog.note-source-dialog{width:min(800px,calc(100vw - 72px));flex:0 1 800px;max-height:calc(100vh - 80px);padding:28px 32px;display:flex;flex-direction:column;overflow:hidden}
+.note-source-dialog header{align-items:baseline;gap:20px}.note-source-dialog header h2{font:28px/1.6 "Songti SC",serif;min-width:0;overflow-wrap:anywhere}.note-source-dialog header button{flex-shrink:0}.note-source-byline{margin:18px 0;color:#8a8075;font:13px/1.8 "Songti SC",serif}
+.note-source-body{overflow:auto;min-height:0;scrollbar-gutter:stable;padding-right:16px;font:17px/1.95 "Songti SC",serif;color:#514a41}.note-source-body .reference-reading-block{margin-bottom:18px}.note-source-body p{font:inherit}.note-source-body img{max-width:100%;height:auto}.note-source-body mark{background:#dacfbb70;color:inherit}.note-source-body button{background:transparent;border:0;box-shadow:none;color:#776b5d;font-size:12px}.note-source-body table{border-collapse:collapse;max-width:100%}.note-source-body td,.note-source-body th{border:1px solid #ddd5ca;padding:6px}
+@media(max-width:1000px){.notes-layout{grid-template-columns:190px minmax(0,1fr)}.notes-layout>main{padding:26px 22px}.notes-quote blockquote{font-size:21px}}
+
+.notes-layout>aside>.notes-scope{padding-right:calc(7px + var(--notes-gutter,0px))}
+.app-shell .note-source-dialog .reference-reading-block{font:16px/2 "Songti SC",serif}
+.app-shell .note-source-dialog .reference-reading-block p{font:inherit;margin:0 0 16px}
+/* Human review: one text baseline per hierarchy; compact content, reversible empty notes. */
+.notes-layout{margin-top:20px}.notes-side-section h2{margin-left:-1px}
+.reading-workspace .notes-scope{font:16px/26px var(--reading-serif);padding:7px 0;align-items:baseline}
+.notes-scope .notes-book-name{font:16px/26px var(--reading-serif)}
+.notes-layout main>header h1{margin-left:-3px}
+.notes-list article{padding:18px 0 20px}.notes-quote blockquote{font-size:22px;line-height:1.8}
+.notes-origin{margin-top:8px!important}.notes-detail{margin-top:11px}.notes-list article>*{max-width:760px}
+/* Compact two-column excerpt overview; row order follows reading order. */
+.notes-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:36px;align-content:start;align-items:stretch}
+.notes-list article{min-width:0;padding:16px 34px 16px 0}
+.notes-quote blockquote{font:18px/1.75 var(--reading-serif);letter-spacing:0}
+.notes-list .notes-origin{margin-top:7px!important;font-size:12px;line-height:1.75}
+.notes-list .notes-detail{margin-top:9px;gap:10px}
+.reading-workspace .notes-list .notes-note-text,.reading-workspace .notes-list .notes-margin textarea{font:14px/1.8 var(--reading-serif);min-height:25px}
+.reading-workspace .notes-list .notes-done{line-height:25px}
+.notes-list .notes-empty,.notes-list .notes-load{grid-column:1/-1}
+.notes-list .notes-load{justify-self:start}
+@media(max-width:1050px){.notes-list{grid-template-columns:minmax(0,1fr)}}

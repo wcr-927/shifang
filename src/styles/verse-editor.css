@@ -1,0 +1,44 @@
+.verse-editor{position:relative;outline:none;white-space:normal;caret-color:#302e2d;user-select:text;-webkit-user-select:text;}
+.verse-editor:focus{outline:none;}
+.verse-editor ::selection{background:#d9d5cb;color:#302e2d;}
+.verse-node{position:relative;display:inline-block;vertical-align:top;width:calc(var(--verse-width) + 22px);max-width:100%;padding-bottom:16px;margin:0 8px 12px 0;line-height:1.5;}
+.verse-text{position:relative;display:block;min-height:1.5em;width:var(--verse-width);max-width:calc(100% - 22px);white-space:pre-wrap;overflow-wrap:anywhere;font:500 var(--verse-font)/1.5 "Songti SC","STSong",serif;letter-spacing:2px;color:#35302c;}
+::highlight(verse-hover){color:#465f79;}
+.verse-markers{position:absolute;left:0;right:22px;bottom:0;height:11px;pointer-events:none;user-select:none;font:11px/11px -apple-system,"PingFang SC",sans-serif;}
+.verse-markers .tone-marker{position:absolute;transform:translateX(-50%);white-space:nowrap;}
+.verse-markers .verse-wide-mark{font-size:8px;letter-spacing:-.4px;}
+.verse-empty{position:absolute;top:0;left:0;display:flex;pointer-events:none;user-select:none;color:#c3bdb5;font:13px/1.5 -apple-system,sans-serif;height:calc(var(--verse-font)*1.5);align-items:center;}
+.verse-empty span{display:block;width:var(--verse-cell);text-align:center;}
+.verse-end{position:absolute;top:0;right:0;width:22px;display:flex;flex-direction:column;align-items:center;gap:5px;user-select:none;}
+.verse-end>span{height:calc(var(--verse-font)*1.5);font:var(--verse-font)/1.5 "Songti SC",serif;color:#716b66;}
+.verse-node[data-empty=true] .verse-end>span{color:#b9b1a8;}
+.verse-end button{border:0;padding:0;background:none;font:10px/11px -apple-system,sans-serif;color:#8a6c4c;}
+.verse-break{display:block;height:10px;user-select:none;pointer-events:none;}
+.verse-stanza-break{position:relative;height:0;}
+.verse-stanza-break:not(:first-child){height:22px;margin-bottom:22px;border-top:1px solid #e1dad280;}
+.verse-stanza-break>span{position:absolute;left:-36px;top:5px;font:12px/1.6 -apple-system,sans-serif;color:#8c8278;white-space:nowrap;}
+.verse-stanza-break:not(:first-child)>span{top:49px;}
+.verse-editor-ci{padding-left:40px;}
+.verse-editor-metre{display:grid;grid-template-columns:repeat(2,205px);gap:33px 17px;width:427px;max-width:100%;margin:0 auto;}
+.verse-editor-metre .verse-node{width:205px;margin:0;padding-bottom:21px;}
+.verse-editor-metre .verse-text{max-width:100%;}
+.verse-editor-metre.verse-five{grid-template-columns:repeat(2,151px);width:319px;}
+.verse-editor-metre.verse-five .verse-node{width:151px;}
+.verse-paste-backdrop{position:fixed;inset:0;z-index:100;background:#41382e33;display:flex;align-items:center;justify-content:center;}
+.verse-paste-backdrop>section{background:#fdfbf8;padding:28px;max-height:80vh;width:min(600px,90vw);overflow:auto;border:1px solid #d9d3cd;}
+.verse-paste-backdrop h2{font:26px/1.5 "Songti SC",serif;}
+.verse-paste-backdrop pre{font:18px/1.8 "Songti SC",serif;white-space:pre-wrap;}
+.verse-paste-backdrop footer{display:flex;gap:16px;justify-content:flex-end;}
+.verse-paste-backdrop button{font:14px/1.6 "Songti SC",serif;background:none;border:1px solid #d9c2bf;padding:4px 12px;color:#8b5c58;}
+.manuscript-column[data-syllables="5"] .verse-editor-metre{grid-template-columns:repeat(2,151px);width:319px;}
+.manuscript-column[data-syllables="5"] .verse-editor-metre .verse-node{width:151px;}
+.verse-overflow::before{content:'谱外原文';display:block;font:12px/1.6 -apple-system,sans-serif;color:#8c8278;}
+.verse-overflow~.verse-overflow::before{content:none;}
+.verse-editor-metre .verse-overflow{grid-column:1/-1;width:100%;}
+/* A couplet reserves 16px for punctuation; do not center a full-em glyph over the last character. */
+.verse-editor-metre .verse-end{left:var(--verse-width);right:auto;width:16px;}
+.verse-editor-metre .verse-end>span{display:block;width:16px;text-align:left;}
+/* Gaps are stored as full-em blanks; these dots are paint only and cannot enter copied text. */
+.verse-empty{display:block;width:100%;}
+.verse-empty span{position:absolute;top:0;height:100%;display:flex;align-items:center;justify-content:center;transform:translateX(-50%);}
+.verse-paste-backdrop textarea{display:block;width:100%;min-height:76px;resize:vertical;border:0;border-bottom:1px solid #8b806d30;outline:none;background:transparent;color:#484038;font:18px/1.8 "Songti SC",serif;}

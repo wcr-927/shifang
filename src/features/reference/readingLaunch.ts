@@ -1,0 +1,2 @@
+export interface ReadingLaunch{bookId:string;nodeId?:string;documentId?:string;title:string;revision:number;returnHome?:boolean;returnNotes?:boolean;sourceId?:string;scrollTop?:number;poemScrollTop?:number;chapterOffset?:number}
+export function recentReading():Omit<ReadingLaunch,'revision'>|null{try{const v=JSON.parse(localStorage.getItem('shifang.reading.last')??'null');return v&&typeof v.bookId==='string'&&typeof v.title==='string'&&(typeof v.nodeId==='string'||typeof v.documentId==='string')?v:null}catch{return null}}

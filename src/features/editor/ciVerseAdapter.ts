@@ -1,0 +1,9 @@
+import type { WorkAssistanceState } from '../../shared/assistanceState';
+import { getRhymeGroups, ciSegmentId } from './rhymeReference';
+import { markerReference, withRhymeMarker } from './rhymeMarkers';
+import { sourceCharacters } from '../../ci/analyze';
+import type { CiForm } from '../../ci/catalogue';
+import type { CiAnalysis } from '../../ci/analyze';
+import { ciToneMarkers } from './toneMarkers';
+import type { VerseSlot } from '../../components/editor/VerseEditor';
+export function ciVerseAdapter(form: CiForm, body: string, analysis: CiAnalysis, assistance?:WorkAssistanceState): VerseSlot[] { const lines = body.split('\n'), size = form.total <= 60 ? 24 : form.total <= 100 ? 22 : 20, groups = [...new Set(form.lines.flatMap(l => l.rhyme ? [l.rhyme] : []))]; const starts = new Map<number, string>(); let start = 0; form.sections.forEach((count, i) => { starts.set(start, form.sections.length === 1 ? '单片' : form.sections.length === 2 ? i ? '下片' : '上片' : `第${i + 1}片`); start += count; }); return form.lines.map((line, i) => ({ width: line.pattern.length * (size + 2), fontSize: size, markers: withRhymeMarker(ciToneMarkers(lines[i]??'',line.pattern,analysis,i),lines[i]??'',line.rhyme?(()=>{const foot=analysis.feet.find(f=>f.key===line.rhyme)?.items.find(f=>f.line===i);return foot?{line:i,character:sourceCharacters(lines[i]??'').at(-1)?.character??'',groupIds:foot.options.map(o=>`cilin-${o.group}`)}:undefined})():undefined,markerReference(assistance,getRhymeGroups({kind:'ci',value:analysis,formId:form.id}),lines,ciSegmentId(form.id,line.rhyme??''))), breakBefore: i > 0 && Boolean(form.lines[i - 1].rhyme), stanza: starts.get(i), rhymeLabel: line.rhyme ? (form.repeat.some(pair => pair[0] === i) ? '叠韵' : groups.length === 1 ? '韵' : `韵${['一', '二', '三', '四'][groups.indexOf(line.rhyme)] ?? line.rhyme}`) : undefined, punctuation: line.rhyme ? '。' : '，' })); }

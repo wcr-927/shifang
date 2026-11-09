@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';import {test} from 'node:test';import React from 'react';import {JSDOM} from 'jsdom';
+const dom=new JSDOM('<html><body></body></html>',{url:'http://localhost/'});for(const key of ['window','document','navigator','HTMLElement','Event'])Object.defineProperty(globalThis,key,{value:key==='window'?dom.window:(dom.window as any)[key],configurable:true});
+const {renderHook,act,cleanup}=await import('@testing-library/react');const {useReadingNotes}=await import('../../src/components/reading/useReadingNotes.ts');const {desktopApi}=await import('../../src/services/desktopApi.ts');
+test('empty flush never blocks later writes; edits during a write are flushed; errors retain text for retry',async()=>{
+ const original=desktopApi.reference.updateReadingNote,written:string[]=[];let release:()=>void=()=>{};
+ try{desktopApi.reference.updateReadingNote=async r=>{written.push(r.note)};const hook=renderHook(()=>useReadingNotes(true));await act(async()=>{await hook.result.current.flush()});await act(async()=>{hook.result.current.change('a','first');await hook.result.current.flush()});assert.deepEqual(written,['first']);
+ desktopApi.reference.updateReadingNote=async r=>{written.push(r.note);if(r.note==='second')await new Promise<void>(resolve=>{release=resolve})};let pending:Promise<unknown>;await act(async()=>{hook.result.current.change('a','second');pending=hook.result.current.flush();await Promise.resolve();});await act(async()=>{hook.result.current.change('a','third');release();await pending});assert.deepEqual(written,['first','second','third']);
+ desktopApi.reference.updateReadingNote=async()=>{throw Error('disk')};await act(async()=>{hook.result.current.change('a','retained');assert.equal((await hook.result.current.flush()).status,'failed')});desktopApi.reference.updateReadingNote=async r=>{written.push(r.note)};await act(async()=>{assert.equal((await hook.result.current.flush()).status,'saved')});assert.equal(written.at(-1),'retained');
+ }finally{cleanup();desktopApi.reference.updateReadingNote=original;}
+});

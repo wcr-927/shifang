@@ -1,0 +1,77 @@
+/* Legacy UI: never style the migrated manuscript surface. */
+@scope (:root) to ([data-manuscript-ui]) {
+/* Shared control finish. Native controls retain their focus, keyboard and cancel behavior. */
+:root { --control-focus: #68755e; --control-edge: rgb(104 108 91 / 22%); --control-fill: #faf8f2; }
+button, select, option, summary { font-family: var(--ui-font); font-weight: 400; }
+:is(.quiet-button,.primary-button,.back-button,.text-button,.inline-action,.clear-reading) { line-height: 22px; letter-spacing: .015em; }
+.quiet-button, .primary-button { padding: 8px 15px; min-height: 38px; border-radius: 10px; }
+.editor-page .back-button { padding: 7px 10px; margin-left: -10px; gap: 9px; }
+:is(button,select,summary):focus-visible, .editor-page :is(button,select,summary):focus-visible { outline: 2px solid var(--control-focus); outline-offset: 2px; }
+select { min-height: 34px; padding: 6px 10px; font: 400 13px/22px var(--ui-font); border: 1px solid var(--control-edge); border-radius: 8px; background: var(--control-fill); color: var(--color-text); cursor: pointer; }
+.editor-controls select { padding: 5px 9px; background: rgb(243 239 230 / 70%); border: 1px solid transparent; }
+.editor-controls select:hover { border-color: var(--control-edge); }
+@supports (appearance: base-select) {
+ select, select::picker(select) { appearance: base-select; }
+ select::picker(select) { margin-block: 6px; padding: 6px; color: var(--color-text); background: #faf8f2; border: 1px solid var(--control-edge); border-radius: 12px; box-shadow: 0 8px 24px rgb(37 43 33 / 15%); font: 400 14px/22px var(--ui-font); max-height: min(360px,70vh); overflow: auto; overscroll-behavior: contain; }
+ select option { min-height: 36px; padding: 7px 12px; border-radius: 7px; gap: 10px; white-space: normal; }
+ select option:hover, select option:focus-visible { background: #eeeade; color: var(--color-text); outline-offset: -2px; }
+ select option:checked { background: #e6e9df; color: #32452e; }
+ select option::checkmark { color: #526749; }
+ select::picker-icon { content: ""; width: 6px; height: 6px; border-right: 1.5px solid #747a68; border-bottom: 1.5px solid #747a68; transform: rotate(45deg); margin: 0 2px 3px 12px; }
+ .filter-strip select { color-scheme: light; color: var(--color-text); background: var(--control-fill); border-color: transparent; }
+}
+.editor-page .candidate-list { gap: 7px; }
+.editor-page .candidate-button { grid-template-columns: minmax(0,1fr) 18px; padding: 11px 13px; min-height: 44px; border: 1px solid var(--control-edge); border-radius: 10px; background: rgb(250 248 242 / 70%); font-size: 14px; line-height: 23px; }
+.candidate-button > svg { grid-column: 2; grid-row: 1; align-self: center; color: #45603b; }
+.editor-page .candidate-button small { font-size: 12px; line-height: 20px; color: #66705f; padding-top: 2px; }
+.editor-page .candidate-button:hover { background: #f0eee4; border-color: #929b86; }
+.editor-page .candidate-button.is-selected { border-color: #809274; background: #e8eddf; box-shadow: inset 3px 0 #7d8e70; }
+.editor-page .reading-list { gap: 18px; }
+.editor-page .reading-context { gap: 5px 7px; }
+.editor-page .reading-context > .inline-action, .editor-page .clear-reading { justify-self: start; padding: 5px 8px; border-radius: 7px; font-size: 12px; background: #efede4; text-decoration: none; }
+.editor-page .reading-context > .inline-action:hover, .editor-page .clear-reading:hover { background: #e7e7da; }
+.dialog, .editor-page .dialog { border: 1px solid var(--control-edge); border-radius: 14px; background: #faf8f2; padding: 26px; }
+.dialog-header { gap: 20px; }
+.dialog-actions { gap: 10px; padding-top: 18px; }
+.dialog-actions :is(.primary-button,.quiet-button) { min-height: 38px; padding: 8px 16px; }
+.export-format, .genre-option { border-color: var(--control-edge); border-radius: 10px; padding: 14px; }
+.export-format.is-selected, .genre-option.is-selected { border-color: #829175; background: #e8eddf; }
+
+/* Sizing belongs to controls; callers only choose placement. */
+:is(.quiet-button,.primary-button,.back-button,.text-button,.clear-reading) { white-space: nowrap; flex-shrink: 0; justify-content: center; align-items: center; }
+button > svg { flex-shrink: 0; vertical-align: middle; }
+button:disabled, select:disabled { opacity: .5; cursor: not-allowed; }
+select { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; min-width: 0; }
+.editor-controls select { max-width: 260px; }
+select::picker-icon { align-self: center; flex-shrink: 0; margin: 0 3px 3px 8px; }
+.filter-strip select { max-width: min(260px,100%); color: var(--color-text); color-scheme: light; }
+.genre-option { min-height: 72px; }
+@media (prefers-reduced-motion: reduce) { .spin { animation: none; } }
+
+.text-input { width: 100%; padding: 10px 11px; outline: none; border-radius: 7px; min-height: var(--control-height); border: 1px solid var(--control-edge); background: var(--control-fill); color: var(--color-text); }
+.text-input:focus, .text-input:focus-visible { border-color: var(--control-focus); outline: 2px solid var(--control-focus); outline-offset: 2px; box-shadow: none; }
+
+.dialog h2 { font: 600 22px/32px var(--ui-font); }
+.dialog :is(p,pre) { line-height: 24px; }
+.export-format small, .genre-option small { font-size: 12px; line-height: 20px; }
+
+.recovery-dialog { width: min(900px, calc(100vw - 64px)); max-height: calc(100vh - 80px); overflow: auto; }
+.recovery-dialog > p { line-height: 1.7; }
+.history-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 20px; }
+.history-list { display: flex; flex-direction: column; gap: 8px; max-height: 55vh; overflow: auto; }
+.history-list button { text-align: left; flex-direction: column; align-items: start; white-space: normal; }
+.history-list button[aria-pressed="true"] { background: var(--paper-warm, #eee9dc); }
+.history-list small { display: block; overflow-wrap: anywhere; }
+.history-preview { min-width: 0; }
+.history-preview pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; line-height: 1.8; }
+.history-comparison { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 16px; }
+.history-comparison > * { min-width: 0; }
+.backup-preview p { overflow-wrap: anywhere; }
+.backup-dialog { width: min(660px, calc(100vw - 64px)); }
+
+.dialog:focus { outline: 2px solid var(--control-focus); outline-offset: -4px; }
+.history-properties { display: grid; gap: 8px; color: var(--color-text-secondary); font: 13px/22px var(--ui-font); }
+.history-properties > div { display: grid; grid-template-columns: 70px minmax(0,1fr); gap: 8px; }
+.history-properties dt, .history-properties dd { margin: 0; overflow-wrap: anywhere; }
+
+}

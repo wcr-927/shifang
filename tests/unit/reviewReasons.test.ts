@@ -1,0 +1,20 @@
+import assert from "node:assert/strict";
+import {test} from "node:test";
+import React from "react";
+import {renderToStaticMarkup} from "react-dom/server";
+import {GrammarReview} from "../../src/components/manuscript/GrammarReview.tsx";
+import {reviewReason} from "../../src/components/manuscript/reviewReasons.ts";
+import {analyzeFixture,regularLines} from "../helpers/analysisFixture.ts";
+test("tone reason identifies position and actual vs expected; capability limits are separate and no empty evidence toggle",()=>{
+ const a=analyzeFixture(regularLines);
+ const c=a.lines[0].characters[0];c.expectedTone="ping";c.actualTones=["ze"];
+ const mismatch:any={code:"TONE_MISMATCH",severity:"error",message:"平仄不符",lineIndex:0,characterIndex:0};
+ const limit:any={code:"RULE_SCOPE_UNMODELED",severity:"warning",message:"此处规则未覆盖",lineIndex:0,characterIndex:1};
+ a.issues=[mismatch,limit];
+ const reason=reviewReason(mismatch,a);
+ assert.match(reason,/第1字/);assert.match(reason,/要求平声/);assert.match(reason,/当前读法为仄声/);
+ const html=renderToStaticMarkup(React.createElement(GrammarReview,{analysis:a,loading:false,error:"",onLocate(){}}));
+ assert.ok(!html.includes("<summary>依据"));
+ assert.ok(html.indexOf("尚未检查的部分")<html.indexOf("此处规则未覆盖"));
+ assert.equal((html.match(/class="review-issue"/g)??[]).length,1);
+});
