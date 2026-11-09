@@ -7,18 +7,18 @@
 }
 .app-shell .dialog.library-dialog.export-dialog,.app-shell .dialog.library-dialog.reading-copy-dialog{width:min(520px,calc(100vw - 64px));flex:0 1 520px}
 .export-dialog .export-format-grid{display:flex;flex-wrap:wrap;gap:12px 26px;margin:0 0 28px}
-.library-dialog .export-format-grid button,.library-dialog .reading-copy-options button{padding:4px 0;border:0;border-bottom:1px solid transparent;border-radius:0;background:none;box-shadow:none;color:#8b8175;font:14px/1.8 "Songti SC",serif}
+.library-dialog .export-format-grid button,.library-dialog .reading-copy-options button{padding:4px 0;border:0;border-bottom:1px solid transparent;border-radius:0;background:none;box-shadow:none;color:#8b8175;font:14px/1.8 var(--text-face)}
 .library-dialog .export-format-grid button[aria-checked=true],.library-dialog .reading-copy-options button[aria-pressed=true]{color:#8b5c58;border-bottom-color:#b99a8870}
-.export-dialog .export-work-title{margin:0;padding:8px 0 12px;font:22px/1.7 "Songti SC",serif;overflow-wrap:anywhere;color:#484038}
-.library-dialog .export-message{font:13px/1.8 "Songti SC",serif;color:#8a8073;overflow-wrap:anywhere;margin:14px 0 0}.library-dialog .export-message[role=alert]{color:#a06159}
+.export-dialog .export-work-title{margin:0;padding:8px 0 12px;font:22px/1.7 var(--text-face);overflow-wrap:anywhere;color:#484038}
+.library-dialog .export-message{font:13px/1.8 var(--text-face);color:#8a8073;overflow-wrap:anywhere;margin:14px 0 0}.library-dialog .export-message[role=alert]{color:#a06159}
 .reading-copy-options{display:flex;gap:24px;margin-bottom:18px}
-.reading-copy-dialog .reading-copy-preview{max-height:min(360px,45vh);overflow:auto;scrollbar-gutter:stable;margin:0;padding:4px 12px 4px 0;border:0;border-radius:0;background:transparent;white-space:pre-wrap;overflow-wrap:anywhere;font:18px/2 "Songti SC",serif;color:#484038}
-.editor-save-indicator{display:inline-flex;align-items:center;min-height:28px;padding:0 4px;font:12px/1.6 "Songti SC",serif;color:#9a9083;white-space:nowrap}
+.reading-copy-dialog .reading-copy-preview{max-height:min(360px,45vh);overflow:auto;scrollbar-gutter:stable;margin:0;padding:4px 12px 4px 0;border:0;border-radius:0;background:transparent;white-space:pre-wrap;overflow-wrap:anywhere;font:18px/2 var(--text-face);color:#484038}
+.editor-save-indicator{display:inline-flex;align-items:center;min-height:28px;padding:0 4px;font:12px/1.6 var(--text-face);color:#9a9083;white-space:nowrap}
 /* Small recovery sheet: the pending word is the content, not a large error panel. */
 .dialog.library-dialog.verse-recovery-dialog,.app-shell .dialog.library-dialog.verse-recovery-dialog{width:min(360px,calc(100vw - 64px));flex:0 1 360px;padding:22px 26px;border:1px solid #d8cfc1;border-radius:2px;background-color:#fcfaf6;background-image:var(--primary-texture,repeating-linear-gradient(0deg,#745c3d07 0 1px,transparent 1px 3px));box-shadow:0 16px 50px -24px #433a2c50;}
 .library-dialog.verse-recovery-dialog header{margin-bottom:18px;padding-bottom:12px;}
 .library-dialog.verse-recovery-dialog header h2{font-size:22px;}
-.library-dialog.verse-recovery-dialog textarea{display:block;width:100%;min-height:40px;max-height:180px;field-sizing:content;resize:none;overflow:auto;padding:5px 0;border:0;border-bottom:1px solid #8b806d25;border-radius:0;outline:none;box-shadow:none;background:transparent;color:#484038;font:21px/1.8 "Songti SC",serif;}
+.library-dialog.verse-recovery-dialog textarea{display:block;width:100%;min-height:40px;max-height:180px;field-sizing:content;resize:none;overflow:auto;padding:5px 0;border:0;border-bottom:1px solid #8b806d25;border-radius:0;outline:none;box-shadow:none;background:transparent;color:#484038;font:21px/1.8 var(--text-face);}
 .library-dialog.verse-recovery-dialog textarea:focus-visible{outline:none;box-shadow:none;border-bottom-color:#8b806d25;}
 .library-dialog.verse-recovery-dialog footer{border:0;margin-top:18px;padding-top:0;}
 .manuscript-reading-choice.is-single{cursor:default;}

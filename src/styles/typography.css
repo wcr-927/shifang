@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Caizhang Title";
+  src: url("../../assets/fonts/bianzhou-regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Caizhang Text";
+  src: url("../../assets/fonts/ximosong-regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Caizhang UI";
+  src: url("../../assets/fonts/ximohei-medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+:root {
+  --title-face: "Caizhang Title", "Songti SC", serif;
+  --text-face: "Caizhang Text", "Songti SC", serif;
+  --interface-face: "Caizhang UI", "PingFang SC", sans-serif;
+}
+
+/* Headings and navigation are the exceptions to the original Song/Hei mapping.
+   Scope the override to their text so adjacent counts and controls keep their type. */
+:is(h1, h2, h3, h4, h5, h6, [role="heading"]),
+:is(h1, h2, h3, h4, h5, h6, [role="heading"]) :is(span, a, button),
+.app-navigation > button, .app-navigation nav button, .reading-right > nav button,
+.editor-title-input, .free-title, .library-work-title, .export-work-title,
+.home-continuations span + button, .library-collection-heading > span,
+.library-collections .library-scope > span:first-child, input[aria-label="文集题名"],
+.reading-books button > span, .reading-works button > span, .reading-source-title,
+.notes-book-name, .pub-toc > div > span:first-child, .pub-preview-heading > span:first-child {
+  font-family: var(--title-face) !important;
+}

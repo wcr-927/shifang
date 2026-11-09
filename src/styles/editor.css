@@ -180,7 +180,7 @@
 .inspector-scroll details > summary { list-style: none; }
 .inspector-scroll details > summary::-webkit-details-marker { display: none; }
 .inspector-scroll details > summary::marker { content: ""; }
-.inspector-scroll details:not(.is-inline) > summary::after { content: "›"; float: right; margin-left: 8px; font: 18px/20px Georgia, serif; color: #787a6d; }
+.inspector-scroll details:not(.is-inline) > summary::after { content: "›"; float: right; margin-left: 8px; font: 18px/20px var(--text-face); color: #787a6d; }
 .inspector-scroll details[open]:not(.is-inline) > summary::after { transform: rotate(90deg); }
 .editor-page summary:hover { color: var(--editor-accent); }
 .empty-analysis-details { margin-top: 8px; }

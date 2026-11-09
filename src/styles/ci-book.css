@@ -4,16 +4,16 @@
 .ci-book .manuscript-breadcrumb{margin-bottom:0;}
 .ci-book .manuscript-foot{margin-top:8px;}
 .ci-rhyme-segments{display:flex;gap:12px;margin-bottom:8px;}
-.ci-rhyme-segments button{font:12px/1.6 -apple-system,sans-serif;color:#82796e;padding:0;border:0;background:none;}
+.ci-rhyme-segments button{font:12px/1.6 var(--interface-face);color:#82796e;padding:0;border:0;background:none;}
 .ci-rhyme-segments button[aria-pressed=true]{color:#465f79;}
 .ci-book-dialog{position:fixed;inset:0;z-index:45;background:#41382e33;display:flex;align-items:center;justify-content:center;padding:28px;}
 .ci-book-dialog>section{background:#fdfbf8;border:1px solid #d9d3cd;box-shadow:0 8px 30px #41382e18;width:760px;max-width:100%;max-height:100%;overflow:auto;padding:24px;}
 .ci-book-dialog header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
-.ci-book-dialog h2{font:26px/1.5 "Songti SC",serif;margin:0;}
+.ci-book-dialog h2{font:26px/1.5 var(--text-face);margin:0;}
 .ci-book-dialog .editor-auxiliary,.ci-book-dialog .assistance-host,.ci-book-dialog .editor-inspector{display:block!important;position:static;width:auto;max-height:none;overflow:visible;}
 .ci-book-dialog .inspector-scroll{overflow:visible;}
 .ci-form-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
-.ci-form-list button{background:none;border:1px solid transparent;color:#716b66;padding:10px;font:16px/1.7 "Songti SC",serif;}
+.ci-form-list button{background:none;border:1px solid transparent;color:#716b66;padding:10px;font:16px/1.7 var(--text-face);}
 .ci-form-list button[aria-pressed=true]{border-color:#d9c2bf;color:#8b5c58;}
 .ci-book-dialog footer{display:flex;justify-content:flex-end;gap:16px;margin-top:22px;}
 @media(max-width:1050px){.ci-book .ci-book-composition{max-width:100%}.ci-book .manuscript-heading{flex-wrap:wrap}.ci-book .manuscript-heading-actions{margin-left:auto}}

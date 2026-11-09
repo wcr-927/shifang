@@ -20,6 +20,11 @@ import "./styles/app-navigation.css";
 import "./styles/home-paper.css";
 import "./styles/primary-pages.css";
 import "./styles/publication-launcher.css";
+import "./styles/typography.css";
+import "./styles/launch.css";
+import { playLaunch } from "./app/playLaunch";
+
+playLaunch();
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

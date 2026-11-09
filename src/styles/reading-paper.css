@@ -1,5 +1,5 @@
 .workspace>.reading-workspace[data-manuscript-ui]{margin:0;padding:0;border:0;border-radius:0;background:#e5e1dc;overflow:hidden;display:flex;flex-direction:column;height:100%;min-height:0;color:#393630}
-.reading-workspace{--reading-line:rgba(130,113,91,.18);--reading-muted:#8d8376;--reading-blue:#4d6980;--reading-serif:"Songti SC","STSong","Noto Serif CJK SC",serif}
+.reading-workspace{--reading-line:rgba(130,113,91,.18);--reading-muted:#8d8376;--reading-blue:#4d6980;--reading-serif:var(--text-face)}
 .reading-workspace button{font:inherit;color:inherit;background:none;border:0;border-radius:0;box-shadow:none;padding:0;cursor:pointer}
 .reading-workspace button:disabled{opacity:.3;cursor:default}
 .reading-workspace button:hover:not(:disabled),.reading-workspace button[aria-current="true"]{color:var(--reading-blue)}
@@ -32,7 +32,7 @@
 .reading-poem-heading p{position:absolute;right:8px;top:4px;font:15px/1.7 var(--reading-serif);color:var(--reading-muted)}
 .reading-poem-heading.long-title{min-height:125px}.reading-poem-heading.long-title h1{writing-mode:horizontal-tb;font-size:26px;letter-spacing:1px;line-height:1.7;padding-right:8px}.reading-poem-heading.long-title p{position:static;text-align:right;margin-top:12px}
 .reading-poem-lines{font:22px/1.8 var(--reading-serif);text-align:center;overflow-wrap:anywhere}.reading-poem-lines>p{margin:0 0 22px}
-.reading-workspace .reading-note-mark{font:10px/1 sans-serif;vertical-align:super;color:#9c8c77;margin-left:2px}
+.reading-workspace .reading-note-mark{font:10px/1 var(--interface-face);vertical-align:super;color:#9c8c77;margin-left:2px}
 .reading-poem ::selection,.reading-body ::selection{background:#dcd2bc88}
 .reading-workspace .reading-excerpt{display:block;margin:10px auto 0;font-size:12px;color:#7e6a50;border-bottom:1px solid #b4a38b66;padding-bottom:3px}
 .reading-right{min-width:0;min-height:0;display:flex;flex-direction:column}
@@ -41,8 +41,8 @@
 .reading-body .reference-reading-block{font:inherit;max-width:36em;margin:0 auto 18px}.reading-body .reference-reading-block p{font:inherit;margin:0 0 14px}.reading-body .reference-reading-block h1,.reading-body .reference-reading-block h2,.reading-body .reference-reading-block h3{font:24px/1.7 var(--reading-serif);margin:20px 0}.reading-body table{border-collapse:collapse;max-width:100%;font-size:14px}.reading-body td,.reading-body th{border:1px solid var(--reading-line);padding:6px}.reading-body img{max-width:100%;height:auto}.reading-body .reference-internal-link{display:inline;color:var(--reading-blue);text-decoration:underline;text-decoration-color:#4d698033;text-underline-offset:4px}
 .is-single .reading-spread{display:block;min-height:0;overflow:hidden}.is-single .reading-right{height:100%;max-width:850px;margin:0 auto}.is-single .reading-right>nav{min-height:28px;padding:0}.is-single .reading-body{padding:8px 48px 32px}.reading-prose-heading{margin:12px 0 30px}.reading-prose-heading h1{font:28px/1.6 var(--reading-serif)}.reading-prose-heading p{text-align:right;color:var(--reading-muted);font-size:15px;margin-top:12px}
 .reading-excerpts article{padding:8px 0 24px;margin:0 0 24px;border-bottom:1px solid var(--reading-line)}.reading-excerpts blockquote{margin:0 0 16px;font:21px/1.8 var(--reading-serif);color:#3b3731}
-.reading-note-edit{display:flex;align-items:flex-start;gap:16px}.reading-workspace .reading-note-edit textarea{flex:1;min-width:0;resize:none;border:0;border-radius:0;background:transparent;box-shadow:none;outline:none;padding:0;font:16px/1.9 var(--reading-serif);color:#71695e;min-height:31px}.reading-note-edit>button{flex-shrink:0;font:12px/30px sans-serif;color:#8d8274}.reading-note-edit>.reading-note-text{text-align:left;white-space:pre-wrap;font:16px/1.9 var(--reading-serif);color:#83786b;width:100%;overflow-wrap:anywhere}
-.reading-original-directory{flex:1;min-height:0;overflow:auto;padding:24px 32px;scrollbar-gutter:stable}.reading-original-directory ul{list-style:none;margin:0;padding-left:18px}.reading-original-directory>ul{padding-left:0}.reading-original-directory li{line-height:2.4;font:17px/2.4 var(--reading-serif)}.reading-original-directory .reading-quiet{margin-left:20px;font:12px sans-serif;color:#a3998b}
+.reading-note-edit{display:flex;align-items:flex-start;gap:16px}.reading-workspace .reading-note-edit textarea{flex:1;min-width:0;resize:none;border:0;border-radius:0;background:transparent;box-shadow:none;outline:none;padding:0;font:16px/1.9 var(--reading-serif);color:#71695e;min-height:31px}.reading-note-edit>button{flex-shrink:0;font:12px/30px var(--interface-face);color:#8d8274}.reading-note-edit>.reading-note-text{text-align:left;white-space:pre-wrap;font:16px/1.9 var(--reading-serif);color:#83786b;width:100%;overflow-wrap:anywhere}
+.reading-original-directory{flex:1;min-height:0;overflow:auto;padding:24px 32px;scrollbar-gutter:stable}.reading-original-directory ul{list-style:none;margin:0;padding-left:18px}.reading-original-directory>ul{padding-left:0}.reading-original-directory li{line-height:2.4;font:17px/2.4 var(--reading-serif)}.reading-original-directory .reading-quiet{margin-left:20px;font:12px var(--interface-face);color:#a3998b}
 .reading-empty{color:#9b9082;font-size:14px;padding:16px 0}.reading-workspace .reading-load{font-size:12px;color:#8a7c6c;margin:20px 0}.reading-error,.reading-progress{font-size:13px;padding:10px 28px;color:#9d594a}.reading-error button,.reading-progress button{margin-left:18px}
 @media(max-width:1000px){.reading-index{grid-template-columns:210px minmax(0,1fr)}.reading-works>div{grid-template-columns:1fr}.reading-poem{padding-left:16px;padding-right:16px}.reading-poem-lines{font-size:20px}.reading-body{font-size:16px;padding-left:24px;padding-right:22px}.reading-shelf{padding:30px}.reading-books{gap:0 28px}}
 
@@ -66,7 +66,7 @@
 .reading-poem{padding-top:34px}
 .reading-workspace button[aria-current="true"],.reading-workspace .reading-right>nav button:hover{color:#51483e;font-weight:500}
 .reading-right>nav{color:#978b7c}.reading-right>nav button[aria-current="true"]{color:#51483e}
-.reading-excerpt-floating{position:fixed;z-index:90;min-width:54px;height:30px;padding:4px 10px;border:1px solid #d8cdbb99;border-radius:3px;background:#fcfaf4;box-shadow:0 4px 14px #5a473218;color:#77644e;font:13px/20px "Songti SC",serif;cursor:pointer}
+.reading-excerpt-floating{position:fixed;z-index:90;min-width:54px;height:30px;padding:4px 10px;border:1px solid #d8cdbb99;border-radius:3px;background:#fcfaf4;box-shadow:0 4px 14px #5a473218;color:#77644e;font:13px/20px var(--text-face);cursor:pointer}
 .reading-excerpt-floating:hover{background:#f5f0e5}.reading-excerpt-floating:focus-visible{outline:1px solid #a39379;outline-offset:2px}
 
 /* Shared paper top edge across the three primary sections. */
@@ -99,7 +99,7 @@
 .reading-excerpts article{padding:4px 0 18px;margin:0 0 18px}
 .reading-excerpts blockquote{margin:0 0 8px;font:20px/1.7 var(--reading-serif)}
 .reading-workspace .reading-excerpts .reading-note-edit textarea,.reading-workspace .reading-excerpts .reading-note-edit>.reading-note-text{font:14px/1.8 var(--reading-serif);min-height:25px}
-.reading-excerpts .reading-note-edit>button:not(.reading-note-text){font:12px/25px sans-serif}
+.reading-excerpts .reading-note-edit>button:not(.reading-note-text){font:12px/25px var(--interface-face)}
 
 /* Bounded open book: each page owns its fading footer; the fold continues below. */
 .reading-book.is-spread{position:relative;width:calc(100% - 52px);max-width:1100px;align-self:center;margin-left:auto;margin-right:auto;box-shadow:0 2px 3px #5b514510,0 15px 32px -19px #51443440}
@@ -129,9 +129,9 @@
 @media(max-width:1000px){.reading-ci-lines .reference-reading-block p{font-size:19px}}
 
 .reading-excerpts article,.notes-list article{position:relative;padding-right:34px}
-.reading-workspace .reading-note-more{position:absolute;right:0;top:8px;width:28px;height:28px;padding:0;color:#998c7c;font:18px/28px Georgia,serif;letter-spacing:2px;opacity:.65}
+.reading-workspace .reading-note-more{position:absolute;right:0;top:8px;width:28px;height:28px;padding:0;color:#998c7c;font:18px/28px var(--text-face);letter-spacing:2px;opacity:.65}
 .reading-workspace .reading-note-more:hover,.reading-note-more[aria-expanded=true]{opacity:1}
-.reading-delete-scope{max-width:190px;margin:4px 2px 8px;font:13px/1.8 "Songti SC",serif;text-align:center;color:#8a7e6f}
+.reading-delete-scope{max-width:190px;margin:4px 2px 8px;font:13px/1.8 var(--text-face);text-align:center;color:#8a7e6f}
 
 .reading-poem-lines.reading-prose-original{text-align:left;font-size:17px;line-height:2}
 .reading-prose-original .reference-reading-block{margin-bottom:18px}

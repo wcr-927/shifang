@@ -1,5 +1,5 @@
 /* Shared material, geometry and type scale for the three primary library pages. */
-.unified-shell{--primary-paper:#fcfaf6;--primary-texture:repeating-linear-gradient(0deg,#745c3d07 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,#745c3d03 0 1px,transparent 1px 7px),linear-gradient(100deg,#f6f0e580,#fffdf980 48%,#f5eee580);--primary-serif:"Songti SC","STSong","Noto Serif CJK SC",serif}
+.unified-shell{--primary-paper:#fcfaf6;--primary-texture:repeating-linear-gradient(0deg,#745c3d07 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,#745c3d03 0 1px,transparent 1px 7px),linear-gradient(100deg,#f6f0e580,#fffdf980 48%,#f5eee580);--primary-serif:var(--text-face)}
 .unified-shell .library-sheet,.unified-shell .notes-layout,.unified-shell .reading-shelf,.unified-shell .reading-directory{margin:20px 26px 26px;background-color:var(--primary-paper);background-image:var(--primary-texture);border:1px solid #d7cfc2;border-radius:0;box-shadow:0 2px 4px #5b514510,0 16px 34px -25px #5b51454a}
 .unified-shell .library-main,.unified-shell .notes-layout>main{padding:28px 30px 24px 36px}
 .unified-shell .library-heading,.unified-shell .notes-layout main>header{align-items:center;padding:0 14px 20px 0}
@@ -12,7 +12,7 @@
 @media(max-width:1000px){.unified-shell .library-sheet{grid-template-columns:190px minmax(0,1fr)}.unified-shell .library-main,.unified-shell .notes-layout>main{padding:26px 22px}}
 @media(prefers-reduced-motion:reduce){.unified-shell .workspace>.library-paper,.unified-shell .reading-view,.unified-shell .notes-overview,.unified-shell .home-scene{animation:none}}
 
-.unified-shell .library-paper .library-collection-menu{align-self:center;flex-shrink:0;width:28px;height:28px;padding:0;color:#948879;font:18px/28px Georgia,serif;letter-spacing:2px;border:0;background:none}
+.unified-shell .library-paper .library-collection-menu{align-self:center;flex-shrink:0;width:28px;height:28px;padding:0;color:#948879;font:18px/28px var(--text-face);letter-spacing:2px;border:0;background:none}
 /* Snapshot only the content: navigation and its indicator remain live and fixed. */
 .unified-shell>.workspace{view-transition-name:primary-workspace}
 ::view-transition{pointer-events:none}

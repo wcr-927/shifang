@@ -10,7 +10,7 @@
 :is(.manuscript-review,.history-paper,.dialog,.reference-session .reference-drawer,.verse-paste-backdrop>section,.ci-book-dialog>section)
 :is(input:not([type=checkbox]):not([type=radio]),textarea,select){
  background:transparent;border:0;border-bottom:1px solid #e2ddd5;border-radius:0;box-shadow:none;color:#3b3731;
- padding:7px 0;font-family:"Songti SC","STSong",serif;
+ padding:7px 0;font-family:var(--text-face);
 }
 :is(.manuscript-review,.history-paper,.dialog,.reference-session .reference-drawer,.verse-paste-backdrop>section,.ci-book-dialog>section)
 :is(input:not([type=checkbox]):not([type=radio]),textarea,select):focus{
@@ -27,13 +27,13 @@ input::placeholder{color:#a79e91;}
 /* Approved compact paper reference window. */
 .reference-session.paper-reference-backdrop{inset:0;display:flex;align-items:center;justify-content:center;padding:32px;background:#4b423125;}
 .reference-session.paper-reference-backdrop[hidden]{display:none;}
-.reference-session .paper-reference{width:min(800px,100%);height:min(620px,calc(100dvh - 64px));max-width:800px;max-height:calc(100dvh - 64px);margin:0;padding:28px 36px;display:flex;overflow:hidden;font:15px/1.8 "Songti SC","STSong",serif;}
+.reference-session .paper-reference{width:min(800px,100%);height:min(620px,calc(100dvh - 64px));max-width:800px;max-height:calc(100dvh - 64px);margin:0;padding:28px 36px;display:flex;overflow:hidden;font:15px/1.8 var(--text-face);}
 .paper-reference .paper-reference-workspace{display:flex;flex-direction:column;min-height:0;flex:1;overflow:hidden;}
 .paper-reference button{border:0;background:none;box-shadow:none;border-radius:0;padding:3px 0;color:inherit;font:inherit;cursor:pointer;}
 .paper-reference button:hover,.paper-reference button[aria-pressed=true]{color:#536b80;}
 .paper-reference button:disabled{opacity:.5;cursor:default;}
 .paper-reference .paper-reference-header{display:flex;align-items:center;gap:28px;flex:none;padding:0 0 20px;margin:0;border-bottom:1px solid #e1d9ce;}
-.paper-reference-header h2{font:28px/1.5 "Songti SC","STSong",serif;margin:0;outline:none;}
+.paper-reference-header h2{font:28px/1.5 var(--text-face);margin:0;outline:none;}
 .paper-reference-header nav{display:flex;gap:26px;margin-left:20px;}
 .paper-reference-header>button{margin-left:auto;color:#8a8176;font-size:14px;}
 .paper-reference .paper-reference-content{overflow:auto;min-height:0;flex:1;padding:22px 4px 24px;scrollbar-gutter:stable;}
@@ -81,12 +81,12 @@ input::placeholder{color:#a79e91;}
 .history-retention-rules dl>div{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid #e1d9ce;}
 .history-retention-rules dt{color:#8a8176;}.history-retention-rules dd{margin:0;}
 .history-retention-rules p{font-size:13px;color:#8a8176;line-height:1.8;}
-.reference-session .paper-reference .paper-reference-header h2{font:28px/1.5 "Songti SC","STSong",serif;margin:0;}
+.reference-session .paper-reference .paper-reference-header h2{font:28px/1.5 var(--text-face);margin:0;}
 .paper-pattern-picker{margin:0 0 26px;}
 .paper-reference .paper-pattern-picker>summary{display:flex;align-items:baseline;gap:20px;color:#3b3731;}
 .paper-pattern-picker>summary>span{font-size:30px;}
 .paper-pattern-picker>summary>small{font-size:14px;color:#8a8176;}
-.paper-pattern-picker>summary>em{font:13px/1.8 "Songti SC","STSong",serif;margin-left:auto;color:#8a8176;}
+.paper-pattern-picker>summary>em{font:13px/1.8 var(--text-face);margin-left:auto;color:#8a8176;}
 .paper-pattern-picker>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-height:190px;overflow:auto;margin-top:18px;border-bottom:1px solid #e1d9ce;padding-bottom:20px;}
 .paper-pattern-picker>div small{display:block;font-size:12px;color:#8a8176;}
 .paper-pattern-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 36px;}
@@ -99,7 +99,7 @@ input::placeholder{color:#a79e91;}
 .paper-pattern-grid .paper-pattern-section-start h4{grid-column:1/-1;}
 /* More: centered paper list, with status choices inside the same small menu. */
 [data-manuscript-ui] .editor-tools-menu>button,
-[data-manuscript-ui] .editor-tools-menu>.editor-status-choice>summary{text-align:center;padding:11px 3px;font:15px/1.6 "Songti SC","STSong",serif;}
+[data-manuscript-ui] .editor-tools-menu>.editor-status-choice>summary{text-align:center;padding:11px 3px;font:15px/1.6 var(--text-face);}
 [data-manuscript-ui] .editor-tools-menu>:not(:first-child){border-top:1px solid #e4dfd64d;}
 [data-manuscript-ui] .editor-status-choice>summary{list-style:none;cursor:pointer;color:var(--manuscript-ink);}
 [data-manuscript-ui] .editor-status-choice>summary::-webkit-details-marker{display:none;}
@@ -146,7 +146,7 @@ input::placeholder{color:#a79e91;}
 .unified-shell [data-manuscript-ui] .editor-header.manuscript-paper-toolbar{height:auto;min-height:28px;margin:0 0 32px;padding:0;background:transparent;border:0;gap:16px;flex-wrap:nowrap;}
 [data-manuscript-ui] .manuscript-paper-toolbar .editor-actions{max-width:none;gap:10px;flex-wrap:wrap;margin-left:auto;justify-content:flex-end;transform:translateY(1px);}
 [data-manuscript-ui] .manuscript-paper-toolbar .back-button{padding:0;min-height:28px;border:0;border-radius:0;background:none;box-shadow:none;color:#8a8073;font:12px/1.6 var(--manuscript-serif);letter-spacing:0;white-space:nowrap;}
-[data-manuscript-ui] .manuscript-paper-toolbar .editor-tools>summary.manuscript-more-compact{display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;font:18px/1 Georgia,serif;letter-spacing:2px;color:#948879;}
+[data-manuscript-ui] .manuscript-paper-toolbar .editor-tools>summary.manuscript-more-compact{display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;font:18px/1 var(--text-face);letter-spacing:2px;color:#948879;}
 [data-manuscript-ui] .manuscript-foot{align-items:center;}
 [data-manuscript-ui] .manuscript-foot-status{display:flex;align-items:center;justify-content:flex-end;gap:18px;}
 [data-manuscript-ui] .manuscript-foot-status .editor-save-button{padding:0;border:0;background:transparent;box-shadow:none;min-height:28px;color:#8b5c58;font:12px/1.6 var(--manuscript-serif);}

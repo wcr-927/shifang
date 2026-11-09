@@ -85,6 +85,10 @@
     },
     "extraResources": [
       {
+        "from": "assets/licenses/fonts",
+        "to": "licenses/fonts"
+      },
+      {
         "from": "LICENSE",
         "to": "licenses/Shifang-MIT.txt"
       },

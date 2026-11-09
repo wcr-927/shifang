@@ -31,7 +31,7 @@
 .character-explanations { margin-top:16px; }
 .explanation-candidate { padding:12px 0; border-top:1px solid var(--line,#ded6cb); }
 .explanation-candidate h4 { margin:0 0 10px; font-size:13px; font-weight:500; }
-.reading-explanation { font-family:"Songti SC","STSong",serif; font-size:15px; line-height:1.9; overflow-wrap:anywhere; }
+.reading-explanation { font-family:var(--text-face); font-size:15px; line-height:1.9; overflow-wrap:anywhere; }
 .explanation-sense p { margin:0 0 6px; }
 .explanation-usage,.explanation-evidence p { color:var(--text-muted,#80766b); font-size:13px; }
 .explanation-footer { display:flex; gap:12px; align-items:baseline; margin-top:8px; }
