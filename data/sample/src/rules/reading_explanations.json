@@ -5,7 +5,7 @@
       "id": "sample",
       "title": "释义示例",
       "edition": "1",
-      "locator": "长幼"
+      "locator": "项目编写的简明用法"
     }
   ],
   "entries": [
@@ -24,6 +24,94 @@
           "id": "seniority",
           "meaning": "年纪较大。",
           "usage": "如长幼、长兄。",
+          "sourceIds": [
+            "sample"
+          ],
+          "examples": []
+        }
+      ]
+    },
+    {
+      "key": {
+        "system": "pingshui",
+        "character": "长",
+        "sourceCandidateId": "长:ping-07yang",
+        "groupId": "ping-07yang",
+        "tone": "ping"
+      },
+      "status": "partial",
+      "version": "sample-1",
+      "senses": [
+        {
+          "id": "usage",
+          "meaning": "从一头到另一头距离远，也可形容时间久，如“路长”“夜长”。",
+          "usage": "从一头到另一头距离远，也可形容时间久，如“路长”“夜长”。",
+          "sourceIds": [
+            "sample"
+          ],
+          "examples": []
+        }
+      ]
+    },
+    {
+      "key": {
+        "system": "pingshui",
+        "character": "好",
+        "sourceCandidateId": "好:shang-19hao",
+        "groupId": "shang-19hao",
+        "tone": "shang"
+      },
+      "status": "partial",
+      "version": "sample-1",
+      "senses": [
+        {
+          "id": "usage",
+          "meaning": "形容事物让人满意，如“好风景”。",
+          "usage": "形容事物让人满意，如“好风景”。",
+          "sourceIds": [
+            "sample"
+          ],
+          "examples": []
+        }
+      ]
+    },
+    {
+      "key": {
+        "system": "pingshui",
+        "character": "好",
+        "sourceCandidateId": "好:qu-20hao",
+        "groupId": "qu-20hao",
+        "tone": "qu"
+      },
+      "status": "partial",
+      "version": "sample-1",
+      "senses": [
+        {
+          "id": "usage",
+          "meaning": "喜爱，乐意做某事，如“好读书”。",
+          "usage": "喜爱，乐意做某事，如“好读书”。",
+          "sourceIds": [
+            "sample"
+          ],
+          "examples": []
+        }
+      ]
+    },
+    {
+      "key": {
+        "system": "pingshui",
+        "character": "重",
+        "sourceCandidateId": "重:ping-02dong",
+        "groupId": "ping-02dong",
+        "tone": "ping"
+      },
+      "status": "partial",
+      "version": "sample-1",
+      "senses": [
+        {
+          "id": "usage",
+          "meaning": "写一件事再次发生，或写景物层层相叠，如“重逢”“山重水复”。",
+          "usage": "写一件事再次发生，或写景物层层相叠，如“重逢”“山重水复”。",
           "sourceIds": [
             "sample"
           ],

@@ -57,7 +57,7 @@ test("candidate circles select and clear only explicit readings even when explan
   assert.equal((screen.getByRole("checkbox", { name: "采用平声 · 七阳" }) as HTMLInputElement).checked, false);
 });
 
-test("candidate definition and expandable source stay in the same row without duplicate controls", async () => {
+test("candidate definition appears inline with one reading choice and no source control", async () => {
   desktopApi.reference.explanations = async () => ({ version: "test", sources: [{ id: "s", title: "诗词格律", edition: "本地", locator: "卷一" }], entries: [{ key: { system: "pingshui", character: "长", sourceCandidateId: candidates[0].id, groupId: "ping-07yang", tone: "ping" }, status: "partial", version: "test", senses: [{ id: "length", meaning: "长度、距离长远", usage: "与短相对", sourceIds: ["s"], examples: [{ text: "我报路长嗟日暮", sourceId: "s", locator: "OEBPS/Text/poem.html / 李清照《渔家傲》" }] }] }] });
   render(<ManuscriptInspector {...props()} />);
   await act(async () => {});
@@ -66,11 +66,8 @@ test("candidate definition and expandable source stay in the same row without du
   assert.equal(screen.getAllByRole("checkbox").length, 2);
   assert.equal(screen.queryByText("我报路长嗟日暮"), null);
   assert.equal(within(row).queryByText("与短相对"), null);
-  fireEvent.click(within(row).getByRole("button", { name: "例句与出处" }));
-  assert.ok(within(row).getByText("我报路长嗟日暮"));
-  assert.ok(within(row).getByText("与短相对"));
-  assert.ok(within(row).getByText("资料待补全"));
-  assert.match(row.textContent!, /诗词格律 · 李清照/);
+  assert.equal(within(row).queryByRole("button", { name: "例句与出处" }), null);
+  assert.ok(!row.textContent!.includes("诗词格律"));
   assert.ok(!row.textContent!.includes("OEBPS"));
 });
 

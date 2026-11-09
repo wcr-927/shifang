@@ -73,7 +73,7 @@ export function ManuscriptInspector({ chosenCandidateId, assistance, body = "", 
             return <div className={`manuscript-reading${chosen ? " is-chosen" : ""}`} key={`${selected.lineIndex}:${selected.characterIndex}:${selected.character}:${candidate.id}`}>
               <label className={`manuscript-reading-choice${multiple?"":" is-single"}`}><span><strong>{toneNames[candidate.toneCategory]}</strong><small>{candidate.rhymeGroupName}</small></span>{multiple?<input type="checkbox" checked={chosen} aria-label={`${chosen ? "取消" : "采用"}${toneNames[candidate.toneCategory]} · ${candidate.rhymeGroupName}`} onChange={() => chosen ? onClear(selected.lineIndex, selected.characterIndex) : onSelect(selected.lineIndex, selected.characterIndex, selected.character, candidate.id)} />:null}</label>
               <div className="manuscript-reading-definition">
-                {entries.length && explanations.status === "ready" ? entries.map(entry => <ReadingExplanation compact key={readingEvidenceKeyId(entry.key)} entry={entry} sources={explanations.bundle.sources} />) : <><p>{candidate.glosses.join("；") || "暂无释义资料"}</p>{explanations.status === "loading" ? <small role="status">正在读取字义</small> : null}</>}
+                {entries.length && explanations.status === "ready" ? entries.map(entry => <ReadingExplanation key={readingEvidenceKeyId(entry.key)} entry={entry} />) : <><p>{candidate.glosses.join("；") || "暂无释义资料"}</p>{explanations.status === "loading" ? <small role="status">正在读取字义</small> : null}</>}
               </div>
             </div>;
           })}

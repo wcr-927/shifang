@@ -15,7 +15,7 @@ export function CharacterExplanations({system,character,candidates,disabled=fals
  const bundle=query.bundle;
  return <section className="character-explanations" aria-label={`${character}的字义解释`}>
   {candidates.map(candidate=>{const entries=matchingExplanations(bundle.entries,system,character,candidate);return <section className="explanation-candidate" key={candidate.id}>
-   <h4>{candidate.label}</h4>{entries.length?entries.map(entry=><ReadingExplanation key={readingEvidenceKeyId(entry.key)} entry={entry} sources={bundle.sources}/>):<p className="explanation-unavailable">暂无释义资料</p>}
+   <h4>{candidate.label}</h4>{entries.length?entries.map(entry=><ReadingExplanation key={readingEvidenceKeyId(entry.key)} entry={entry}/>):<p className="explanation-unavailable">暂无释义资料</p>}
   </section>})}
  </section>;
 }

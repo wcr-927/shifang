@@ -23,3 +23,5 @@ npm run dev
 可选变量 `SHIFANG_ART_DIR` 指向图片目录，结构为 `home/landscape.png`、`home/mist.png`、`publication/mountain.jpeg`、`publication/bamboo.jpeg`、`publication/water.jpeg`。开发和构建会复制这些指定文件，产生的副本已加入 Git 忽略规则。若要恢复示例，请退出应用、运行 `unset SHIFANG_DATA_DIR SHIFANG_ART_DIR`，再重新启动。
 
 更换规则包会改变可选词牌、支持的字和对应读法。使用不同数据测试时可将 `SHIFANG_DEV_USER_DATA` 指向新的本地目录。提交 PR 前请以默认示例运行测试。发布 App 前应在全新检出中使用默认示例构建，避免把自备资料装进可下载文件。
+
+阅读页导入 EPUB 后会按书内正文和目录结构建立阅读索引。同一版本的书使用相同解析规则。查韵使用独立的结构化规则包，EPUB 导入不会自动提取逐字释义。
