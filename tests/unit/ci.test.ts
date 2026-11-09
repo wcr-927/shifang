@@ -80,3 +80,14 @@ test('empty ci form changes preserve notes/history and reject any written source
  }finally{c.close()}
 });
 
+
+test('eight added forms accept their cited examples and preserve changing rhyme groups',()=>{
+ const names=['虞美人','定风波','江城子','声声慢','雨霖铃','青玉案','永遇乐','醉花阴'];
+ for(const name of names){
+  const f=ciForms.find(f=>f.name===name)!;
+  const result=analyzeCi(f.lines.map(line=>line.example).join('\n'),f,state(f));
+  assert.deepEqual(result.issues.filter(i=>i.kind==='conflict'||i.kind==='uncovered'),[],name);
+ }
+ assert.equal(ciForms.find(f=>f.name==='定风波')!.lines.map(l=>l.rhyme).join(''),'aabbaccadda');
+ assert.equal(ciForms.find(f=>f.name==='虞美人')!.lines.map(l=>l.rhyme).join(''),'aabbccdd');
+});

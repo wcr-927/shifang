@@ -8315,6 +8315,2573 @@
         "subgroup": "十四旱",
         "gloss": ""
       }
+    ],
+    "与": [
+      {
+        "id": "4-S-六语",
+        "group": 4,
+        "tone": "S",
+        "subgroup": "六语",
+        "gloss": ""
+      },
+      {
+        "id": "4-Q-六御",
+        "group": 4,
+        "tone": "Q",
+        "subgroup": "六御",
+        "gloss": ""
+      },
+      {
+        "id": "4-P-六鱼",
+        "group": 4,
+        "tone": "P",
+        "subgroup": "六鱼",
+        "gloss": ""
+      }
+    ],
+    "个": [
+      {
+        "id": "9-Q-二十一个",
+        "group": 9,
+        "tone": "Q",
+        "subgroup": "二十一个",
+        "gloss": ""
+      }
+    ],
+    "为": [
+      {
+        "id": "3-P-四支",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "四支",
+        "gloss": ""
+      },
+      {
+        "id": "3-Q-四寘",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "四寘",
+        "gloss": ""
+      },
+      {
+        "id": "3-P-四支",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "四支",
+        "gloss": ""
+      }
+    ],
+    "乍": [
+      {
+        "id": "10-Q-二十二祃",
+        "group": 10,
+        "tone": "Q",
+        "subgroup": "二十二祃",
+        "gloss": ""
+      },
+      {
+        "id": "10-Q-二十二禡",
+        "group": 10,
+        "tone": "Q",
+        "subgroup": "二十二禡",
+        "gloss": ""
+      }
+    ],
+    "了": [
+      {
+        "id": "8-P-二萧",
+        "group": 8,
+        "tone": "P",
+        "subgroup": "二萧",
+        "gloss": ""
+      },
+      {
+        "id": "8-S-十七篠",
+        "group": 8,
+        "tone": "S",
+        "subgroup": "十七篠",
+        "gloss": ""
+      },
+      {
+        "id": "8-S-十七篠",
+        "group": 8,
+        "tone": "S",
+        "subgroup": "十七篠",
+        "gloss": ""
+      },
+      {
+        "id": "8-P-二蕭",
+        "group": 8,
+        "tone": "P",
+        "subgroup": "二蕭",
+        "gloss": ""
+      }
+    ],
+    "他": [
+      {
+        "id": "9-P-五歌",
+        "group": 9,
+        "tone": "P",
+        "subgroup": "五歌",
+        "gloss": ""
+      },
+      {
+        "id": "9-Q-二十一个",
+        "group": 9,
+        "tone": "Q",
+        "subgroup": "二十一个",
+        "gloss": ""
+      },
+      {
+        "id": "10-P-六麻",
+        "group": 10,
+        "tone": "P",
+        "subgroup": "六麻",
+        "gloss": ""
+      }
+    ],
+    "佳": [
+      {
+        "id": "5-P-九佳<半>",
+        "group": 5,
+        "tone": "P",
+        "subgroup": "九佳<半>",
+        "gloss": ""
+      },
+      {
+        "id": "10-P-九佳<半>",
+        "group": 10,
+        "tone": "P",
+        "subgroup": "九佳<半>",
+        "gloss": ""
+      }
+    ],
+    "信": [
+      {
+        "id": "6-Q-十二震",
+        "group": 6,
+        "tone": "Q",
+        "subgroup": "十二震",
+        "gloss": ""
+      },
+      {
+        "id": "6-P-十一真",
+        "group": 6,
+        "tone": "P",
+        "subgroup": "十一真",
+        "gloss": ""
+      }
+    ],
+    "候": [
+      {
+        "id": "12-Q-二十六宥",
+        "group": 12,
+        "tone": "Q",
+        "subgroup": "二十六宥",
+        "gloss": ""
+      }
+    ],
+    "借": [
+      {
+        "id": "10-Q-二十二祃",
+        "group": 10,
+        "tone": "Q",
+        "subgroup": "二十二祃",
+        "gloss": ""
+      },
+      {
+        "id": "10-Q-二十二禡",
+        "group": 10,
+        "tone": "Q",
+        "subgroup": "二十二禡",
+        "gloss": ""
+      },
+      {
+        "id": "17-R-十一陌",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十一陌",
+        "gloss": ""
+      }
+    ],
+    "倦": [
+      {
+        "id": "7-Q-十七霰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十七霰",
+        "gloss": ""
+      }
+    ],
+    "催": [
+      {
+        "id": "3-P-十灰<半>",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "十灰<半>",
+        "gloss": ""
+      }
+    ],
+    "儿": [
+      {
+        "id": "3-P-四支",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "四支",
+        "gloss": ""
+      },
+      {
+        "id": "3-P-八齐",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "八齐",
+        "gloss": ""
+      }
+    ],
+    "冉": [
+      {
+        "id": "14-S-二十八俭",
+        "group": 14,
+        "tone": "S",
+        "subgroup": "二十八俭",
+        "gloss": ""
+      },
+      {
+        "id": "14-S-二十八儉",
+        "group": 14,
+        "tone": "S",
+        "subgroup": "二十八儉",
+        "gloss": ""
+      }
+    ],
+    "冰": [
+      {
+        "id": "11-P-十蒸",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "十蒸",
+        "gloss": ""
+      }
+    ],
+    "凄": [
+      {
+        "id": "3-P-八齐",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "八齐",
+        "gloss": ""
+      }
+    ],
+    "凌": [
+      {
+        "id": "11-P-十蒸",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "十蒸",
+        "gloss": ""
+      },
+      {
+        "id": "11-Q-二十五径",
+        "group": 11,
+        "tone": "Q",
+        "subgroup": "二十五径",
+        "gloss": ""
+      }
+    ],
+    "凝": [
+      {
+        "id": "11-P-十蒸",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "十蒸",
+        "gloss": ""
+      },
+      {
+        "id": "11-P-十蒸",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "十蒸",
+        "gloss": ""
+      },
+      {
+        "id": "11-P-十蒸",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "十蒸",
+        "gloss": ""
+      },
+      {
+        "id": "11-Q-二十五径",
+        "group": 11,
+        "tone": "Q",
+        "subgroup": "二十五径",
+        "gloss": ""
+      }
+    ],
+    "凰": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      },
+      {
+        "id": "2-P-七陽",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七陽",
+        "gloss": ""
+      }
+    ],
+    "切": [
+      {
+        "id": "18-R-九屑",
+        "group": 18,
+        "tone": "R",
+        "subgroup": "九屑",
+        "gloss": ""
+      },
+      {
+        "id": "3-Q-八霁",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "八霁",
+        "gloss": ""
+      }
+    ],
+    "劝": [
+      {
+        "id": "7-Q-十四愿<半>",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十四愿<半>",
+        "gloss": ""
+      }
+    ],
+    "半": [
+      {
+        "id": "7-Q-十五翰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十五翰",
+        "gloss": ""
+      }
+    ],
+    "华": [
+      {
+        "id": "10-P-六麻",
+        "group": 10,
+        "tone": "P",
+        "subgroup": "六麻",
+        "gloss": ""
+      },
+      {
+        "id": "10-Q-二十二祃",
+        "group": 10,
+        "tone": "Q",
+        "subgroup": "二十二祃",
+        "gloss": ""
+      },
+      {
+        "id": "10-Q-二十二祃",
+        "group": 10,
+        "tone": "Q",
+        "subgroup": "二十二祃",
+        "gloss": ""
+      }
+    ],
+    "取": [
+      {
+        "id": "4-S-七麌",
+        "group": 4,
+        "tone": "S",
+        "subgroup": "七麌",
+        "gloss": ""
+      },
+      {
+        "id": "12-S-二十五有",
+        "group": 12,
+        "tone": "S",
+        "subgroup": "二十五有",
+        "gloss": ""
+      },
+      {
+        "id": "12-S-二十五有",
+        "group": 12,
+        "tone": "S",
+        "subgroup": "二十五有",
+        "gloss": ""
+      },
+      {
+        "id": "12-S-二十五有",
+        "group": 12,
+        "tone": "S",
+        "subgroup": "二十五有",
+        "gloss": ""
+      }
+    ],
+    "叹": [
+      {
+        "id": "7-P-十四寒",
+        "group": 7,
+        "tone": "P",
+        "subgroup": "十四寒",
+        "gloss": ""
+      },
+      {
+        "id": "7-Q-十五翰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十五翰",
+        "gloss": ""
+      },
+      {
+        "id": "7-P-十四寒",
+        "group": 7,
+        "tone": "P",
+        "subgroup": "十四寒",
+        "gloss": ""
+      },
+      {
+        "id": "7-Q-十五翰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十五翰",
+        "gloss": ""
+      }
+    ],
+    "君": [
+      {
+        "id": "6-P-十二文",
+        "group": 6,
+        "tone": "P",
+        "subgroup": "十二文",
+        "gloss": ""
+      }
+    ],
+    "含": [
+      {
+        "id": "14-P-十三覃",
+        "group": 14,
+        "tone": "P",
+        "subgroup": "十三覃",
+        "gloss": ""
+      }
+    ],
+    "咽": [
+      {
+        "id": "7-P-一先",
+        "group": 7,
+        "tone": "P",
+        "subgroup": "一先",
+        "gloss": ""
+      },
+      {
+        "id": "7-Q-十七霰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十七霰",
+        "gloss": ""
+      },
+      {
+        "id": "18-R-九屑",
+        "group": 18,
+        "tone": "R",
+        "subgroup": "九屑",
+        "gloss": ""
+      },
+      {
+        "id": "18-R-九屑",
+        "group": 18,
+        "tone": "R",
+        "subgroup": "九屑",
+        "gloss": ""
+      }
+    ],
+    "地": [
+      {
+        "id": "3-Q-四寘",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "四寘",
+        "gloss": ""
+      }
+    ],
+    "堂": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      },
+      {
+        "id": "2-P-七陽",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七陽",
+        "gloss": ""
+      }
+    ],
+    "堆": [
+      {
+        "id": "3-P-十灰<半>",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "十灰<半>",
+        "gloss": ""
+      }
+    ],
+    "堪": [
+      {
+        "id": "14-P-十三覃",
+        "group": 14,
+        "tone": "P",
+        "subgroup": "十三覃",
+        "gloss": ""
+      }
+    ],
+    "塘": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      },
+      {
+        "id": "2-P-七陽",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七陽",
+        "gloss": ""
+      }
+    ],
+    "娉": [
+      {
+        "id": "11-P-九青",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "九青",
+        "gloss": ""
+      },
+      {
+        "id": "11-Q-二十四敬",
+        "group": 11,
+        "tone": "Q",
+        "subgroup": "二十四敬",
+        "gloss": ""
+      }
+    ],
+    "婷": [
+      {
+        "id": "11-P-九青",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "九青",
+        "gloss": ""
+      }
+    ],
+    "字": [
+      {
+        "id": "3-Q-四寘",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "四寘",
+        "gloss": ""
+      }
+    ],
+    "宵": [
+      {
+        "id": "8-P-二萧",
+        "group": 8,
+        "tone": "P",
+        "subgroup": "二萧",
+        "gloss": ""
+      },
+      {
+        "id": "8-P-二蕭",
+        "group": 8,
+        "tone": "P",
+        "subgroup": "二蕭",
+        "gloss": ""
+      }
+    ],
+    "寸": [
+      {
+        "id": "6-Q-十四愿<半>",
+        "group": 6,
+        "tone": "Q",
+        "subgroup": "十四愿<半>",
+        "gloss": ""
+      },
+      {
+        "id": "6-Q-十四願<半>",
+        "group": 6,
+        "tone": "Q",
+        "subgroup": "十四願<半>",
+        "gloss": ""
+      }
+    ],
+    "寻": [
+      {
+        "id": "13-P-十二侵",
+        "group": 13,
+        "tone": "P",
+        "subgroup": "十二侵",
+        "gloss": ""
+      }
+    ],
+    "将": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      },
+      {
+        "id": "2-Q-二十三漾",
+        "group": 2,
+        "tone": "Q",
+        "subgroup": "二十三漾",
+        "gloss": ""
+      }
+    ],
+    "尊": [
+      {
+        "id": "6-P-十三元<半>",
+        "group": 6,
+        "tone": "P",
+        "subgroup": "十三元<半>",
+        "gloss": ""
+      },
+      {
+        "id": "6-P-十三元",
+        "group": 6,
+        "tone": "P",
+        "subgroup": "十三元",
+        "gloss": ""
+      }
+    ],
+    "尘": [
+      {
+        "id": "6-P-十一真",
+        "group": 6,
+        "tone": "P",
+        "subgroup": "十一真",
+        "gloss": ""
+      }
+    ],
+    "屏": [
+      {
+        "id": "11-P-九青",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "九青",
+        "gloss": ""
+      },
+      {
+        "id": "11-S-二十三梗",
+        "group": 11,
+        "tone": "S",
+        "subgroup": "二十三梗",
+        "gloss": ""
+      }
+    ],
+    "峰": [
+      {
+        "id": "1-P-二冬",
+        "group": 1,
+        "tone": "P",
+        "subgroup": "二冬",
+        "gloss": ""
+      }
+    ],
+    "川": [
+      {
+        "id": "7-P-一先",
+        "group": 7,
+        "tone": "P",
+        "subgroup": "一先",
+        "gloss": ""
+      }
+    ],
+    "帐": [
+      {
+        "id": "2-Q-二十三漾",
+        "group": 2,
+        "tone": "Q",
+        "subgroup": "二十三漾",
+        "gloss": ""
+      }
+    ],
+    "床": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      },
+      {
+        "id": "2-P-七陽",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七陽",
+        "gloss": ""
+      }
+    ],
+    "度": [
+      {
+        "id": "4-Q-七遇",
+        "group": 4,
+        "tone": "Q",
+        "subgroup": "七遇",
+        "gloss": ""
+      },
+      {
+        "id": "16-R-十药",
+        "group": 16,
+        "tone": "R",
+        "subgroup": "十药",
+        "gloss": ""
+      },
+      {
+        "id": "16-R-十藥",
+        "group": 16,
+        "tone": "R",
+        "subgroup": "十藥",
+        "gloss": ""
+      },
+      {
+        "id": "16-R-十药",
+        "group": 16,
+        "tone": "R",
+        "subgroup": "十药",
+        "gloss": ""
+      }
+    ],
+    "庭": [
+      {
+        "id": "11-P-九青",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "九青",
+        "gloss": ""
+      },
+      {
+        "id": "11-Q-二十五径",
+        "group": 11,
+        "tone": "Q",
+        "subgroup": "二十五径",
+        "gloss": ""
+      }
+    ],
+    "异": [
+      {
+        "id": "3-Q-四寘",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "四寘",
+        "gloss": ""
+      }
+    ],
+    "引": [
+      {
+        "id": "6-S-十一轸",
+        "group": 6,
+        "tone": "S",
+        "subgroup": "十一轸",
+        "gloss": ""
+      },
+      {
+        "id": "6-S-十一軫",
+        "group": 6,
+        "tone": "S",
+        "subgroup": "十一軫",
+        "gloss": ""
+      },
+      {
+        "id": "6-Q-十二震",
+        "group": 6,
+        "tone": "Q",
+        "subgroup": "十二震",
+        "gloss": ""
+      }
+    ],
+    "得": [
+      {
+        "id": "17-R-十三职",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十三职",
+        "gloss": ""
+      },
+      {
+        "id": "17-R-十三職",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十三職",
+        "gloss": ""
+      }
+    ],
+    "忍": [
+      {
+        "id": "6-S-十一轸",
+        "group": 6,
+        "tone": "S",
+        "subgroup": "十一轸",
+        "gloss": ""
+      },
+      {
+        "id": "6-S-十一軫",
+        "group": 6,
+        "tone": "S",
+        "subgroup": "十一軫",
+        "gloss": ""
+      }
+    ],
+    "念": [
+      {
+        "id": "7-Q-十七霰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十七霰",
+        "gloss": ""
+      },
+      {
+        "id": "14-Q-二十九艳",
+        "group": 14,
+        "tone": "Q",
+        "subgroup": "二十九艳",
+        "gloss": ""
+      },
+      {
+        "id": "7-Q-十七霰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十七霰",
+        "gloss": ""
+      },
+      {
+        "id": "14-Q-二十九艷",
+        "group": 14,
+        "tone": "Q",
+        "subgroup": "二十九艷",
+        "gloss": ""
+      }
+    ],
+    "忽": [
+      {
+        "id": "18-R-六月",
+        "group": 18,
+        "tone": "R",
+        "subgroup": "六月",
+        "gloss": ""
+      }
+    ],
+    "怎": [
+      {
+        "id": "13-S-二十六寝",
+        "group": 13,
+        "tone": "S",
+        "subgroup": "二十六寝",
+        "gloss": ""
+      },
+      {
+        "id": "13-S-二十六寢",
+        "group": 13,
+        "tone": "S",
+        "subgroup": "二十六寢",
+        "gloss": ""
+      }
+    ],
+    "怨": [
+      {
+        "id": "7-Q-十四愿<半>",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十四愿<半>",
+        "gloss": ""
+      },
+      {
+        "id": "7-Q-十四願<半>",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十四願<半>",
+        "gloss": ""
+      },
+      {
+        "id": "7-P-十三元",
+        "group": 7,
+        "tone": "P",
+        "subgroup": "十三元",
+        "gloss": ""
+      }
+    ],
+    "恋": [
+      {
+        "id": "7-Q-十七霰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十七霰",
+        "gloss": ""
+      }
+    ],
+    "息": [
+      {
+        "id": "17-R-十三职",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十三职",
+        "gloss": ""
+      },
+      {
+        "id": "17-R-十三職",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十三職",
+        "gloss": ""
+      }
+    ],
+    "悴": [
+      {
+        "id": "3-Q-四寘",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "四寘",
+        "gloss": ""
+      }
+    ],
+    "惟": [
+      {
+        "id": "3-P-四支",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "四支",
+        "gloss": ""
+      }
+    ],
+    "惨": [
+      {
+        "id": "14-S-二十七感",
+        "group": 14,
+        "tone": "S",
+        "subgroup": "二十七感",
+        "gloss": ""
+      }
+    ],
+    "慕": [
+      {
+        "id": "4-Q-七遇",
+        "group": 4,
+        "tone": "Q",
+        "subgroup": "七遇",
+        "gloss": ""
+      }
+    ],
+    "憔": [
+      {
+        "id": "8-P-二萧",
+        "group": 8,
+        "tone": "P",
+        "subgroup": "二萧",
+        "gloss": ""
+      },
+      {
+        "id": "8-P-二蕭",
+        "group": 8,
+        "tone": "P",
+        "subgroup": "二蕭",
+        "gloss": ""
+      }
+    ],
+    "戚": [
+      {
+        "id": "17-R-十二锡",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十二锡",
+        "gloss": ""
+      },
+      {
+        "id": "17-R-十二錫",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十二錫",
+        "gloss": ""
+      }
+    ],
+    "执": [
+      {
+        "id": "17-R-十四缉",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十四缉",
+        "gloss": ""
+      }
+    ],
+    "损": [
+      {
+        "id": "6-S-十三阮<半>",
+        "group": 6,
+        "tone": "S",
+        "subgroup": "十三阮<半>",
+        "gloss": ""
+      }
+    ],
+    "摘": [
+      {
+        "id": "17-R-十一陌",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十一陌",
+        "gloss": ""
+      }
+    ],
+    "收": [
+      {
+        "id": "12-P-十一尤",
+        "group": 12,
+        "tone": "P",
+        "subgroup": "十一尤",
+        "gloss": ""
+      },
+      {
+        "id": "12-Q-二十六宥",
+        "group": 12,
+        "tone": "Q",
+        "subgroup": "二十六宥",
+        "gloss": ""
+      }
+    ],
+    "敌": [
+      {
+        "id": "17-R-十二锡",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十二锡",
+        "gloss": ""
+      }
+    ],
+    "教": [
+      {
+        "id": "8-P-三肴",
+        "group": 8,
+        "tone": "P",
+        "subgroup": "三肴",
+        "gloss": ""
+      },
+      {
+        "id": "8-Q-十九效",
+        "group": 8,
+        "tone": "Q",
+        "subgroup": "十九效",
+        "gloss": ""
+      },
+      {
+        "id": "8-P-三餚",
+        "group": 8,
+        "tone": "P",
+        "subgroup": "三餚",
+        "gloss": ""
+      },
+      {
+        "id": "8-Q-十九效",
+        "group": 8,
+        "tone": "Q",
+        "subgroup": "十九效",
+        "gloss": ""
+      }
+    ],
+    "敛": [
+      {
+        "id": "14-S-二十八俭",
+        "group": 14,
+        "tone": "S",
+        "subgroup": "二十八俭",
+        "gloss": ""
+      },
+      {
+        "id": "14-Q-二十九艳",
+        "group": 14,
+        "tone": "Q",
+        "subgroup": "二十九艳",
+        "gloss": ""
+      },
+      {
+        "id": "14-S-二十八俭",
+        "group": 14,
+        "tone": "S",
+        "subgroup": "二十八俭",
+        "gloss": ""
+      },
+      {
+        "id": "14-Q-二十九艳",
+        "group": 14,
+        "tone": "Q",
+        "subgroup": "二十九艳",
+        "gloss": ""
+      }
+    ],
+    "散": [
+      {
+        "id": "7-S-十四旱",
+        "group": 7,
+        "tone": "S",
+        "subgroup": "十四旱",
+        "gloss": ""
+      },
+      {
+        "id": "7-Q-十五翰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十五翰",
+        "gloss": ""
+      },
+      {
+        "id": "7-S-十四旱",
+        "group": 7,
+        "tone": "S",
+        "subgroup": "十四旱",
+        "gloss": ""
+      },
+      {
+        "id": "7-S-十四旱",
+        "group": 7,
+        "tone": "S",
+        "subgroup": "十四旱",
+        "gloss": ""
+      },
+      {
+        "id": "7-Q-十五翰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十五翰",
+        "gloss": ""
+      }
+    ],
+    "数": [
+      {
+        "id": "4-S-七麌",
+        "group": 4,
+        "tone": "S",
+        "subgroup": "七麌",
+        "gloss": ""
+      },
+      {
+        "id": "4-Q-七遇",
+        "group": 4,
+        "tone": "Q",
+        "subgroup": "七遇",
+        "gloss": ""
+      },
+      {
+        "id": "16-R-三觉",
+        "group": 16,
+        "tone": "R",
+        "subgroup": "三觉",
+        "gloss": ""
+      },
+      {
+        "id": "4-S-七麌",
+        "group": 4,
+        "tone": "S",
+        "subgroup": "七麌",
+        "gloss": ""
+      },
+      {
+        "id": "4-Q-七遇",
+        "group": 4,
+        "tone": "Q",
+        "subgroup": "七遇",
+        "gloss": ""
+      }
+    ],
+    "方": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      },
+      {
+        "id": "2-P-七陽",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七陽",
+        "gloss": ""
+      }
+    ],
+    "昏": [
+      {
+        "id": "6-P-十三元<半>",
+        "group": 6,
+        "tone": "P",
+        "subgroup": "十三元<半>",
+        "gloss": ""
+      }
+    ],
+    "映": [
+      {
+        "id": "11-Q-二十四敬",
+        "group": 11,
+        "tone": "Q",
+        "subgroup": "二十四敬",
+        "gloss": ""
+      }
+    ],
+    "暗": [
+      {
+        "id": "14-Q-二十八勘",
+        "group": 14,
+        "tone": "Q",
+        "subgroup": "二十八勘",
+        "gloss": ""
+      },
+      {
+        "id": "7-Q-十七霰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十七霰",
+        "gloss": ""
+      }
+    ],
+    "暮": [
+      {
+        "id": "4-Q-七遇",
+        "group": 4,
+        "tone": "Q",
+        "subgroup": "七遇",
+        "gloss": ""
+      }
+    ],
+    "未": [
+      {
+        "id": "3-Q-五未",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "五未",
+        "gloss": ""
+      }
+    ],
+    "朵": [
+      {
+        "id": "9-S-二十哿",
+        "group": 9,
+        "tone": "S",
+        "subgroup": "二十哿",
+        "gloss": ""
+      }
+    ],
+    "板": [
+      {
+        "id": "7-S-十五潸",
+        "group": 7,
+        "tone": "S",
+        "subgroup": "十五潸",
+        "gloss": ""
+      }
+    ],
+    "梧": [
+      {
+        "id": "4-P-七虞",
+        "group": 4,
+        "tone": "P",
+        "subgroup": "七虞",
+        "gloss": ""
+      }
+    ],
+    "棠": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      },
+      {
+        "id": "2-P-七陽",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七陽",
+        "gloss": ""
+      }
+    ],
+    "次": [
+      {
+        "id": "3-Q-四寘",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "四寘",
+        "gloss": ""
+      }
+    ],
+    "正": [
+      {
+        "id": "11-P-八庚",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "八庚",
+        "gloss": ""
+      },
+      {
+        "id": "11-Q-二十四敬",
+        "group": 11,
+        "tone": "Q",
+        "subgroup": "二十四敬",
+        "gloss": ""
+      },
+      {
+        "id": "11-Q-二十四敬",
+        "group": 11,
+        "tone": "Q",
+        "subgroup": "二十四敬",
+        "gloss": ""
+      }
+    ],
+    "池": [
+      {
+        "id": "3-P-四支",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "四支",
+        "gloss": ""
+      }
+    ],
+    "波": [
+      {
+        "id": "9-P-五歌",
+        "group": 9,
+        "tone": "P",
+        "subgroup": "五歌",
+        "gloss": ""
+      }
+    ],
+    "泻": [
+      {
+        "id": "10-S-二十一马",
+        "group": 10,
+        "tone": "S",
+        "subgroup": "二十一马",
+        "gloss": ""
+      },
+      {
+        "id": "10-Q-二十二祃",
+        "group": 10,
+        "tone": "Q",
+        "subgroup": "二十二祃",
+        "gloss": ""
+      }
+    ],
+    "浩": [
+      {
+        "id": "8-S-十九皓",
+        "group": 8,
+        "tone": "S",
+        "subgroup": "十九皓",
+        "gloss": ""
+      }
+    ],
+    "涯": [
+      {
+        "id": "3-P-四支",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "四支",
+        "gloss": ""
+      },
+      {
+        "id": "5-P-九佳<半>",
+        "group": 5,
+        "tone": "P",
+        "subgroup": "九佳<半>",
+        "gloss": ""
+      },
+      {
+        "id": "10-P-九佳<半>",
+        "group": 10,
+        "tone": "P",
+        "subgroup": "九佳<半>",
+        "gloss": ""
+      },
+      {
+        "id": "10-P-六麻",
+        "group": 10,
+        "tone": "P",
+        "subgroup": "六麻",
+        "gloss": ""
+      },
+      {
+        "id": "3-P-四支",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "四支",
+        "gloss": ""
+      },
+      {
+        "id": "5-P-九佳<半>",
+        "group": 5,
+        "tone": "P",
+        "subgroup": "九佳<半>",
+        "gloss": ""
+      },
+      {
+        "id": "10-P-九佳<半>",
+        "group": 10,
+        "tone": "P",
+        "subgroup": "九佳<半>",
+        "gloss": ""
+      },
+      {
+        "id": "10-P-六麻",
+        "group": 10,
+        "tone": "P",
+        "subgroup": "六麻",
+        "gloss": ""
+      },
+      {
+        "id": "3-P-四支",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "四支",
+        "gloss": ""
+      },
+      {
+        "id": "5-P-九佳",
+        "group": 5,
+        "tone": "P",
+        "subgroup": "九佳",
+        "gloss": ""
+      },
+      {
+        "id": "10-P-九佳",
+        "group": 10,
+        "tone": "P",
+        "subgroup": "九佳",
+        "gloss": ""
+      }
+    ],
+    "淡": [
+      {
+        "id": "14-Q-二十八勘",
+        "group": 14,
+        "tone": "Q",
+        "subgroup": "二十八勘",
+        "gloss": ""
+      },
+      {
+        "id": "14-S-二十七感",
+        "group": 14,
+        "tone": "S",
+        "subgroup": "二十七感",
+        "gloss": ""
+      }
+    ],
+    "港": [
+      {
+        "id": "2-S-三讲",
+        "group": 2,
+        "tone": "S",
+        "subgroup": "三讲",
+        "gloss": ""
+      },
+      {
+        "id": "2-S-三講",
+        "group": 2,
+        "tone": "S",
+        "subgroup": "三講",
+        "gloss": ""
+      }
+    ],
+    "湘": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      },
+      {
+        "id": "2-P-七陽",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七陽",
+        "gloss": ""
+      }
+    ],
+    "滴": [
+      {
+        "id": "17-R-十二锡",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十二锡",
+        "gloss": ""
+      },
+      {
+        "id": "17-R-十二錫",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十二錫",
+        "gloss": ""
+      }
+    ],
+    "瀛": [
+      {
+        "id": "11-P-八庚",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "八庚",
+        "gloss": ""
+      }
+    ],
+    "灯": [
+      {
+        "id": "11-P-十蒸",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "十蒸",
+        "gloss": ""
+      }
+    ],
+    "灵": [
+      {
+        "id": "11-P-九青",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "九青",
+        "gloss": ""
+      }
+    ],
+    "烛": [
+      {
+        "id": "15-R-二沃",
+        "group": 15,
+        "tone": "R",
+        "subgroup": "二沃",
+        "gloss": ""
+      }
+    ],
+    "瑟": [
+      {
+        "id": "17-R-四质",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "四质",
+        "gloss": ""
+      },
+      {
+        "id": "17-R-四質",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "四質",
+        "gloss": ""
+      },
+      {
+        "id": "3-Q-四寘",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "四寘",
+        "gloss": ""
+      }
+    ],
+    "皋": [
+      {
+        "id": "8-P-四豪",
+        "group": 8,
+        "tone": "P",
+        "subgroup": "四豪",
+        "gloss": ""
+      }
+    ],
+    "盈": [
+      {
+        "id": "11-P-八庚",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "八庚",
+        "gloss": ""
+      }
+    ],
+    "盏": [
+      {
+        "id": "7-S-十五潸",
+        "group": 7,
+        "tone": "S",
+        "subgroup": "十五潸",
+        "gloss": ""
+      }
+    ],
+    "着": [
+      {
+        "id": "16-R-十药",
+        "group": 16,
+        "tone": "R",
+        "subgroup": "十药",
+        "gloss": ""
+      }
+    ],
+    "破": [
+      {
+        "id": "9-Q-二十一个",
+        "group": 9,
+        "tone": "Q",
+        "subgroup": "二十一个",
+        "gloss": ""
+      },
+      {
+        "id": "9-Q-二十一箇",
+        "group": 9,
+        "tone": "Q",
+        "subgroup": "二十一箇",
+        "gloss": ""
+      }
+    ],
+    "禁": [
+      {
+        "id": "13-P-十二侵",
+        "group": 13,
+        "tone": "P",
+        "subgroup": "十二侵",
+        "gloss": ""
+      },
+      {
+        "id": "13-Q-二十七沁",
+        "group": 13,
+        "tone": "Q",
+        "subgroup": "二十七沁",
+        "gloss": ""
+      },
+      {
+        "id": "13-P-十二侵",
+        "group": 13,
+        "tone": "P",
+        "subgroup": "十二侵",
+        "gloss": ""
+      },
+      {
+        "id": "13-P-十二侵",
+        "group": 13,
+        "tone": "P",
+        "subgroup": "十二侵",
+        "gloss": ""
+      },
+      {
+        "id": "13-Q-二十七沁",
+        "group": 13,
+        "tone": "Q",
+        "subgroup": "二十七沁",
+        "gloss": ""
+      }
+    ],
+    "种": [
+      {
+        "id": "1-S-二肿",
+        "group": 1,
+        "tone": "S",
+        "subgroup": "二肿",
+        "gloss": ""
+      },
+      {
+        "id": "1-Q-二宋",
+        "group": 1,
+        "tone": "Q",
+        "subgroup": "二宋",
+        "gloss": ""
+      },
+      {
+        "id": "1-P-一东",
+        "group": 1,
+        "tone": "P",
+        "subgroup": "一东",
+        "gloss": ""
+      }
+    ],
+    "积": [
+      {
+        "id": "3-Q-四寘",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "四寘",
+        "gloss": ""
+      },
+      {
+        "id": "17-R-十一陌",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十一陌",
+        "gloss": ""
+      },
+      {
+        "id": "3-Q-四寘",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "四寘",
+        "gloss": ""
+      },
+      {
+        "id": "17-R-十一陌",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十一陌",
+        "gloss": ""
+      }
+    ],
+    "穿": [
+      {
+        "id": "7-P-一先",
+        "group": 7,
+        "tone": "P",
+        "subgroup": "一先",
+        "gloss": ""
+      },
+      {
+        "id": "7-Q-十七霰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十七霰",
+        "gloss": ""
+      }
+    ],
+    "窗": [
+      {
+        "id": "2-P-三江",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "三江",
+        "gloss": ""
+      }
+    ],
+    "竟": [
+      {
+        "id": "11-Q-二十四敬",
+        "group": 11,
+        "tone": "Q",
+        "subgroup": "二十四敬",
+        "gloss": ""
+      }
+    ],
+    "笔": [
+      {
+        "id": "17-R-四质",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "四质",
+        "gloss": ""
+      }
+    ],
+    "筝": [
+      {
+        "id": "11-P-八庚",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "八庚",
+        "gloss": ""
+      }
+    ],
+    "紞": [
+      {
+        "id": "14-S-二十七感",
+        "group": 14,
+        "tone": "S",
+        "subgroup": "二十七感",
+        "gloss": ""
+      }
+    ],
+    "絮": [
+      {
+        "id": "4-Q-六御",
+        "group": 4,
+        "tone": "Q",
+        "subgroup": "六御",
+        "gloss": ""
+      }
+    ],
+    "约": [
+      {
+        "id": "16-R-十药",
+        "group": 16,
+        "tone": "R",
+        "subgroup": "十药",
+        "gloss": ""
+      },
+      {
+        "id": "8-Q-十八啸",
+        "group": 8,
+        "tone": "Q",
+        "subgroup": "十八啸",
+        "gloss": ""
+      }
+    ],
+    "纱": [
+      {
+        "id": "10-P-六麻",
+        "group": 10,
+        "tone": "P",
+        "subgroup": "六麻",
+        "gloss": ""
+      }
+    ],
+    "纵": [
+      {
+        "id": "1-P-二冬",
+        "group": 1,
+        "tone": "P",
+        "subgroup": "二冬",
+        "gloss": ""
+      },
+      {
+        "id": "1-Q-二宋",
+        "group": 1,
+        "tone": "Q",
+        "subgroup": "二宋",
+        "gloss": ""
+      },
+      {
+        "id": "1-S-一董",
+        "group": 1,
+        "tone": "S",
+        "subgroup": "一董",
+        "gloss": ""
+      }
+    ],
+    "经": [
+      {
+        "id": "11-P-九青",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "九青",
+        "gloss": ""
+      },
+      {
+        "id": "11-Q-二十五径",
+        "group": 11,
+        "tone": "Q",
+        "subgroup": "二十五径",
+        "gloss": ""
+      }
+    ],
+    "绣": [
+      {
+        "id": "12-Q-二十六宥",
+        "group": 12,
+        "tone": "Q",
+        "subgroup": "二十六宥",
+        "gloss": ""
+      }
+    ],
+    "绪": [
+      {
+        "id": "4-S-六语",
+        "group": 4,
+        "tone": "S",
+        "subgroup": "六语",
+        "gloss": ""
+      }
+    ],
+    "续": [
+      {
+        "id": "15-R-二沃",
+        "group": 15,
+        "tone": "R",
+        "subgroup": "二沃",
+        "gloss": ""
+      }
+    ],
+    "罍": [
+      {
+        "id": "3-P-十灰",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "十灰",
+        "gloss": ""
+      }
+    ],
+    "羞": [
+      {
+        "id": "12-P-十一尤",
+        "group": 12,
+        "tone": "P",
+        "subgroup": "十一尤",
+        "gloss": ""
+      }
+    ],
+    "肠": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      }
+    ],
+    "脸": [
+      {
+        "id": "14-S-二十八俭",
+        "group": 14,
+        "tone": "S",
+        "subgroup": "二十八俭",
+        "gloss": ""
+      }
+    ],
+    "舍": [
+      {
+        "id": "10-S-二十一马",
+        "group": 10,
+        "tone": "S",
+        "subgroup": "二十一马",
+        "gloss": ""
+      },
+      {
+        "id": "10-Q-二十二祃",
+        "group": 10,
+        "tone": "Q",
+        "subgroup": "二十二祃",
+        "gloss": ""
+      },
+      {
+        "id": "10-S-二十一馬",
+        "group": 10,
+        "tone": "S",
+        "subgroup": "二十一馬",
+        "gloss": ""
+      },
+      {
+        "id": "10-Q-二十二禡",
+        "group": 10,
+        "tone": "Q",
+        "subgroup": "二十二禡",
+        "gloss": ""
+      },
+      {
+        "id": "10-S-二十一马",
+        "group": 10,
+        "tone": "S",
+        "subgroup": "二十一马",
+        "gloss": ""
+      }
+    ],
+    "良": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      },
+      {
+        "id": "2-P-七陽",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七陽",
+        "gloss": ""
+      }
+    ],
+    "节": [
+      {
+        "id": "18-R-九屑",
+        "group": 18,
+        "tone": "R",
+        "subgroup": "九屑",
+        "gloss": ""
+      },
+      {
+        "id": "17-R-四质",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "四质",
+        "gloss": ""
+      }
+    ],
+    "芙": [
+      {
+        "id": "4-P-七虞",
+        "group": 4,
+        "tone": "P",
+        "subgroup": "七虞",
+        "gloss": ""
+      }
+    ],
+    "茫": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      },
+      {
+        "id": "2-P-七陽",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七陽",
+        "gloss": ""
+      }
+    ],
+    "荷": [
+      {
+        "id": "9-P-五歌",
+        "group": 9,
+        "tone": "P",
+        "subgroup": "五歌",
+        "gloss": ""
+      },
+      {
+        "id": "9-S-二十哿",
+        "group": 9,
+        "tone": "S",
+        "subgroup": "二十哿",
+        "gloss": ""
+      },
+      {
+        "id": "9-S-二十哿",
+        "group": 9,
+        "tone": "S",
+        "subgroup": "二十哿",
+        "gloss": ""
+      },
+      {
+        "id": "9-P-五歌",
+        "group": 9,
+        "tone": "P",
+        "subgroup": "五歌",
+        "gloss": ""
+      }
+    ],
+    "蓉": [
+      {
+        "id": "1-P-二冬",
+        "group": 1,
+        "tone": "P",
+        "subgroup": "二冬",
+        "gloss": ""
+      }
+    ],
+    "蘅": [
+      {
+        "id": "11-P-八庚",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "八庚",
+        "gloss": ""
+      }
+    ],
+    "虚": [
+      {
+        "id": "4-P-六鱼",
+        "group": 4,
+        "tone": "P",
+        "subgroup": "六鱼",
+        "gloss": ""
+      }
+    ],
+    "覆": [
+      {
+        "id": "12-Q-二十六宥",
+        "group": 12,
+        "tone": "Q",
+        "subgroup": "二十六宥",
+        "gloss": ""
+      },
+      {
+        "id": "15-R-一屋",
+        "group": 15,
+        "tone": "R",
+        "subgroup": "一屋",
+        "gloss": ""
+      }
+    ],
+    "觅": [
+      {
+        "id": "17-R-十二锡",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十二锡",
+        "gloss": ""
+      }
+    ],
+    "觉": [
+      {
+        "id": "8-Q-十九效",
+        "group": 8,
+        "tone": "Q",
+        "subgroup": "十九效",
+        "gloss": ""
+      },
+      {
+        "id": "16-R-三觉",
+        "group": 16,
+        "tone": "R",
+        "subgroup": "三觉",
+        "gloss": ""
+      }
+    ],
+    "解": [
+      {
+        "id": "5-S-九蟹",
+        "group": 5,
+        "tone": "S",
+        "subgroup": "九蟹",
+        "gloss": ""
+      },
+      {
+        "id": "5-Q-十卦",
+        "group": 5,
+        "tone": "Q",
+        "subgroup": "十卦",
+        "gloss": ""
+      }
+    ],
+    "言": [
+      {
+        "id": "7-P-十三元<半>",
+        "group": 7,
+        "tone": "P",
+        "subgroup": "十三元<半>",
+        "gloss": ""
+      }
+    ],
+    "许": [
+      {
+        "id": "4-S-六语",
+        "group": 4,
+        "tone": "S",
+        "subgroup": "六语",
+        "gloss": ""
+      }
+    ],
+    "设": [
+      {
+        "id": "18-R-九屑",
+        "group": 18,
+        "tone": "R",
+        "subgroup": "九屑",
+        "gloss": ""
+      }
+    ],
+    "识": [
+      {
+        "id": "3-Q-四寘",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "四寘",
+        "gloss": ""
+      },
+      {
+        "id": "17-R-十三职",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十三职",
+        "gloss": ""
+      }
+    ],
+    "试": [
+      {
+        "id": "3-Q-四寘",
+        "group": 3,
+        "tone": "Q",
+        "subgroup": "四寘",
+        "gloss": ""
+      }
+    ],
+    "路": [
+      {
+        "id": "4-Q-七遇",
+        "group": 4,
+        "tone": "Q",
+        "subgroup": "七遇",
+        "gloss": ""
+      }
+    ],
+    "跳": [
+      {
+        "id": "8-Q-十八啸",
+        "group": 8,
+        "tone": "Q",
+        "subgroup": "十八啸",
+        "gloss": ""
+      },
+      {
+        "id": "8-Q-十八嘯",
+        "group": 8,
+        "tone": "Q",
+        "subgroup": "十八嘯",
+        "gloss": ""
+      },
+      {
+        "id": "8-P-二萧",
+        "group": 8,
+        "tone": "P",
+        "subgroup": "二萧",
+        "gloss": ""
+      },
+      {
+        "id": "8-Q-十八啸",
+        "group": 8,
+        "tone": "Q",
+        "subgroup": "十八啸",
+        "gloss": ""
+      }
+    ],
+    "这": [
+      {
+        "id": "7-Q-十七霰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十七霰",
+        "gloss": ""
+      }
+    ],
+    "速": [
+      {
+        "id": "15-R-一屋",
+        "group": 15,
+        "tone": "R",
+        "subgroup": "一屋",
+        "gloss": ""
+      }
+    ],
+    "遍": [
+      {
+        "id": "7-Q-十七霰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十七霰",
+        "gloss": ""
+      }
+    ],
+    "遣": [
+      {
+        "id": "7-S-十六铣",
+        "group": 7,
+        "tone": "S",
+        "subgroup": "十六铣",
+        "gloss": ""
+      },
+      {
+        "id": "7-S-十六銑",
+        "group": 7,
+        "tone": "S",
+        "subgroup": "十六銑",
+        "gloss": ""
+      },
+      {
+        "id": "7-S-十六铣",
+        "group": 7,
+        "tone": "S",
+        "subgroup": "十六铣",
+        "gloss": ""
+      },
+      {
+        "id": "7-Q-十七霰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十七霰",
+        "gloss": ""
+      }
+    ],
+    "那": [
+      {
+        "id": "9-S-二十哿",
+        "group": 9,
+        "tone": "S",
+        "subgroup": "二十哿",
+        "gloss": ""
+      },
+      {
+        "id": "10-S-二十一马",
+        "group": 10,
+        "tone": "S",
+        "subgroup": "二十一马",
+        "gloss": ""
+      },
+      {
+        "id": "10-S-二十一馬",
+        "group": 10,
+        "tone": "S",
+        "subgroup": "二十一馬",
+        "gloss": ""
+      },
+      {
+        "id": "9-P-五歌",
+        "group": 9,
+        "tone": "P",
+        "subgroup": "五歌",
+        "gloss": ""
+      },
+      {
+        "id": "9-Q-二十一个",
+        "group": 9,
+        "tone": "Q",
+        "subgroup": "二十一个",
+        "gloss": ""
+      }
+    ],
+    "郎": [
+      {
+        "id": "2-P-七阳",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七阳",
+        "gloss": ""
+      },
+      {
+        "id": "2-P-七陽",
+        "group": 2,
+        "tone": "P",
+        "subgroup": "七陽",
+        "gloss": ""
+      }
+    ],
+    "都": [
+      {
+        "id": "4-P-七虞",
+        "group": 4,
+        "tone": "P",
+        "subgroup": "七虞",
+        "gloss": ""
+      }
+    ],
+    "醒": [
+      {
+        "id": "11-P-九青",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "九青",
+        "gloss": ""
+      },
+      {
+        "id": "11-S-二十四迥",
+        "group": 11,
+        "tone": "S",
+        "subgroup": "二十四迥",
+        "gloss": ""
+      },
+      {
+        "id": "11-S-二十四迥",
+        "group": 11,
+        "tone": "S",
+        "subgroup": "二十四迥",
+        "gloss": ""
+      },
+      {
+        "id": "11-S-二十四迥",
+        "group": 11,
+        "tone": "S",
+        "subgroup": "二十四迥",
+        "gloss": ""
+      },
+      {
+        "id": "11-Q-二十五径",
+        "group": 11,
+        "tone": "Q",
+        "subgroup": "二十五径",
+        "gloss": ""
+      }
+    ],
+    "铮": [
+      {
+        "id": "11-P-八庚",
+        "group": 11,
+        "tone": "P",
+        "subgroup": "八庚",
+        "gloss": ""
+      }
+    ],
+    "锁": [
+      {
+        "id": "9-S-二十哿",
+        "group": 9,
+        "tone": "S",
+        "subgroup": "二十哿",
+        "gloss": ""
+      }
+    ],
+    "锦": [
+      {
+        "id": "13-S-二十六寝",
+        "group": 13,
+        "tone": "S",
+        "subgroup": "二十六寝",
+        "gloss": ""
+      }
+    ],
+    "闲": [
+      {
+        "id": "7-P-十五删",
+        "group": 7,
+        "tone": "P",
+        "subgroup": "十五删",
+        "gloss": ""
+      }
+    ],
+    "闺": [
+      {
+        "id": "3-P-八齐",
+        "group": 3,
+        "tone": "P",
+        "subgroup": "八齐",
+        "gloss": ""
+      }
+    ],
+    "阑": [
+      {
+        "id": "7-P-十四寒",
+        "group": 7,
+        "tone": "P",
+        "subgroup": "十四寒",
+        "gloss": ""
+      }
+    ],
+    "阔": [
+      {
+        "id": "18-R-七曷",
+        "group": 18,
+        "tone": "R",
+        "subgroup": "七曷",
+        "gloss": ""
+      }
+    ],
+    "限": [
+      {
+        "id": "7-S-十五潸",
+        "group": 7,
+        "tone": "S",
+        "subgroup": "十五潸",
+        "gloss": ""
+      }
+    ],
+    "院": [
+      {
+        "id": "7-Q-十七霰",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十七霰",
+        "gloss": ""
+      }
+    ],
+    "雁": [
+      {
+        "id": "7-Q-十六谏",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十六谏",
+        "gloss": ""
+      },
+      {
+        "id": "7-Q-十六諫",
+        "group": 7,
+        "tone": "Q",
+        "subgroup": "十六諫",
+        "gloss": ""
+      }
+    ],
+    "霞": [
+      {
+        "id": "10-P-六麻",
+        "group": 10,
+        "tone": "P",
+        "subgroup": "六麻",
+        "gloss": ""
+      }
+    ],
+    "霭": [
+      {
+        "id": "5-Q-九泰<半>",
+        "group": 5,
+        "tone": "Q",
+        "subgroup": "九泰<半>",
+        "gloss": ""
+      }
+    ],
+    "音": [
+      {
+        "id": "13-P-十二侵",
+        "group": 13,
+        "tone": "P",
+        "subgroup": "十二侵",
+        "gloss": ""
+      }
+    ],
+    "须": [
+      {
+        "id": "4-P-七虞",
+        "group": 4,
+        "tone": "P",
+        "subgroup": "七虞",
+        "gloss": ""
+      }
+    ],
+    "骤": [
+      {
+        "id": "12-Q-二十六宥",
+        "group": 12,
+        "tone": "Q",
+        "subgroup": "二十六宥",
+        "gloss": ""
+      }
+    ],
+    "鱼": [
+      {
+        "id": "4-P-六鱼",
+        "group": 4,
+        "tone": "P",
+        "subgroup": "六鱼",
+        "gloss": ""
+      }
+    ],
+    "鹭": [
+      {
+        "id": "4-Q-七遇",
+        "group": 4,
+        "tone": "Q",
+        "subgroup": "七遇",
+        "gloss": ""
+      }
+    ],
+    "黑": [
+      {
+        "id": "17-R-十三职",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十三职",
+        "gloss": ""
+      },
+      {
+        "id": "17-R-十三職",
+        "group": 17,
+        "tone": "R",
+        "subgroup": "十三職",
+        "gloss": ""
+      }
+    ],
+    "黯": [
+      {
+        "id": "14-S-二十九豏",
+        "group": 14,
+        "tone": "S",
+        "subgroup": "二十九豏",
+        "gloss": ""
+      },
+      {
+        "id": "14-P-十五咸",
+        "group": 14,
+        "tone": "P",
+        "subgroup": "十五咸",
+        "gloss": ""
+      }
+    ],
+    "鼓": [
+      {
+        "id": "4-S-七麌",
+        "group": 4,
+        "tone": "S",
+        "subgroup": "七麌",
+        "gloss": ""
+      }
     ]
   }
 }

@@ -661,5 +661,974 @@
     "version": "sample-1",
     "scope": "仅此谱式。",
     "notes": ""
+  },
+  {
+    "id": "yumeiren-qinding-v1",
+    "name": "虞美人",
+    "author": "李煜",
+    "summary": "双调五十六字，前后段各四句，两仄韵、两平韵",
+    "total": 56,
+    "sections": [
+      4,
+      4
+    ],
+    "lines": [
+      {
+        "example": "风回小院庭芜绿",
+        "pattern": "APAZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "柳眼春相续",
+        "pattern": "AZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "凭阑半日独无言",
+        "pattern": "APAZZPP",
+        "rhyme": "b",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "依旧竹声新月似当年",
+        "pattern": "AZAPAZZPP",
+        "rhyme": "b",
+        "rhymeTone": "P",
+        "caesura": 6
+      },
+      {
+        "example": "笙歌未散尊罍在",
+        "pattern": "APZZPPZ",
+        "rhyme": "c",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "池面冰初解",
+        "pattern": "AZPPZ",
+        "rhyme": "c",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "烛明香暗画阑深",
+        "pattern": "ZPPZZPP",
+        "rhyme": "d",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "满鬓清霜残雪思难禁",
+        "pattern": "AZAPAZZPP",
+        "rhyme": "d",
+        "rhymeTone": "P",
+        "caesura": 6
+      }
+    ],
+    "repeat": [],
+    "rhymeChanges": [
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        6
+      ]
+    ],
+    "source": "https://www.52shici.com/zd/pu.php?id=783",
+    "book": "《钦定词谱》",
+    "version": "qinding-2026-11-v1",
+    "scope": "仅此谱式。",
+    "notes": ""
+  },
+  {
+    "id": "dingfengbo-qinding-v1",
+    "name": "定风波",
+    "author": "欧阳炯",
+    "summary": "双调六十二字，前段五句三平韵、两仄韵，后段六句四仄韵、两平韵",
+    "total": 62,
+    "sections": [
+      5,
+      6
+    ],
+    "lines": [
+      {
+        "example": "暖日闲窗映碧纱",
+        "pattern": "AZPPAZP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "小池春水浸明霞",
+        "pattern": "APAZZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "数树海棠红欲尽",
+        "pattern": "AZAPPAZ",
+        "rhyme": "b",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "争忍",
+        "pattern": "AZ",
+        "rhyme": "b",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "玉闺深掩过年华",
+        "pattern": "APAZZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "独凭绣床方寸乱",
+        "pattern": "AZAPPZZ",
+        "rhyme": "c",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "肠断",
+        "pattern": "AZ",
+        "rhyme": "c",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "泪珠穿破脸边花",
+        "pattern": "APAZZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "邻舍女郎相借问",
+        "pattern": "AZAPPZZ",
+        "rhyme": "d",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "音信",
+        "pattern": "AZ",
+        "rhyme": "d",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "教人羞道未还家",
+        "pattern": "APAZZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      }
+    ],
+    "repeat": [],
+    "rhymeChanges": [
+      [
+        2,
+        5
+      ],
+      [
+        5,
+        8
+      ]
+    ],
+    "source": "https://www.52shici.com/zd/pu.php?id=905",
+    "book": "《钦定词谱》",
+    "version": "qinding-2026-11-v1",
+    "scope": "仅此谱式。",
+    "notes": ""
+  },
+  {
+    "id": "jiangchengzi-qinding-v1",
+    "name": "江城子",
+    "author": "苏轼",
+    "summary": "双调七十字，前后段各七句、五平韵",
+    "total": 70,
+    "sections": [
+      7,
+      7
+    ],
+    "lines": [
+      {
+        "example": "凤凰山下雨初晴",
+        "pattern": "APAZZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "水风清",
+        "pattern": "ZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "晚霞明",
+        "pattern": "ZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "一朵芙蓉开过尚盈盈",
+        "pattern": "AZAPAZZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": 4
+      },
+      {
+        "example": "何处飞来双白鹭",
+        "pattern": "AZAPPZZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "如有意",
+        "pattern": "PAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "慕娉婷",
+        "pattern": "ZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "忽闻江上弄哀筝",
+        "pattern": "APAZZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "苦含情",
+        "pattern": "ZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "遣谁听",
+        "pattern": "ZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      },
+      {
+        "example": "烟敛云收依约是湘灵",
+        "pattern": "AZAPAZZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": 4
+      },
+      {
+        "example": "欲待曲终寻问取",
+        "pattern": "AZAPPZZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "人不见",
+        "pattern": "PAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "数峰青",
+        "pattern": "ZPP",
+        "rhyme": "a",
+        "rhymeTone": "P",
+        "caesura": null
+      }
+    ],
+    "repeat": [],
+    "rhymeChanges": [],
+    "source": "https://www.52shici.com/zd/pu.php?id=156",
+    "book": "《钦定词谱》",
+    "version": "qinding-2026-11-v1",
+    "scope": "仅此谱式。",
+    "notes": ""
+  },
+  {
+    "id": "shengshengman-qinding-v1",
+    "name": "声声慢",
+    "author": "李清照",
+    "summary": "双调九十七字，前段九句五仄韵，后段八句五仄韵",
+    "total": 97,
+    "sections": [
+      9,
+      8
+    ],
+    "lines": [
+      {
+        "example": "寻寻觅觅",
+        "pattern": "PPZZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "冷冷清清",
+        "pattern": "ZZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "凄凄惨惨戚戚",
+        "pattern": "PPZZZZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "乍暖还寒时候",
+        "pattern": "ZZPPPZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "最难将息",
+        "pattern": "ZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "三杯两盏淡酒",
+        "pattern": "PPZZZZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "怎敌他晚来风急",
+        "pattern": "ZZPZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": 3
+      },
+      {
+        "example": "雁过也",
+        "pattern": "ZZZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "正伤心却是旧时相识",
+        "pattern": "ZPPZZZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": 3
+      },
+      {
+        "example": "满地黄花堆积",
+        "pattern": "ZZPPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "憔悴损如今有谁堪摘",
+        "pattern": "PZZPPZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": 3
+      },
+      {
+        "example": "守着窗儿",
+        "pattern": "ZZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "独自怎生得黑",
+        "pattern": "ZZZPZZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "梧桐更兼细雨",
+        "pattern": "PPZPZZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "到黄昏点点滴滴",
+        "pattern": "ZPPZZZZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": 3
+      },
+      {
+        "example": "这次第",
+        "pattern": "ZZZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "怎一个愁字了得",
+        "pattern": "ZZZPZZZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": 3
+      }
+    ],
+    "repeat": [],
+    "rhymeChanges": [],
+    "source": "https://www.52shici.com/zd/pu.php?id=1638",
+    "book": "《钦定词谱》",
+    "version": "qinding-2026-11-v1",
+    "scope": "仅此谱式。",
+    "notes": "此体范词押入声韵。"
+  },
+  {
+    "id": "yulinling-qinding-v1",
+    "name": "雨霖铃",
+    "author": "柳永",
+    "summary": "双调一百三字，前段十句五仄韵，后段九句五仄韵",
+    "total": 103,
+    "sections": [
+      10,
+      9
+    ],
+    "lines": [
+      {
+        "example": "寒蝉凄切",
+        "pattern": "PPAZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "对长亭晚",
+        "pattern": "ZPPZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "骤雨初歇",
+        "pattern": "ZZPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "都门帐饮无绪",
+        "pattern": "PPAAAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "方留恋处",
+        "pattern": "PPZZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "兰舟催发",
+        "pattern": "PPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "执手相看泪眼",
+        "pattern": "ZZPPAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "竟无语凝咽",
+        "pattern": "ZPAPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "念去去千里烟波",
+        "pattern": "ZZAPZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": 3
+      },
+      {
+        "example": "暮霭沉沉楚天阔",
+        "pattern": "ZZPPZPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "多情自古伤离别",
+        "pattern": "APZZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "更那堪冷落清秋节",
+        "pattern": "ZPPZZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": 3
+      },
+      {
+        "example": "今宵酒醒何处",
+        "pattern": "APZAAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "杨柳岸晓风残月",
+        "pattern": "AZZZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": 3
+      },
+      {
+        "example": "此去经年",
+        "pattern": "ZZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "应是良辰",
+        "pattern": "PZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "好景虚设",
+        "pattern": "ZAPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "便纵有千种风情",
+        "pattern": "ZZZAZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": 3
+      },
+      {
+        "example": "更与何人说",
+        "pattern": "ZZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      }
+    ],
+    "repeat": [],
+    "rhymeChanges": [],
+    "source": "https://www.52shici.com/zd/pu.php?id=1908",
+    "book": "《钦定词谱》",
+    "version": "qinding-2026-11-v1",
+    "scope": "仅此谱式。",
+    "notes": "此体范词押入声韵。"
+  },
+  {
+    "id": "qingyuan-qinding-v1",
+    "name": "青玉案",
+    "author": "贺铸",
+    "summary": "双调六十七字，前后段各六句、五仄韵",
+    "total": 67,
+    "sections": [
+      6,
+      6
+    ],
+    "lines": [
+      {
+        "example": "凌波不过横塘路",
+        "pattern": "APAZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "但目送芳尘去",
+        "pattern": "ZAZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": 3
+      },
+      {
+        "example": "锦瑟年华谁与度",
+        "pattern": "AZAPPZZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "月楼花院",
+        "pattern": "APAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "绮窗朱户",
+        "pattern": "APAZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "惟有春知处",
+        "pattern": "AZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "碧云冉冉蘅皋暮",
+        "pattern": "APAZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "彩笔空题断肠句",
+        "pattern": "AZPPZPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "试问闲愁知几许",
+        "pattern": "AZAPPZZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "一川烟草",
+        "pattern": "APAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "满城风絮",
+        "pattern": "APAZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "梅子黄时雨",
+        "pattern": "AZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      }
+    ],
+    "repeat": [],
+    "rhymeChanges": [],
+    "source": "https://www.52shici.com/zd/pu.php?id=976",
+    "book": "《钦定词谱》",
+    "version": "qinding-2026-11-v1",
+    "scope": "仅此谱式。",
+    "notes": ""
+  },
+  {
+    "id": "yongyule-qinding-v1",
+    "name": "永遇乐",
+    "author": "苏轼",
+    "summary": "双调一百四字，前后段各十一句、四仄韵",
+    "total": 104,
+    "sections": [
+      11,
+      11
+    ],
+    "lines": [
+      {
+        "example": "明月如霜",
+        "pattern": "AZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "好风如水",
+        "pattern": "APAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "清景无限",
+        "pattern": "AAPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "曲港跳鱼",
+        "pattern": "AZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "圆荷泻露",
+        "pattern": "APAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "寂寞无人见",
+        "pattern": "AZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "紞如五鼓",
+        "pattern": "APAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "铮然一叶",
+        "pattern": "APAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "黯黯梦云惊断",
+        "pattern": "AZAPAZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "夜茫茫重寻无处",
+        "pattern": "APAPPAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": 3
+      },
+      {
+        "example": "觉来小园行遍",
+        "pattern": "AAZAPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "天涯倦客",
+        "pattern": "APAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "山中归路",
+        "pattern": "AAAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "望断故园心眼",
+        "pattern": "AZAPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "燕子楼空",
+        "pattern": "AZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "佳人何在",
+        "pattern": "APAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "空锁楼中燕",
+        "pattern": "AZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "古今如梦",
+        "pattern": "APAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "何曾梦觉",
+        "pattern": "AAAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "但有旧欢新怨",
+        "pattern": "AZAPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "异时对黄楼夜景",
+        "pattern": "APAAAAZ",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": 3
+      },
+      {
+        "example": "为余浩叹",
+        "pattern": "APZZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      }
+    ],
+    "repeat": [],
+    "rhymeChanges": [],
+    "source": "https://www.52shici.com/zd/pu.php?id=1955",
+    "book": "《钦定词谱》",
+    "version": "qinding-2026-11-v1",
+    "scope": "仅此谱式。",
+    "notes": ""
+  },
+  {
+    "id": "zuihuayin-qinding-v1",
+    "name": "醉花阴",
+    "author": "毛滂",
+    "summary": "双调五十二字，前后段各五句、三仄韵",
+    "total": 52,
+    "sections": [
+      5,
+      5
+    ],
+    "lines": [
+      {
+        "example": "檀板一声莺起速",
+        "pattern": "AAAAPAZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "山影穿疏木",
+        "pattern": "AAPAZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "人在翠阴中",
+        "pattern": "AZZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "欲觅残春",
+        "pattern": "AZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "春在屏风曲",
+        "pattern": "AZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "劝君对客杯须覆",
+        "pattern": "ZPZZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "灯照瀛洲绿",
+        "pattern": "AZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      },
+      {
+        "example": "西去玉堂深",
+        "pattern": "AZZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "魄冷魂清",
+        "pattern": "AZPP",
+        "rhyme": null,
+        "rhymeTone": null,
+        "caesura": null
+      },
+      {
+        "example": "独引金莲烛",
+        "pattern": "AZPPZ",
+        "rhyme": "a",
+        "rhymeTone": "Z",
+        "caesura": null
+      }
+    ],
+    "repeat": [],
+    "rhymeChanges": [],
+    "source": "https://www.52shici.com/zd/pu.php?id=638",
+    "book": "《钦定词谱》",
+    "version": "qinding-2026-11-v1",
+    "scope": "仅此谱式。",
+    "notes": ""
   }
 ]
