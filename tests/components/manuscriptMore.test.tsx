@@ -20,7 +20,7 @@ test('global navigation exposes only current destinations and routes without cre
  try{render(<AppNavigation route={{kind:'work',workId:'id'}} onBackup={()=>{}} motion onMotion={()=>{}} onError={()=>{}}/>);
  assert.deepEqual(Array.from(document.querySelectorAll('.app-navigation nav button')).map(b=>b.textContent),['创作','阅读','摘记']);
  assert.equal(screen.getByRole('button',{name:'创作'}).getAttribute('aria-current'),'page');
- for(const label of ['阅读','摘记','创作'])fireEvent.click(screen.getByRole('button',{name:label,exact:true}));fireEvent.click(screen.getByLabelText('诗房首页'));
+ for(const label of ['阅读','摘记','创作'])fireEvent.click(screen.getByRole('button',{name:label,exact:true}));fireEvent.click(screen.getByLabelText('采章首页'));
  assert.deepEqual(routes,[{kind:'reference'},{kind:'notes'},{kind:'works'},{kind:'home'}]);
  }finally{cleanup();dispose()}
 });

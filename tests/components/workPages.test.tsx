@@ -18,7 +18,7 @@ Object.defineProperty(globalThis,"innerWidth",{value:1280,configurable:true});Ob
 const {installVerseDom,changeVerse}=await import('../support/verseDom.ts');installVerseDom(dom.window);
 Object.defineProperty(dom.window, "shifang", {
   value: {
-    app: { health: async () => ({ name: "诗房", version: "test", packaged: false }) },
+    app: { health: async () => ({ name: "采章", version: "test", packaged: false }) },
     rules: {
       listTemplates: async () => ({ templates: [
         { id: "wujue", name: "五言绝句", shortName: "五绝", lineCount: 4, lineLength: 5, recommendedVariantId: "auto", variants: [] },

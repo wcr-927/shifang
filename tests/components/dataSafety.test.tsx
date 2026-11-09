@@ -45,7 +45,7 @@ function deferred<T = void>() {
 }
 async function open() { render(<App />); return await screen.findByLabelText("第1句") as HTMLInputElement; }
 async function edit(input: HTMLElement, value = "最新正文") { await changeVerse(input,value); }
-function sidebar(name:string){if(name==='首页')fireEvent.click(screen.getByLabelText('诗房首页'));else fireEvent.click(screen.getByRole('button',{name:name==='诗稿'?'创作':name==='资料'?'阅读':name,exact:true}));}
+function sidebar(name:string){if(name==='首页')fireEvent.click(screen.getByLabelText('采章首页'));else fireEvent.click(screen.getByRole('button',{name:name==='诗稿'?'创作':name==='资料'?'阅读':name,exact:true}));}
 
 beforeEach(() => {
   records = new Map([[id, work()], [otherId, work(otherId)]]);
@@ -54,7 +54,7 @@ beforeEach(() => {
   save = async (request) => persisted(request);
   window.shifang = {
     app: {
-      health: async () => ({ name: "诗房", version: "test", packaged: false }),
+      health: async () => ({ name: "采章", version: "test", packaged: false }),
       onBeforeClose: (handler) => { beforeClose = handler; return () => { beforeClose = undefined; }; },
       completeClose: (requestId, result) => { closeResults.push({ id: requestId, result }); },
       onCloseCancelled: () => () => {},
@@ -79,7 +79,7 @@ const exits = [
   { name: "navigation home", target: "#/", leave: () => sidebar("首页") },
   { name: "navigation works", target: "#/works", leave: () => sidebar("诗稿") },
   { name: "navigation reference", target: "#/reference", leave: () => sidebar("资料") },
-  { name: "brand home", target: "#/", leave: () => fireEvent.click(screen.getByLabelText("诗房首页")) },
+  { name: "brand home", target: "#/", leave: () => fireEvent.click(screen.getByLabelText("采章首页")) },
   { name: "hash navigation", target: "#/reference", leave: () => { window.location.hash = "#/reference"; } },
   { name: "work switch", target: `#/works/${otherId}`, leave: () => navigate({ kind: "work", workId: otherId }) },
 ];
@@ -265,7 +265,7 @@ test("failed history back preserves its destination for a successful retry", asy
   save = async (request) => persisted(request);
   window.history.back();
   await waitFor(() => assert.equal(window.location.hash, "#/"));
-  await screen.findByLabelText("诗房首页");
+  await screen.findByLabelText("采章首页");
   assert.equal(records.get(id)!.body, "最新正文");
 });
 

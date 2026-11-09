@@ -1,8 +1,8 @@
 {
   "name": "shifang",
   "version": "0.6.0",
-  "description": "诗房公开源码与开发示例",
-  "author": "诗房",
+  "description": "采章公开源码与开发示例",
+  "author": "采章",
   "private": true,
   "type": "module",
   "main": "dist-electron/main.js",
@@ -14,8 +14,8 @@
     "typecheck": "npm run typecheck:renderer && npm run typecheck:electron",
     "test": "node --max-old-space-size=256 --import tsx --test --test-concurrency=1 --test-timeout=15000 tests/unit/*.test.ts tests/components/*.test.tsx",
     "package:mac": "CSC_IDENTITY_AUTO_DISCOVERY=false npm run build && CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --mac --arm64 --dir && npm run sign:mac:local",
-    "sign:mac:local": "node scripts/sign_local_mac_app.mjs \"release/mac-arm64/诗房开源版.app\"",
-    "icons": "electron scripts/generate_icons.cjs",
+    "sign:mac:local": "node scripts/sign_local_mac_app.mjs \"release/mac-arm64/采章开源版.app\"",
+    "icons": "node scripts/generate_icons.cjs",
     "typecheck:renderer": "tsc -p tsconfig.json --noEmit",
     "typecheck:electron": "tsc -p tsconfig.electron.json --noEmit",
     "runtime:check": "node scripts/require_node.mjs",
@@ -64,7 +64,7 @@
       "output": "release"
     },
     "appId": "com.shifang.poetry.opensource",
-    "productName": "诗房开源版",
+    "productName": "采章开源版",
     "asar": true,
     "files": [
       "dist/**",

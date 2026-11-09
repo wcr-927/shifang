@@ -21,7 +21,7 @@ export class BackupService {
   constructor(private repository: WorkRepository, private backupDirectory: string, private saveDialog: ShowSaveDialog, private openDialog: (window: BrowserWindow | undefined)=>Promise<{canceled:boolean;filePaths:string[]}>, private write=writeBackupAtomic) {}
   private async exclusive<T>(action:()=>Promise<T>):Promise<T>{if(this.busy)throw new Error("备份或恢复正在进行，请稍候");this.busy=true;try{return await action();}finally{this.busy=false;}}
   export(window: BrowserWindow | undefined){return this.exclusive(async()=>{
-    const choice=await this.saveDialog(window,{title:"完整备份作品库",defaultPath:`诗房完整备份-${new Date().toISOString().slice(0,10)}.json`,filters:[{name:"诗房完整备份",extensions:["json"]}]});
+    const choice=await this.saveDialog(window,{title:"完整备份作品库",defaultPath:`采章完整备份-${new Date().toISOString().slice(0,10)}.json`,filters:[{name:"采章完整备份",extensions:["json"]}]});
     if(choice.canceled||!choice.filePath)return {status:"cancelled" as const};
     this.write(choice.filePath,this.repository.exportBackup());return {status:"exported" as const,path:choice.filePath};
   });}

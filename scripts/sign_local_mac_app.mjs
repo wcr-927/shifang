@@ -6,7 +6,7 @@ if (process.platform !== "darwin") {
   throw new Error("Local macOS signing requires macOS and /usr/bin/codesign.");
 }
 
-const appPath = resolve(process.argv[2] ?? "release/mac-arm64/诗房.app");
+const appPath = resolve(process.argv[2] ?? "release/mac-arm64/采章.app");
 if (!existsSync(appPath)) throw new Error(`Application bundle not found: ${appPath}`);
 
 function codesign(args) {

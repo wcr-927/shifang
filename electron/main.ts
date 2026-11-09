@@ -22,7 +22,10 @@ import { ReferenceRuleService, defaultCiDirectory } from "./services/ReferenceRu
 import { ReferenceLibraryService } from "./reference/ReferenceLibraryService.js";
 import { registerReferenceHandlers } from "./ipc/reference.js";
 
-app.setName("诗房开源版");
+app.setName("诗房开源版"); // Resolve the existing profile before changing the display name.
+const establishedProfile = app.getPath("userData");
+app.setName("采章开源版");
+app.setPath("userData", establishedProfile);
 const isDevelopment = !app.isPackaged;
 const currentDirectory = fileURLToPath(new URL(".", import.meta.url));
 if (isDevelopment) {
@@ -56,7 +59,7 @@ const closeService = new CloseService(
   (result) => {
     mainWindow?.webContents.send("app:close-cancelled", result);
     if (isDevelopment && "message" in result) console.error(`DEV_QUIT_CANCELLED ${result.message}`);
-    if (result.status === "timeout") dialog.showErrorBox("诗房未关闭", result.message);
+    if (result.status === "timeout") dialog.showErrorBox("采章未关闭", result.message);
   },
 );
 
@@ -77,7 +80,7 @@ function createWindow(): void {
     height: 820,
     minWidth: 960,
     minHeight: 640,
-    title: candidate ? "诗房 · 候选版" : "诗房",
+    title: candidate ? "采章 · 候选版" : "采章",
     backgroundColor: "#f7f5ef",
     ...(process.platform === "darwin" ? { titleBarStyle: "hiddenInset" as const, trafficLightPosition: { x: 14, y: 25 } } : {}),
     webPreferences: {
@@ -139,7 +142,7 @@ app.whenReady().then(() => {
   );
 
   handleTrusted("app:health", () => ({
-    name: "诗房",
+    name: "采章",
     version: app.getVersion(),
     packaged: app.isPackaged,
     candidate,
@@ -148,7 +151,7 @@ app.whenReady().then(() => {
   registerRuleHandlers(ruleService);
   registerWorkHandlers(workRepository, exportService, new BackupService(workRepository,join(app.getPath("userData"),"backups"),
     (window,options)=>window?dialog.showSaveDialog(window,options):dialog.showSaveDialog(options),
-    window=>{const options={title:"选择完整备份",properties:["openFile" as const],filters:[{name:"诗房完整备份",extensions:["json"]}]};return window?dialog.showOpenDialog(window,options):dialog.showOpenDialog(options);}
+    window=>{const options={title:"选择完整备份",properties:["openFile" as const],filters:[{name:"采章完整备份",extensions:["json"]}]};return window?dialog.showOpenDialog(window,options):dialog.showOpenDialog(options);}
   ), text => clipboard.writeText(text));
   ipcMain.on("app:close-result", (event, requestId: number, result: unknown) => {
     if (!isTrustedSender(event)) return;
@@ -166,7 +169,7 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });
 }).catch(error => {
-  dialog.showErrorBox("诗房未能打开", error instanceof Error ? error.message : String(error));
+  dialog.showErrorBox("采章未能打开", error instanceof Error ? error.message : String(error));
   closeAllowed = true;
   app.quit();
 });
