@@ -4,6 +4,7 @@ import type { FlushResult } from "../src/shared/close.js";
 contextBridge.exposeInMainWorld("shifang", {
   reference: Object.fromEntries(["notesOverview","queryNotes","recommendationTarget","readingShelf","readingIndex","readingPiece","readingNotes","createReadingNote","updateReadingNote","removeReadingNote","explanations","lookup","groups","group","patterns","sources","books","importBook","importProgress","cancel","toc","read","search","image","position","savePosition","resolve","copy","reindex","tocPath","tocSearch"].map(method=>[method,(request?:unknown)=>ipcRenderer.invoke(`reference:${method}`,request)])),
   app: {
+    isWindows: process.platform === "win32",
     health: () => ipcRenderer.invoke("app:health"),
     onBeforeClose: (callback: (requestId: number) => void | Promise<void>) => {
       const listener = (_event: unknown, requestId: number) => {

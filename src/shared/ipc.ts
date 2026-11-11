@@ -176,6 +176,7 @@ export interface ShifangWorksApi {
 export interface ShifangWindowApi {
   reference?: import("./reference").ReferenceApi;
   app: {
+    isWindows?: boolean;
     health: () => Promise<{
       name: string;
       version: string;

@@ -1,0 +1,35 @@
+name: Windows x64 preview
+on:
+  push:
+    branches: [codex/windows-x64-preview]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  installer:
+    runs-on: windows-2022
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run package:win
+      - name: Install and verify persistence
+        timeout-minutes: 5
+        shell: pwsh
+        run: |
+          $setup = Get-Item release/*-Windows-x64-Setup.exe
+          $dir = Join-Path $env:RUNNER_TEMP 'CaizhangPreview'
+          $result = Start-Process $setup.FullName -ArgumentList '/S',"/D=$dir" -PassThru -Wait
+          if ($result.ExitCode -ne 0) { throw "Installer exited with $($result.ExitCode)" }
+          node scripts/windows-smoke.mjs (Join-Path $dir '采章开源版.exe')
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Caizhang-Windows-x64-preview
+          path: release/*-Windows-x64-Setup.exe
+          if-no-files-found: error

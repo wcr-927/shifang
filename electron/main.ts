@@ -82,6 +82,7 @@ function createWindow(): void {
     minHeight: 640,
     title: candidate ? "采章 · 候选版" : "采章",
     backgroundColor: "#f7f5ef",
+    autoHideMenuBar: process.platform === "win32",
     ...(process.platform === "darwin" ? { titleBarStyle: "hiddenInset" as const, trafficLightPosition: { x: 14, y: 25 } } : {}),
     webPreferences: {
       preload: join(currentDirectory, "preload.cjs"),

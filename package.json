@@ -26,7 +26,8 @@
     "predev": "npm run runtime:check && npm run prepare:data",
     "prebuild": "npm run runtime:check && npm run prepare:data",
     "pretypecheck": "npm run runtime:check && npm run prepare:data",
-    "pretest": "npm run runtime:check && npm run prepare:data"
+    "pretest": "npm run runtime:check && npm run prepare:data",
+    "package:win": "npm run build && electron-builder --win nsis --x64 --publish never"
   },
   "dependencies": {
     "better-sqlite3": "^13.0.3",
@@ -105,7 +106,18 @@
         "from": "node_modules/electron/dist/LICENSES.chromium.html",
         "to": "licenses/Chromium.html"
       }
-    ]
+    ],
+    "win": {
+      "icon": "assets/brand/shifang.png",
+      "artifactName": "Caizhang-${version}-Windows-${arch}-Setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": false,
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": false
+    }
   },
   "engines": {
     "node": "24.19.0"

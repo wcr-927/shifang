@@ -24,6 +24,7 @@ import "./styles/typography.css";
 import "./styles/launch.css";
 import { playLaunch } from "./app/playLaunch";
 
+if (window.shifang?.app.isWindows) document.documentElement.dataset.platform = "windows";
 playLaunch();
 
 createRoot(document.getElementById("root")!).render(

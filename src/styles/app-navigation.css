@@ -26,3 +26,6 @@
 .app-navigation nav[data-section=notes] .app-nav-indicator{transform:translateX(128px)}
 .app-navigation nav[data-section=home] .app-nav-indicator{opacity:0;transition:opacity 150ms ease}
 @media(prefers-reduced-motion:reduce){.app-navigation button,.app-navigation nav button,.app-navigation .app-brand,.app-navigation .app-more,.app-nav-indicator{transition:none}}
+
+/* Windows keeps native window controls in its title bar. */
+:root[data-platform="windows"] .app-navigation { padding-left: 32px; -webkit-app-region: no-drag; }
