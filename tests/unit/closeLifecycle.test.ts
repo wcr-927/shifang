@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { resolve } from "node:path";
 import { EventEmitter } from "node:events";
 import { test } from "node:test";
 import { build } from "esbuild";
@@ -94,7 +95,7 @@ test("main lifecycle never destroys an unconfirmed window and only closes on sav
   await import(`data:text/javascript;base64,${Buffer.from(output.outputFiles[0].text).toString("base64")}`);
   context.mock.timers.enable({ apis: ["setTimeout"] });
   try {
-    assert.ok(appPaths.get("userData")?.endsWith("/.development/user-data"), "unpackaged app isolates its data before ready");
+    assert.equal(appPaths.get("userData"), resolve(".development", "user-data"), "unpackaged app isolates its data before ready");
     const current = () => windows.at(-1)!;
     const requestId = () => sent.filter((item) => item.channel === "app:before-close").at(-1)!.args[0];
     const respond = (status: string, sender = current().webContents, id = requestId()) => ipcMain.emit("app:close-result", { sender, senderFrame:current().webContents.mainFrame }, id, { status });

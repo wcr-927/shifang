@@ -50,3 +50,9 @@ npm run package:dmg
 技术栈为 Electron、React、TypeScript、Vite、SQLite 和 ProseMirror。除依赖安装与开发服务器外，日常创作和阅读使用本地文件。Windows、Linux、Intel Mac 和手机端尚未在本次发布中验证。
 
 贡献方式见 [CONTRIBUTING](CONTRIBUTING.md)，当前版本见 [CHANGELOG](CHANGELOG.md)。项目自有代码采用 [MIT](LICENSE)。第三方组件的版权、许可和素材来源见 [NOTICE](NOTICE.md)。
+
+## Windows x64 测试版
+
+在 Windows x64 环境使用仓库指定的 Node.js，运行 `npm ci`、`npm run check`、`npm run package:win`。安装程序位于 `release/Caizhang-0.6.1-Windows-x64-Setup.exe`。它按当前用户安装，示例资料和字体随程序离线提供。
+
+测试分支的 Windows 构建任务会安装生成的 EXE，用独立书房新建和保存诗稿，关闭后重开核对正文，再上传安装程序作为 Actions 构建产物。安装包目前使用未签名测试构建。
