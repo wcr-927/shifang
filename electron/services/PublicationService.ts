@@ -20,7 +20,7 @@ export class PublicationService{
   else{const collection=this.repository.libraryOverview().collections.find(c=>c.id===request.collectionId);if(!collection)throw Error('文集不存在');title=collection.name;
    const result=this.repository.queryWorks({collectionId:request.collectionId,limit:100});if(result.total>100)throw Error('文集超过100篇，请拆分后导出。');works=result.items.map(w=>this.repository.getWork(w.id)!).filter(Boolean);
   }
-  this.snapshot=publicationSnapshot(title,'collectionId'in request,works.map(w=>({...w,...(w.genre==='ci'?{sections:ciForms.find(f=>f.id===w.ci.formId)?.sections}:{})})));
+  this.snapshot=publicationSnapshot(title,'collectionId'in request,works.map(w=>({...w,category:w.category??(w.room==='song'?'modern':undefined),...(w.genre==='ci'?{sections:ciForms.find(f=>f.id===w.ci.formId)?.sections}:{})})));
   const window=new BrowserWindow({width:1100,height:860,minWidth:850,minHeight:680,title:'采章 · 导出',backgroundColor:'#e5e1dc',show:false,webPreferences:{preload:join(this.base,'publicationPreload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true}});this.window=window;
   window.webContents.setWindowOpenHandler(()=>({action:'deny'}));window.webContents.on('will-navigate',(event,url)=>{if(url!==this.url())event.preventDefault();});window.on('close',e=>{if(this.busy)e.preventDefault();});window.on('closed',()=>{this.window=null;this.snapshot=null;});
   try{await window.loadURL(this.url());window.show();return{status:'opened'};}catch(e){window.destroy();throw e;}

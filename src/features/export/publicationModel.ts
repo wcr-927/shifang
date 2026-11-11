@@ -1,5 +1,5 @@
 import type { PublicationDocument, PublicationOptions, PublicationWork } from '../../shared/publication';
-export interface PublicationPage{kind:'cover'|'toc'|'body';height:number;title:string;workId?:string;text:string;rows:string[];fontSize:number;lineHeight:number;continued?:boolean;entries?:{title:string;page:number}[];number:number}
+export interface PublicationPage{kind:'cover'|'toc'|'body';height:number;title:string;workId?:string;verse?:boolean;text:string;rows:string[];fontSize:number;lineHeight:number;continued?:boolean;entries?:{title:string;page:number}[];number:number}
 export function publicationSnapshot(title:string,collection:boolean,works:PublicationWork[]):PublicationDocument{
  if(!works.length)throw Error('没有可导出的作品。');
  if(works.length>100||works.reduce((n,w)=>n+w.body.length,0)>200000)throw Error('本次内容过多，请拆分文集后导出。');
@@ -12,21 +12,23 @@ export function wrapPublicationText(text:string,width:number,measure:(s:string)=
  for(const {segment:c} of segments){if(c==='\n'||c==='\r\n'){rows.push(row+c);row='';continue;}if(row&&measure(row+c)>width){rows.push(row);row=c;}else row+=c;}
  if(row||!rows.length)rows.push(row);return rows;
 }
-export function paginatePublication(doc:PublicationDocument,options:PublicationOptions,measure:(text:string,size:number,role?:"title")=>number):PublicationPage[]{
+export function paginatePublication(doc:PublicationDocument,options:PublicationOptions,measure:(text:string,size:number,role?:"title"|"verse")=>number):PublicationPage[]{
  const height=doc.collection?764:doc.works[0].body.length<=60&&/^(?:wu|qi)(?:jue|lv)$/.test(doc.works[0].genre)?540:doc.works[0].body.length<=140?675:764;
  const pages:PublicationPage[]=[],starts:{title:string;page:number}[]=[];
  const bodyPages:PublicationPage[]=[];
  for(const work of doc.works){
   const size=doc.collection||work.body.length>140?18:work.genre==='free'?20:22,lineHeight=size*(doc.collection?1.85:2.05);
-  let rows=wrapPublicationText(work.body,392,t=>measure(t,size));
+  const verse=work.genre!=='free'||work.category==='ancient'||work.category==='modern';
+  const measureBody=(text:string)=>measure(text,size,verse?'verse':undefined);
+  let rows=wrapPublicationText(work.body,392,measureBody);
   if(/^(?:wu|qi)(?:jue|lv)$/.test(work.genre)&&rows.length%2===0&&rows.every(r=>r.trim().length>0)){
-   const pairs:string[]=[];let fits=true;for(let i=0;i<rows.length;i+=2){const pair=rows[i]+rows[i+1];if(measure(pair.replace(/\r?\n$/u,'').replace(/\r?\n/gu,'　'),size)>392){fits=false;break;}pairs.push(pair);}if(fits)rows=pairs;
+   const pairs:string[]=[];let fits=true;for(let i=0;i<rows.length;i+=2){const pair=rows[i]+rows[i+1];if(measureBody(pair.replace(/\r?\n$/u,'').replace(/\r?\n/gu,'　'))>392){fits=false;break;}pairs.push(pair);}if(fits)rows=pairs;
   }
   if(work.genre==='ci'){
    const sourceLines=work.body.match(/[^\n]*\n|[^\n]+$/gu)??[''];
    const ends=new Set<number>();let total=0;for(const section of work.sections??[]){total+=section;ends.add(total);}
    const packed:string[]=[];let pending='';
-   sourceLines.forEach((line,index)=>{const candidate=pending+line;const visible=candidate.replace(/\r?\n$/u,'').replace(/\r?\n/gu,'　');if(pending&&measure(visible,size)>392){packed.push(pending);pending='';}if(measure(line.trimEnd(),size)>392){if(pending){packed.push(pending);pending='';}packed.push(...wrapPublicationText(line,392,t=>measure(t,size)));}else pending+=line;
+   sourceLines.forEach((line,index)=>{const candidate=pending+line;const visible=candidate.replace(/\r?\n$/u,'').replace(/\r?\n/gu,'　');if(pending&&measureBody(visible)>392){packed.push(pending);pending='';}if(measureBody(line.trimEnd())>392){if(pending){packed.push(pending);pending='';}packed.push(...wrapPublicationText(line,392,measureBody));}else pending+=line;
     if(!line.trim()||ends.has(index+1)&&index+1<sourceLines.length){if(pending)packed.push(pending);packed.push('');pending='';}
    });if(pending)packed.push(pending);rows=packed;
   }
@@ -35,7 +37,7 @@ export function paginatePublication(doc:PublicationDocument,options:PublicationO
   if(titleHeight>height-152-58-lineHeight)throw Error('题名过长，请缩短题名后导出。');
   const capacity=Math.max(1,Math.floor((height-152-titleHeight-58)/lineHeight));
   starts.push({title:work.title,page:bodyPages.length});
-  for(let i=0;i<rows.length;i+=capacity){const chunk=rows.slice(i,i+capacity);bodyPages.push({height,kind:'body',title:work.title,workId:work.id,text:chunk.join(''),rows:chunk,fontSize:size,lineHeight,continued:i>0,number:0});}
+  for(let i=0;i<rows.length;i+=capacity){const chunk=rows.slice(i,i+capacity);bodyPages.push({height,kind:'body',verse,title:work.title,workId:work.id,text:chunk.join(''),rows:chunk,fontSize:size,lineHeight,continued:i>0,number:0});}
  }
  if(doc.collection){
   pages.push({height,kind:'cover',title:doc.title,text:'',rows:[],fontSize:18,lineHeight:33,number:0});

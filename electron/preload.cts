@@ -2,7 +2,7 @@ import { contextBridge, ipcRenderer } from "electron";
 import type { FlushResult } from "../src/shared/close.js";
 
 contextBridge.exposeInMainWorld("shifang", {
-  reference: Object.fromEntries(["notesOverview","queryNotes","readingShelf","readingIndex","readingPiece","readingNotes","createReadingNote","updateReadingNote","removeReadingNote","explanations","lookup","groups","group","patterns","sources","books","importBook","importProgress","cancel","toc","read","search","image","position","savePosition","resolve","copy","reindex","tocPath","tocSearch"].map(method=>[method,(request?:unknown)=>ipcRenderer.invoke(`reference:${method}`,request)])),
+  reference: Object.fromEntries(["notesOverview","queryNotes","recommendationTarget","readingShelf","readingIndex","readingPiece","readingNotes","createReadingNote","updateReadingNote","removeReadingNote","explanations","lookup","groups","group","patterns","sources","books","importBook","importProgress","cancel","toc","read","search","image","position","savePosition","resolve","copy","reindex","tocPath","tocSearch"].map(method=>[method,(request?:unknown)=>ipcRenderer.invoke(`reference:${method}`,request)])),
   app: {
     health: () => ipcRenderer.invoke("app:health"),
     onBeforeClose: (callback: (requestId: number) => void | Promise<void>) => {

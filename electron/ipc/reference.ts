@@ -7,6 +7,7 @@ import type { ReferenceLibraryService } from "../reference/ReferenceLibraryServi
 import { referenceLookupSchema, referenceSystemSchema, referenceGroupSchema, referencePatternSchema, referenceRequestSchema, referenceTocSchema,referenceTocPathSchema,referenceTocSearchSchema, referenceChapterSchema, referenceSearchSchema, referenceImageSchema, referenceSourceSchema, referencePositionSchema, referenceResolveSchema } from "../../src/shared/reference.js";
 
 export function registerReferenceHandlers(rules:ReferenceRuleService, library:ReferenceLibraryService, chooseFile:()=>Promise<string|null>,copy:(character:string)=>void=()=>{},explanations?:ReadingExplanationService):void {
+  handleTrusted("reference:recommendationTarget",(_e,id)=>{if(typeof id!=="string"||id.length>128)throw Error("篇目标识无效");return library.recommendationTarget(id);});
   handleTrusted("reference:readingShelf",()=>library.readingShelf());
   handleTrusted("reference:readingIndex",(_e,raw)=>library.readingIndex(readingIndexRequest.parse(raw)));
   handleTrusted("reference:readingPiece",(_e,raw)=>library.readingPiece(readingPieceRequest.parse(raw)));

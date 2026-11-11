@@ -34,6 +34,7 @@ export class ReferenceLibraryService {
 
   }
   private reader():WorkerRpc{if(this.closed)throw new Error('资料库已关闭');return this.rpc??=(new WorkerRpc(this.directory,this.workerPath,true,()=>{}));}
+  recommendationTarget(id:string):Promise<{bookId:string;sourceId:string;nodeId:string;title:string}|null>{return this.reader().call('recommendationTarget',[id]);}
   readingShelf():Promise<ReadingShelfItem[]>{return this.reader().call('readingShelf');}
   readingIndex(r:z.output<typeof readingIndexRequest>):Promise<ReadingIndexPage>{return this.reader().call('readingIndex',[r]);}
   readingPiece(r:z.output<typeof readingPieceRequest>):Promise<ReadingPiece>{return this.reader().call('readingPiece',[r]);}

@@ -43,6 +43,7 @@ export const referenceResolveSchema=referenceSourceSchema.extend({internalPath:z
 export interface ReferenceApi {
   notesOverview():Promise<import('./reading').ReadingNotesOverview>;
   queryNotes(request:z.input<typeof import('./reading').readingNotesQuerySchema>):Promise<import('./reading').ReadingNotesPage>;
+  recommendationTarget(id:string):Promise<{bookId:string;sourceId:string;nodeId:string;title:string}|null>;
   readingShelf():Promise<import('./reading').ReadingShelfItem[]>;
   readingIndex(request:z.input<typeof import('./reading').readingIndexRequest>):Promise<import('./reading').ReadingIndexPage>;
   readingPiece(request:z.input<typeof import('./reading').readingPieceRequest>):Promise<import('./reading').ReadingPiece>;

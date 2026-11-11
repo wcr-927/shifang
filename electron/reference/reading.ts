@@ -1,3 +1,4 @@
+import archived from "../../src/shared/archivedHomePoems.json";
 import {homePoems,HOME_POEM_SOURCE} from "../../src/shared/homePoems";
 import type Database from 'better-sqlite3';
 import {createHash} from 'node:crypto';
@@ -37,7 +38,7 @@ export class ReadingPieces{
   }finally{archive.close();}
  }
  async get(r:z.output<typeof readingPieceRequest>):Promise<ReadingPiece>{
-  if(r.sourceId===HOME_POEM_SOURCE){const p=homePoems.find(p=>p.id===r.nodeId);if(!p)throw new Error('未找到篇目');const texts=[p.title,...(p.preface?[p.preface]:[]),...p.lines];const blocks:ReadingPieceBlock[]=texts.map((text,i)=>({id:p.id+':'+i,documentId:p.id,section:i===0?'title':p.preface&&i===1?'notes':'poem',text,anchors:[],node:{type:'p',children:[{type:'text',text}]}}));return{sourceId:r.sourceId,node:{id:p.id,parentId:null,label:p.title,documentId:p.id,anchor:'',hasChildren:false,kind:'work'},author:p.author,blocks:blocks.slice(r.offset,r.offset+r.limit),offset:r.offset,nextOffset:blocks.length>r.offset+r.limit?r.offset+r.limit:null,previousId:null,nextId:null};}
+  if(r.sourceId===HOME_POEM_SOURCE){const p:typeof homePoems[number]|undefined=homePoems.find(p=>p.id===r.nodeId)??archived.find(p=>p.id===r.nodeId);if(!p)throw new Error('未找到篇目');const texts=[p.title,...(p.preface?[p.preface]:[]),...p.lines];const blocks:ReadingPieceBlock[]=texts.map((text,i)=>({id:p.id+':'+i,documentId:p.id,section:i===0?'title':p.preface&&i===1?'notes':'poem',text,anchors:[],node:{type:'p',children:[{type:'text',text}]}}));return{sourceId:r.sourceId,node:{id:p.id,parentId:null,label:p.title,documentId:p.id,anchor:'',hasChildren:false,kind:'work'},author:p.author,blocks:blocks.slice(r.offset,r.offset+r.limit),offset:r.offset,nextOffset:blocks.length>r.offset+r.limit?r.offset+r.limit:null,previousId:null,nextId:null};}
   const gen=generation(this.db,r.sourceId);if(!gen)throw new Error('请先整理这本书的阅读目录');
   const own=this.db.prepare(`SELECT * FROM navigation_nodes WHERE source_id=? AND generation=? AND id=?${scopeSql(r.rootId)}`).get(r.sourceId,gen,r.nodeId,...scopeArgs(r.sourceId,gen,r.rootId)) as Row|undefined;
   if(!own)throw new Error('未找到篇目');if(!['work','intro'].includes(own.kind))throw new Error('此目录项请使用原书章节阅读');
@@ -45,14 +46,18 @@ export class ReadingPieces{
   const all=this.db.prepare('SELECT b.*,d.ordinal AS document_order FROM blocks b JOIN documents d ON d.source_id=b.source_id AND d.id=b.document_id WHERE b.source_id=? AND d.ordinal*1000000+b.ordinal>=? AND d.ordinal*1000000+b.ordinal<? ORDER BY d.ordinal,b.ordinal LIMIT ?').all(r.sourceId,own.start_order,own.end_order,r.offset+r.limit+1) as Row[];
   // Bound cumulative scans to a chapter-sized request; callers cannot request unbounded offsets.
   const roles=new Map<string,Map<string,ParsedBlock & {role?:string} >>();for(const doc of new Set(all.map(b=>String(b.document_id)))){try{roles.set(doc,await this.rolesFor(r.sourceId,doc));}catch{roles.set(doc,new Map());}}
-  let originalEnded=own.kind==='intro';let displayAuthor=parent?.kind==='author'?parent.label:'';
+  let indexedVerseOpen=false;let originalEnded=own.kind==='intro';let displayAuthor=parent?.kind==='author'?parent.label:'';
   const blocks:ReadingPieceBlock[]=all.slice(0,r.offset+r.limit).map(b=>{
    const proof=roles.get(b.document_id)?.get(b.id),role=proof&&proof.text===b.text?proof.role:undefined;
+   // A subtitle or illustration can precede (or interrupt) a ci stanza.
+   // Confirm the start against the indexed verse, then stop at notes or commentary.
+   if(role==='verse-candidate' && own.first_line && b.text.trim().startsWith(own.first_line.trim()))indexedVerseOpen=true;
+   if(role==='notes'||role==='commentary')indexedVerseOpen=false;
    let section:ReadingPieceBlock['section']='body';
    if(b.document_order*1000000+b.ordinal===own.start_order){section='title';if(proof?.author)displayAuthor=proof.author.replace(/\s+/gu,'');}
    else if(role==='signature'&&!originalEnded){section='signature';displayAuthor=b.text.replace(/\s+/gu,'');}
-   else if(role==='notes'||JSON.parse(b.anchors).some((a:string)=>/^(?:FT|note_\d)/u.test(a))||/^(?:〔注〕|【注释】|\[注\]|注释[：:]|［注］)/u.test(b.text.trim())){section='notes';originalEnded=true;}
-   else if(role==='verse'||role==='work-title'||!originalEnded&&role==='verse-candidate')section='poem';
+   else if(role==='notes'||JSON.parse(b.anchors).some((a:string)=>/^(?:FT|note_\d)/u.test(a))||/^(?:〔注〕|【注释】|\[注\]|注释[：:]|［注］)/u.test(b.text.trim())){section='notes';originalEnded=true;indexedVerseOpen=false;}
+   else if(role==='verse'||role==='work-title'||(!originalEnded||indexedVerseOpen)&&role==='verse-candidate')section='poem';
    else {if(section==='body'&&b.text.trim())originalEnded=true;}
    return{id:b.id,documentId:b.document_id,text:section==='title'&&proof?.title?proof.title:b.text,anchors:JSON.parse(b.anchors),node:proof&&proof.text===b.text&&proof.nodes[0]?publicNode(proof.nodes[0]):JSON.parse(b.nodes),section};
   });

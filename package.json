@@ -1,6 +1,6 @@
 {
   "name": "shifang",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "采章公开源码与开发示例",
   "author": "采章",
   "private": true,
@@ -14,6 +14,7 @@
     "typecheck": "npm run typecheck:renderer && npm run typecheck:electron",
     "test": "node --max-old-space-size=256 --import tsx --test --test-concurrency=1 --test-timeout=15000 tests/unit/*.test.ts tests/components/*.test.tsx",
     "package:mac": "CSC_IDENTITY_AUTO_DISCOVERY=false npm run build && CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --mac --arm64 --dir && npm run sign:mac:local",
+    "package:dmg": "npm run package:mac && sh scripts/package_dmg.sh",
     "sign:mac:local": "node scripts/sign_local_mac_app.mjs \"release/mac-arm64/采章开源版.app\"",
     "icons": "node scripts/generate_icons.cjs",
     "typecheck:renderer": "tsc -p tsconfig.json --noEmit",

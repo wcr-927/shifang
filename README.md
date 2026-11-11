@@ -4,6 +4,10 @@
 
 采章是一款本地运行的 macOS 诗词创作与阅读应用。写五绝、七律或填词时，可以逐字对照谱式、选择多音字读法、查看同韵字。阅读时可以导入自己的 EPUB，在原文旁看鉴赏、摘录句子、写读书笔记。原创作品可归入文集，排成图片或 PDF。
 
+## Mac 下载安装
+
+[下载采章 0.6.1 · Apple Silicon DMG](https://github.com/wcr-927/shifang/releases/download/v0.6.1/Caizhang-0.6.1-macOS-arm64.dmg)。打开磁盘映像，将「采章开源版」拖到 Applications，然后从「应用程序」启动。此版适用于 M 系列 Mac，使用本地签名，未经 Apple 公证。首次启动可能需要在「系统设置 → 隐私与安全性」中确认打开。
+
 ## 开始开发
 
 当前验证平台为 Apple Silicon Mac。安装 Xcode Command Line Tools（如尚未安装，运行 `xcode-select --install`），准备 Git 和 **Node.js 24.19.0** 及其附带的 npm。下载或克隆此仓库，在包含 `package.json` 的目录执行：
@@ -27,10 +31,10 @@ npm run dev
 ```sh
 npm run check
 npm run build
-npm run package:mac
+npm run package:dmg
 ```
 
-`check` 运行前后端 TypeScript 检查和单元、组件回归。测试按文件串行执行。构建产生 `dist/` 和 `dist-electron/`。Mac 打包命令生成 `release/mac-arm64/采章开源版.app` 并执行本地 ad-hoc 签名。该产物适合开发者自行运行。面向公众分发时需要单独安排 Developer ID 签名及公证。
+`check` 运行前后端 TypeScript 检查和单元、组件回归。测试按文件串行执行。构建产生 `dist/` 和 `dist-electron/`。Mac 打包命令生成 `release/mac-arm64/采章开源版.app` 并执行本地 ad-hoc 签名。`npm run package:dmg` 随后生成 `release/Caizhang-0.6.1-macOS-arm64.dmg`。
 
 ## 项目结构
 

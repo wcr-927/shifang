@@ -17,10 +17,15 @@
 :root {
   --title-face: "Caizhang Title", "Songti SC", serif;
   --text-face: "Caizhang Text", "Songti SC", serif;
-  --interface-face: "Caizhang UI", "PingFang SC", sans-serif;
+  --interface-face: var(--text-face);
+  --pattern-face: "Caizhang UI", "PingFang SC", sans-serif;
 }
 
-/* Headings and navigation are the exceptions to the original Song/Hei mapping.
+.tone-marker, .paper-pattern-grid p > span {
+  font-family: var(--pattern-face);
+}
+
+/* Headings and navigation use the display face.
    Scope the override to their text so adjacent counts and controls keep their type. */
 :is(h1, h2, h3, h4, h5, h6, [role="heading"]),
 :is(h1, h2, h3, h4, h5, h6, [role="heading"]) :is(span, a, button),
@@ -30,5 +35,28 @@
 .library-collections .library-scope > span:first-child, input[aria-label="文集题名"],
 .reading-books button > span, .reading-works button > span, .reading-source-title,
 .notes-book-name, .pub-toc > div > span:first-child, .pub-preview-heading > span:first-child {
+  font-family: var(--title-face) !important;
+}
+
+/* Use the same face for the original verse on screen and on the printed sheet. */
+.home-verses p, .verse-text, .verse-end > span, .ci-book-input .line-input,
+.ci-book-hover, .ci-book-line-end > span, .ci-fallback-body,
+.ancient-body, .ancient-body p, .is-modern .free-paper-body,
+.reading-poem-lines:not(.reading-prose-original) .reference-reading-block,
+.reading-body[data-home-poems="true"] .reference-reading-block,
+.pub-poem[data-verse="true"] .pub-row {
+  font-family: var(--title-face) !important;
+}
+
+/* Action labels, choices, bylines and dates share the display face. */
+:is(button, select, option, optgroup, summary, [role="button"], [role="option"],
+    [role="menuitem"], [role="tab"], label:has(input:is([type="radio"], [type="checkbox"]))),
+:is(button, summary, [role="button"], [role="option"], [role="menuitem"], [role="tab"],
+    label:has(input:is([type="radio"], [type="checkbox"]))) :is(span, small, strong, em, b):not(.tone-marker),
+input:is([type="button"], [type="submit"], [type="reset"], [type="date"]),
+.home-byline, .note-source-byline, .reading-poem-heading > p, .reading-prose-heading > p,
+.author-name, .reference-reading-block[data-section="signature"], time,
+.cover-author, .cover-date, .pub-signature, .pub-signature > :is(span, small),
+.pub-field > span, .pub-app input:is([aria-label="署名"], [aria-label="落款日期"]) {
   font-family: var(--title-face) !important;
 }

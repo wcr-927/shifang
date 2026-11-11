@@ -30,6 +30,7 @@ export const desktopApi = {
     createReadingNote: (request: Parameters<ReferenceApi["createReadingNote"]>[0]) => callReference("createReadingNote",request),
     updateReadingNote: (request: Parameters<ReferenceApi["updateReadingNote"]>[0]) => callReference("updateReadingNote",request),
     removeReadingNote: (request: Parameters<ReferenceApi["removeReadingNote"]>[0]) => callReference("removeReadingNote",request),
+    recommendationTarget:(id:string)=>callReference("recommendationTarget",id),
     readingShelf:()=>callReference("readingShelf"),
     explanations: async (request: Parameters<ReferenceApi["explanations"]>[0]) => {
       const result=readingExplanationBundleSchema.parse(await callReference("explanations",request));

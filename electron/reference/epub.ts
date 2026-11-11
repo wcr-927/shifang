@@ -104,7 +104,7 @@ export function parseChapter(html: string, documentId: string, registeredDocumen
     }
     const children = (node.childNodes ?? []).flatMap(child => sanitize(child, depth + 1));
     const semanticTag = /(?:^|\s)super\d*(?:\s|$)/u.test(attr.class ?? '') ? 'sup' : node.tagName === 'p' && /(?:^|\s)(?:title-poem[^\s]*|shitou|title-article[^\s]*)/.test(attr.class ?? '') ? 'h3' : node.tagName;
-    let role:SafeNode['role'] = /(?:^|\s)title-poem[^\s]*/u.test(attr.class ?? '') ? 'work-title' : /(?:^|\s)(?:shuming\d*|kindle-cn-para-right1?|calibre32)(?:\s|$)/u.test(attr.class ?? '') ? 'signature' : /(?:^|\s)(?:kai(?:_[^\s]*)?|shici[^\s]*|kindle-cn-kai\d*)(?:\s|$)/u.test(attr.class ?? '') ? 'verse' : /(?:^|\s)yinwen(?:\s|$)/u.test(attr.class ?? '') ? 'verse-candidate' : /(?:^|\s)normaltext[^\s]*(?:\s|$)/u.test(attr.class ?? '') ? 'commentary' : undefined;
+    let role:SafeNode['role'] = /(?:^|\s)title-poem[^\s]*/u.test(attr.class ?? '') ? 'work-title' : /(?:^|\s)(?:shuming\d*|kindle-cn-para-right1?|calibre32)(?:\s|$)/u.test(attr.class ?? '') ? 'signature' : /(?:^|\s)(?:kai(?:_[^\s]*)?|shici[^\s]*|kindle-cn-kai\d*)(?:\s|$)/u.test(attr.class ?? '') ? 'verse' : /(?:^|\s)yinwen\d*(?:\s|$)/u.test(attr.class ?? '') ? 'verse-candidate' : /(?:^|\s)normaltext[^\s]*(?:\s|$)/u.test(attr.class ?? '') ? 'commentary' : undefined;
     if (/(?:^|\s)fnote(?:\s|$)/u.test(attr.class ?? '')) role='notes';
     if (/^h[23]$/u.test(node.tagName) && /(?:^|\s)kindle-cn-heading[12](?:\s|$)/u.test(attr.class ?? '')) role='work-title';
     // A prose paragraph wraps its entire original text in a kai span.

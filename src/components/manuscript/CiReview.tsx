@@ -7,7 +7,7 @@ export function CiReview({form,analysis,body,onLocate,onPattern}:{form:CiForm;an
  const keys=[...new Set(form.lines.flatMap(l=>l.rhyme?[l.rhyme]:[]))];
  const issues=analysis.issues.filter(i=>!rhymeIssues.includes(i)&&(i.kind==="conflict"||i.kind==="pending")),limits=analysis.issues.filter(i=>i.kind==="uncovered"),lines=body.split("\n");
  return <div className="grammar-review">
- <div className="review-format"><span>{form.name} · {form.author}体</span><button className="review-source-link" onClick={onPattern}>原谱</button></div>
+ <div className="review-format"><span>{form.name} · <span className="author-name">{form.author}体</span></span><button className="review-source-link" onClick={onPattern}>原谱</button></div>
  <p className="review-reasons">{form.summary}</p>
  {rhymeIssues.map(issue=><RhymeReview key={issue.segment} groups={ciRhymeReviewGroups(analysis,issue.segment!)} segment={keys.length>1?`韵${['一','二','三','四'][keys.indexOf(issue.segment!)]??keys.indexOf(issue.segment!)+1}`:undefined} pending={issue.kind==='pending'} title={issue.kind==='pending'?'韵脚读音待核对':'押韵不一致'} onLocate={onLocate}/>)}
  {[...new Set(issues.map(i=>i.line))].map(line=><article className="review-issue" key={line}>

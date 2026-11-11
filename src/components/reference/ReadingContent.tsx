@@ -38,5 +38,5 @@ export function ReadingContent({ block, sourceId, highlight, onLink, onNote, opt
     const allowed = ["p", "h1", "h2", "h3", "h4", "h5", "h6", "strong", "em", "sup", "sub", "br", "ul", "ol", "li", "table", "tr", "td", "th", "blockquote", "pre", "code", "span", "thead", "tbody", "tfoot", "caption", "dl", "dt", "dd", "figure", "figcaption"];
     return createElement(allowed.includes(node.type) ? node.type : "span", { key }, children);
   }
-  return <div className="reference-reading-block" data-block-id={block.id}>{render(block.node, 0)}</div>;
+  return <div className="reference-reading-block" data-block-id={block.id} data-section={"section" in block && block.section === "signature" ? "signature" : undefined}>{render(block.node, 0)}</div>;
 }

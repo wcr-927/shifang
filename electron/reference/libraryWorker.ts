@@ -2,6 +2,7 @@ import { mkdir, readdir, rm } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parentPort, workerData } from 'node:worker_threads';
 import { ReferenceLibrary, yieldTask } from './library';
+import {recommendationTarget} from './recommendation';
 import {readingShelf,readingIndex,ReadingPieces} from './reading';
 import { ReferenceCancelledError } from './task';
 
@@ -23,6 +24,7 @@ port.on('message', async (message:{id:number;method:string;args:any[];requestId?
   try {
     hooks.check(); let result:unknown;
     switch(message.method) {
+      case 'recommendationTarget': result=recommendationTarget(library.db,message.args[0]);break;
       case 'readingShelf': result=readingShelf(library.db);break;
       case 'readingIndex': await ensureNavigation(message.args[0].sourceId);result=readingIndex(library.db,message.args[0]);break;
       case 'readingPiece': await ensureNavigation(message.args[0].sourceId);result=await pieces.get(message.args[0]);break;

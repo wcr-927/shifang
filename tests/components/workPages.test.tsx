@@ -274,7 +274,7 @@ test("UI-01 home shows one real latest draft, not a duplicate work dashboard",as
  render(<HomePage onOpenWork={id=>opened.push(id)} onCreateWork={()=>{}}/>);await screen.findByText('作品6');assert.equal(Boolean(screen.queryByText('作品7')),false);fireEvent.click(screen.getByRole('button',{name:'作品6'}));assert.deepEqual(opened,['work-6']);
 });
 
-test('UI-01 empty home retains real recommendations and a creation entry, without fake recent works',async()=>{desktopApi.works.query=queryFixture(()=>[]);let created=0;render(<HomePage onOpenWork={()=>assert.fail('no work')} onCreateWork={()=>created++}/>);await screen.findByText('开始写作');fireEvent.click(screen.getByRole('button',{name:'开始写作'}));assert.equal(created,1);assert.ok(screen.getByRole('button',{name:'阅读全文：终南别业'}));});
+test('UI-01 empty home retains real recommendations and a creation entry, without fake recent works',async()=>{desktopApi.works.query=queryFixture(()=>[]);let created=0;render(<HomePage onOpenWork={()=>assert.fail('no work')} onCreateWork={()=>created++}/>);await screen.findByText('开始写作');fireEvent.click(screen.getByRole('button',{name:'开始写作'}));assert.equal(created,1);assert.ok(screen.getByRole('button',{name:/^阅读全文：/}));});
 
 
 test('Failure presentation keeps the real reason, full IPC detail and retry action', async () => {
